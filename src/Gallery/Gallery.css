@@ -1,0 +1,16 @@
+.Gallery{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+  
+}
+.Gallery img {
+   border: 10px transparent solid;
+    width: 250px;
+   text-align: center;
+  
+}
+.yoga {
+    height: 400px;
+}
