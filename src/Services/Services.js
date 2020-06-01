@@ -27,7 +27,7 @@ const services = props => {
       </div>
       
      <div className="svg"><img src={require('./manicure.png')} alt="mani"/> 
-          <h2>Handes & Feets</h2> 
+          <h2>Hands & Feet</h2> 
          <h5>Classic Manicure</h5>
          <h5>Classic Pedicure</h5>
          <h5>Shellac Manicure</h5>

@@ -17,7 +17,7 @@ return(
         
            <ul className="side-list">
           <div><li><a href="Home">Home</a></li></div>
-          <div> <li><a href="About me">About me</a></li></div>
+          <div> <li><a href="About me">About</a></li></div>
          
             <div className="Services">
             
