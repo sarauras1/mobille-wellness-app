@@ -5,7 +5,7 @@ import './About.css';
 
 const about = (props) => {
     return(
-        <div className="about">
+        <div className="about" id="about">
              <h1>About the Business</h1>
      <div className="about-img">
     
@@ -20,7 +20,7 @@ const about = (props) => {
     <p>To further my knowledge and experience, I moved to London to work in an illustrious Mayfair beauty hotspot for 5 years. I have also worked at exclusive 
         events such as London fashion shows and I had a number of A-list celebrities amongst her former clients.</p>
     <p>I also developed a deep understanding of traditional Thai massage techniques learnt during an extended stay in the Jungles near Chiang Mai, 
-        Thailand and in India, Rishikesh Ayurveda tecnique of marma pressure points and Hatha yoga.</p>
+        Thailand and in India, Rishikesh Ayurveda technique of marma pressure points and Hatha yoga.</p>
         <p>Now, I bring those 13 years of beauty experience and luxury treatments directly to your door!</p>
         <h4>Mission</h4>
         <p>My mission is to deliver luxurious beauty treatments at your home and office. That will make you save time and keep you comfortable.</p>

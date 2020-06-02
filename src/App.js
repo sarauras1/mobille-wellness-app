@@ -1,4 +1,5 @@
 import React from 'react';
+import {Switch, Route} from "react-router-dom";
 import Navbar from './Navbar/Navbar';
 import SideDrawer from './SideDrawer/SideDrawer';
 import Backdrop from './Backdrop/Backdrop';
@@ -45,34 +46,54 @@ backdropClickHandler = () => {
         <Navbar drawerClickHandler={this.drawerToggleClickHandler} />
    
         <SideDrawer show={this.state.sideDrawerOpen } />
+
+        <Switch>
+          <Route exact path="/">
             {backdrop}
-       <banner style={{marginTop: '50px'}}>
-        <Banner/>
-       </banner>
+            <banner style={{marginTop: '50px'}}>
+              <Banner/>
+            </banner>
 
-       <main style={{marginTop: '-100px'}}>
-       <motion.div
-       initial={{ opacity: 0,
-           y: 100}}
-         animate={{ opacity: 1,
-         y: 0}}
-       transition={{duration: 1}}
-        >  
-         <Services/>
-         </motion.div>
+            <main style={{marginTop: '-100px'}}>
+              <motion.div
+                initial={{ opacity: 0,
+                y: 100}}
+                animate={{ opacity: 1,
+                y: 0}}
+                transition={{duration: 1}}
+              >  
+              <Services/>
+              </motion.div>
+              <About/>
+            </main>
+          </Route>
+          <Route path = "/gallery">
+            <Gallery/>
+          </Route>
+          {/* If you want more separate pages, such as the Blog and Contact, render their components here each wrapped in their own <Route> component.
+          e.g.
+            <Route path ="/blog">
+              <Blog />
+            </Route>
 
-         <About/>
+            Then in your Navbar and SideDrawer components, render a NavLink or Link component like so <Link to="/blog>.
 
-        <Gallery/>
-       </main>
+            --------------------------------------------------------------------------------------------------------------------------------------------
 
-      <footer>
-        <Footer/>
-      </footer>
+            If instead you want them to be sections of the same (home) page like Services and About, then add an id attribute to their surrounding <div> within the component.
+            e.g.
 
-  
-          
-   </div>
+            ... inside Blog.js ...
+            <div id="blog">... your html... </div>
+
+            and then in Navbar and SideDrawer components, render a NavHashLink or HashLink component like so <HashLink to="/#blog">
+          */}
+        </Switch>
+
+        <footer>
+          <Footer/>
+        </footer>          
+      </div>
     );
   }
 }

@@ -3,10 +3,10 @@ import './Services.css';
 
 const services = props => {
         return (
-          <div className="Services">
+          <div className="Services" id="services">
          
      <div className="svg"><img src={require('./depilation.png')} alt="waxing"/>
-         <h2>Hair Removel</h2>
+         <h2>Hair Removal</h2>
          <h5> Wax Hot</h5>
          <h5> Strep Wax</h5>
          <h5> Threading</h5>
@@ -27,7 +27,7 @@ const services = props => {
       </div>
       
      <div className="svg"><img src={require('./manicure.png')} alt="mani"/> 
-          <h2>Hands & Feet</h2> 
+          <h2>Hands &amp; Feet</h2> 
          <h5>Classic Manicure</h5>
          <h5>Classic Pedicure</h5>
          <h5>Shellac Manicure</h5>
@@ -43,8 +43,8 @@ const services = props => {
       </div>
     
   <div className="svg"><img src={require('./work.png')} alt="work"/> 
-      <h2>Corporate & Pamper Parties</h2>
-     <h5>At Home & Office</h5>
+      <h2>Corporate &amp; Pamper Parties</h2>
+     <h5>At Home &amp; Office</h5>
       <h5>Affordable</h5>
      <h5>Convenience</h5>
   </div>

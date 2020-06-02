@@ -1,5 +1,6 @@
 import './DropdownMenu.css';
 import React, { Component } from 'react';
+import { NavHashLink } from "react-router-hash-link";
 
 class DropdownMenu extends Component {
   constructor() {
@@ -37,7 +38,7 @@ class DropdownMenu extends Component {
       <div>
         
         <div onClick={this.showMenu}className="dropdownServices">
-        <li><a href="Services">Services</a></li> 
+        <li><NavHashLink to="/#services">Services</NavHashLink></li> 
                
          <img src={require('./drop.png')} alt="drop"/>
         </div> 
@@ -55,10 +56,10 @@ class DropdownMenu extends Component {
         <ul className="dropdown">
            <li><a href="Yoga">Yoga</a></li>
            <li>< a href="Massage">Massage </a></li>
-           <li><a href="Hands & feet">Hands & Feet</a></li>
+           <li><a href="Hands &amp; feet">Hands &amp; Feet</a></li>
            <li><a href="Facials">Facials</a></li>
            <li><a href="Contact">Hair Removal</a></li>
-           <li><a href="Corporate">Corporate & Pamper Parties</a></li>
+           <li><a href="Corporate">Corporate &amp; Pamper Parties</a></li>
         </ul>    
               </div>
             )

@@ -1,4 +1,6 @@
 import React  from 'react';
+import {NavLink} from "react-router-dom";
+import { NavHashLink } from "react-router-hash-link";
 import './SideDrawer.css';
 import DropdownMenu from '../DropdownMenu/DropdownMenu';
 
@@ -16,17 +18,16 @@ return(
   <nav className={drawerClasses}>
         
            <ul className="side-list">
-          <div><li><a href="Home">Home</a></li></div>
-          <div> <li><a href="About me">About</a></li></div>
+          <div><li><NavLink to="/">Home</NavLink></li></div>
+          <div> <li><NavHashLink to="/#about">About</NavHashLink></li></div>
          
             <div className="Services">
-            
              <DropdownMenu />
             </div>
          
             <div> <li><a href="Blog">Blog</a></li></div>
             <div> <li><a href="Contact">Contact</a></li></div>
-            <div> <li><a href="Coorporate">Gallery</a></li></div>
+            <div> <li><NavLink to="/gallery">Gallery</NavLink></li></div>
           </ul>
          
   </nav>
