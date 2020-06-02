@@ -9,13 +9,9 @@ const banner = props => {
         
          <div><img src={require('./bg_3.jpg')} alt="corals"/> </div>  
          <motion.div
-        initial={{ width: 0,
-            x: 200,
-             y: 200}}
-          animate={{ width: 400,
-          x: 0,
-          y: 0}}
-        transition={{duration: 1}}
+        initial={{ opacity: 0,}}
+          animate={{ opacity: 1,}}
+        transition={{duration: 2}}
          >  
         <TextSlice/>
          </motion.div>

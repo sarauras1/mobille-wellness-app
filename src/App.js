@@ -44,17 +44,30 @@ backdropClickHandler = () => {
       <div style={{height: '100%'}}>
     
         <Navbar drawerClickHandler={this.drawerToggleClickHandler} />
-   
+        {backdrop}
         <SideDrawer show={this.state.sideDrawerOpen } />
 
         <Switch>
-          <Route exact path="/">
+          <Route exact path="/" >
             {backdrop}
-            <banner style={{marginTop: '50px'}}>
+
+            <banner style={{marginTop: '100px'}}>
               <Banner/>
             </banner>
-
-            <main style={{marginTop: '-100px'}}>
+            <section style={{marginTop: '-150px'}}>
+            <motion.div
+                initial={{ opacity: 0,
+                y: 100}}
+                animate={{ opacity: 1,
+                y: 0}}
+                transition={{duration: 1}}
+              >  
+              <Services/>
+              </motion.div>
+              </section>
+            </Route>
+           
+            <Route  path="/services" >
               <motion.div
                 initial={{ opacity: 0,
                 y: 100}}
@@ -64,12 +77,16 @@ backdropClickHandler = () => {
               >  
               <Services/>
               </motion.div>
-              <About/>
-            </main>
+              </Route>
+
+              <Route  path="/about" >
+              <About />
+              </Route>
+
+          <Route path="/gallery">
+            <Gallery />
           </Route>
-          <Route path = "/gallery">
-            <Gallery/>
-          </Route>
+
           {/* If you want more separate pages, such as the Blog and Contact, render their components here each wrapped in their own <Route> component.
           e.g.
             <Route path ="/blog">

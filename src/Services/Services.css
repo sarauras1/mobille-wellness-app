@@ -8,7 +8,7 @@
  cursor: pointer;
  width: 200px;
  height: 300px;
- margin: 50px;
+ margin: 30px 50px;
   text-align: center;
   border:rgb(88,88,88) 1px solid;
   border-radius: 20px;
@@ -17,3 +17,5 @@
  .svg, h2, h5 {
      color:	rgb(88,88,88);
  }
+
+ 

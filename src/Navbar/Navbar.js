@@ -18,8 +18,8 @@ const navbar = props => {
 <div className="Nav-items">
  <ul>
     <li><NavLink to="/"  className="current">Home</NavLink></li>
-    <li><NavHashLink to="/#services" className="current">Services</NavHashLink></li>
-    <li><NavHashLink to="/#about" 
+    <li><NavHashLink to="/services" className="current">Services</NavHashLink></li>
+    <li><NavHashLink to="/about" 
     isActive={(match, location) => {
       if (!match) {
         return false;

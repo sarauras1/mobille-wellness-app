@@ -3,8 +3,9 @@ import './Gallery.css';
 
 
 const gallery = props => {
+
         return (
-     <div className="Gallery">
+     <div className="Gallery" id="gallery">
            
           <div><img src={require('./occhi.jpg')} alt="occhi"/> </div>
           <div><img src={require('./french.jpg')} alt="french"/> </div>
