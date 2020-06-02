@@ -2,14 +2,14 @@ import React from 'react';
 import './Navbar.css';
 import DrawerToggleButton from '../SideDrawer/DrawerToggleButton';
 import logo from './logo.png'; 
-import { BrowserRouter, NavLink } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
+import { NavHashLink } from "react-router-hash-link";
 
 
 const navbar = props => {
     return (
     
   <header className="Navbar">
-      <BrowserRouter>
   <nav className="Navbar-nav">
      <div>
          <DrawerToggleButton click={props.drawerClickHandler}/>
@@ -17,9 +17,9 @@ const navbar = props => {
     <div className="spacer2"></div>
 <div className="Nav-items">
  <ul>
-    <li><NavLink to="/Banner/Services/About"  className="current">Home</NavLink></li>
-    <li><NavLink to="/Services" className="current">Services</NavLink></li>
-    <li><NavLink to="/About" 
+    <li><NavLink to="/"  className="current">Home</NavLink></li>
+    <li><NavHashLink to="/#services" className="current">Services</NavHashLink></li>
+    <li><NavHashLink to="/#about" 
     isActive={(match, location) => {
       if (!match) {
         return false;
@@ -29,7 +29,7 @@ const navbar = props => {
       const eventID = parseInt(match.params.eventID);
       return !isNaN(eventID) && eventID % 2 === 1;
     }}
-     className="current">About</NavLink></li>
+     className="current">About</NavHashLink></li>
 </ul>
 
 </div>
@@ -40,13 +40,12 @@ const navbar = props => {
 <div className="Nav-items">
   <ul>
       <li><NavLink to="/Blog" className="current">Blog</NavLink></li>
-     <li><NavLink to="/Gallery" className="current">Gallery</NavLink></li>
+     <li><NavLink to="/gallery" className="current">Gallery</NavLink></li>
     <li><NavLink to="/Contact" className="current">Contact</NavLink></li>   
 </ul>
 
 </div>
   </nav>
-  </BrowserRouter>
 </header>
     );
   }
