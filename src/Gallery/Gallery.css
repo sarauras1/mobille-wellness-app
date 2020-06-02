@@ -14,3 +14,35 @@
 .yoga {
     height: 400px;
 }
+
+@media(max-width: 850px){
+    .Gallery{
+        justify-content: center;
+        align-items: center;
+        display: flex;
+      
+    }
+    .Gallery img {
+        width: 400px;
+      
+    }
+    .yoga {
+        height: 500px;
+    }
+}
+
+@media(max-width: 500px){
+    .Gallery{
+        justify-content: center;
+        align-items: center;
+        display: flex;
+      
+    }
+    .Gallery img {
+        width: 350px;
+      
+    }
+    .yoga {
+        height: 500px;
+    }
+}
