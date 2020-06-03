@@ -54,14 +54,14 @@ class DropdownMenu extends Component {
                 }}
               >
         <ul className="dropdown">
-           <li><a href="Yoga">Yoga</a></li>
-           <li>< a href="Massage">Massage </a></li>
-           <li><a href="Hands &amp; feet">Hands &amp; Feet</a></li>
-           <li><a href="Facials">Facials</a></li>
-           <li><a href="Contact">Hair Removal</a></li>
-           <li><a href="Corporate">Corporate &amp; Pamper Parties</a></li>
+           <li><NavHashLink to="yoga" className="current">Yoga</NavHashLink></li>
+           <li><NavHashLink to="massages" className="current">Massage </NavHashLink></li>
+           <li><NavHashLink to="handsFeet" className="current" >Hands &amp; Feet</NavHashLink></li>
+           <li><NavHashLink to="facials" className="current">Facials</NavHashLink></li>
+           <li><NavHashLink to="contact" className="current">Hair Removal</NavHashLink></li>
+           <li><NavHashLink to="pamper" className="current">Corporate &amp; Pamper Parties</NavHashLink></li>
         </ul>    
-              </div>
+     </div>
             )
             : (
               null

@@ -14,7 +14,13 @@ import Facials from './Facials/Facials';
 import HandsFeet from './HandsFeet/HandsFeet';
 import Yoga from './Yoga/Yoga';
 import Waxing from './Waxing/Waxing';
-import Pamper from './Pamper';
+import Pamper from './Pamper/Pamper';
+import Shop from './Shop/Shop';
+import Contact from './Contact/Contact';
+
+
+
+
 class App extends React.Component  {
     
   
@@ -57,6 +63,7 @@ backdropClickHandler = () => {
             <banner style={{marginTop: '100px'}}>
               <Banner/>
             </banner>
+
             <section style={{marginTop: '-150px'}}>
             <motion.div
                 initial={{ opacity: 0,
@@ -92,29 +99,20 @@ backdropClickHandler = () => {
             <Gallery />
           </Route>
 
-          {/* If you want more separate pages, such as the Blog and Contact, render their components here each wrapped in their own <Route> component.
-          e.g.
-            <Route path ="/shop">
-              <Blog />
+          <Route path ="/shop">
+              <Shop />
             </Route>
 
-            Then in your Navbar and SideDrawer components, render a NavLink or Link component like so <Link to="/blog>.
-
-            --------------------------------------------------------------------------------------------------------------------------------------------
-
-            If instead you want them to be sections of the same (home) page like Services and About, then add an id attribute to their surrounding <div> within the component.
-            e.g.
-
-            ... inside Blog.js ...
-            <div id="blog">... your html... </div>
-
-            and then in Navbar and SideDrawer components, render a NavHashLink or HashLink component like so <HashLink to="/#blog">
-          */}
+            <Route path ="/contact">
+              <Contact />
+            </Route>
         </Switch>
+        
         <Switch>
-        <Route path ="/massages">
+           <Route path ="/massages">
               <Massages />
             </Route>
+
             <Route path ="/facials">
               <Facials />
             </Route>
@@ -131,9 +129,11 @@ backdropClickHandler = () => {
               <Waxing />
             </Route>
         </Switch>
+
         <footer>
           <Footer/>
-        </footer>          
+        </footer>  
+                
       </div>
     );
   }
