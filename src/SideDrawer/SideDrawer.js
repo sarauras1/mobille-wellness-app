@@ -19,13 +19,13 @@ return(
         
            <ul className="side-list">
           <div><li><NavLink to="/">Home</NavLink></li></div>
-          <div> <li><NavHashLink to="/#about">About</NavHashLink></li></div>
+          <div> <li><NavHashLink to="/about">About</NavHashLink></li></div>
          
             <div className="Services">
              <DropdownMenu />
             </div>
          
-            <div> <li><a href="Blog">Blog</a></li></div>
+            <div> <li><a href="shop">Shop</a></li></div>
             <div> <li><a href="Contact">Contact</a></li></div>
             <div> <li><NavLink to="/gallery">Gallery</NavLink></li></div>
           </ul>

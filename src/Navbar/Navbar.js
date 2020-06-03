@@ -39,7 +39,7 @@ const navbar = props => {
 
 <div className="Nav-items">
   <ul>
-      <li><NavLink to="/Blog" className="current">Blog</NavLink></li>
+      <li><NavLink to="/Shop" className="current">Shop</NavLink></li>
      <li><NavLink to="/gallery" className="current">Gallery</NavLink></li>
     <li><NavLink to="/Contact" className="current">Contact</NavLink></li>   
 </ul>

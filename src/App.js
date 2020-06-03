@@ -10,8 +10,6 @@ import { motion } from "framer-motion";
 import Footer from './Footer/Footer';
 import About from './About/About';
 
-
-
 class App extends React.Component  {
     
   
@@ -78,6 +76,8 @@ backdropClickHandler = () => {
               <Services/>
               </motion.div>
               </Route>
+             
+              
 
               <Route  path="/about" >
               <About />
@@ -106,7 +106,7 @@ backdropClickHandler = () => {
             and then in Navbar and SideDrawer components, render a NavHashLink or HashLink component like so <HashLink to="/#blog">
           */}
         </Switch>
-
+     
         <footer>
           <Footer/>
         </footer>          
