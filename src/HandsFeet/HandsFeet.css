@@ -1,27 +1,17 @@
-.HandsFeet-background img {  
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;     
-    margin-top: 20px;
+.HandsFeet-imge {  
+    margin: 200px;
     width: 400px;
-  
-   display: block;
+    text-align: left;
 }
 
 
 .HandsFeet-h1-div {
-  
-    display: inline-block;
-    position: absolute;
-    top: 45%;
-    left: 50%;
-    transform: translate( -50%, -50% );
     text-align: center;
 }
 
 #HandsFeet-h1 {
     text-align: center;
-    color: white;
+    color :black;
     font-weight: bold;
     font-size: 40px;
   
@@ -31,7 +21,6 @@
 @media(max-width: 600px) {
     #HandsFeet-h1 {
         text-align: center;
-        color: white;
         font-weight: bold;
         font-size: 30px;
       

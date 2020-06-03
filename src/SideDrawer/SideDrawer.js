@@ -25,8 +25,8 @@ return(
              <DropdownMenu />
             </div>
          
-            <div> <li><a href="shop">Shop</a></li></div>
-            <div> <li><a href="Contact">Contact</a></li></div>
+            <div> <li><NavHashLink to="/shop">Shop</NavHashLink></li></div>
+            <div> <li><NavHashLink to="/contact">Contact</NavHashLink></li></div>
             <div> <li><NavLink to="/gallery">Gallery</NavLink></li></div>
           </ul>
          

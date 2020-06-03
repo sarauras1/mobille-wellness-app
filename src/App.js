@@ -9,7 +9,12 @@ import Services from './Services/Services';
 import { motion } from "framer-motion";
 import Footer from './Footer/Footer';
 import About from './About/About';
-
+import Massages from './Massages/Massages';
+import Facials from './Facials/Facials';
+import HandsFeet from './HandsFeet/HandsFeet';
+import Yoga from './Yoga/Yoga';
+import Waxing from './Waxing/Waxing';
+import Pamper from './Pamper';
 class App extends React.Component  {
     
   
@@ -89,7 +94,7 @@ backdropClickHandler = () => {
 
           {/* If you want more separate pages, such as the Blog and Contact, render their components here each wrapped in their own <Route> component.
           e.g.
-            <Route path ="/blog">
+            <Route path ="/shop">
               <Blog />
             </Route>
 
@@ -106,7 +111,26 @@ backdropClickHandler = () => {
             and then in Navbar and SideDrawer components, render a NavHashLink or HashLink component like so <HashLink to="/#blog">
           */}
         </Switch>
-     
+        <Switch>
+        <Route path ="/massages">
+              <Massages />
+            </Route>
+            <Route path ="/facials">
+              <Facials />
+            </Route>
+            <Route path ="/handsFeet">
+              <HandsFeet />
+            </Route>
+            <Route path ="/pamper">
+              <Pamper />
+            </Route>
+            <Route path ="/yoga">
+              <Yoga />
+            </Route>
+            <Route path ="/waxing">
+              <Waxing />
+            </Route>
+        </Switch>
         <footer>
           <Footer/>
         </footer>          
