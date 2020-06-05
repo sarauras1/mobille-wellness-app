@@ -22,3 +22,30 @@ code {
  padding: 5px;
  border-bottom: 1.5px solid rgb(88,88,88); 
 }
+
+.service-component {
+  display: flex;
+  margin-top: 80px;
+  
+}
+
+.service-h1-div-component {
+ margin:10px auto;
+  text-align: center;
+  min-width: 400px;
+  max-width: 500px;
+}
+
+.service-h1-component {
+  font-size: 30px;
+  font-weight: 700;
+  color: inherit;
+  
+}
+
+
+
+.service-image-component img{
+   min-width: 400px;
+   max-width: 500px;
+}

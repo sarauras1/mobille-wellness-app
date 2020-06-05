@@ -1,24 +1,11 @@
- .Facials {
-     display: flex;
-     margin-top: 100px;
+ .facials-h4 h4 {
+     cursor: pointer;
+     margin-bottom: 0;
+     margin-left: 60px;
+     margin-right: 60px;
+    border-bottom: 0.5px solid rgb(88,88,88) ;
+ }
 
- }
-.Facials-h1-div {
-    text-align: center;
-    width: 50%;
-    height: 100%;
- }
- 
- #Facials-h1 {
-     font-size: 30px;
-     font-weight: 700;
-     color: inherit;
-  
-     margin-bottom: 30px;
- }
- 
- .Facials-image {
-     width: 50%;
-     height: 100%;
- }
- 
+ .facials-h4 h4:hover {
+   color:  rgb(163, 157, 157);
+}

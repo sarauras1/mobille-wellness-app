@@ -2,7 +2,6 @@
     border-radius: 30px;
     border: 1px solid rgb(216, 112, 147);
     background-color: white;
-    margin: 10px;
     box-shadow: 0 3px 3px rgb(216, 112, 147), 0 10px 10px rgba(0,0,0,0.22);
 }
 .button-text {
