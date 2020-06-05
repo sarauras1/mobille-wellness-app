@@ -4,7 +4,7 @@ import { NavHashLink } from "react-router-hash-link";
 const services = props => {
         return (
           <div className="Services" id="services">
-        <NavHashLink to="/waxing" className="services-nav">
+        <NavHashLink to="/waxing" className="current-serv">
      <div className="svg"><img src={require('./depilation.png')} alt="waxing"/>
          <h2>Hair Removal</h2>
          <h5> Wax Hot</h5>
@@ -12,7 +12,7 @@ const services = props => {
          <h5> Threading</h5>
       </div>
       </NavHashLink>
-      <NavHashLink to="/yoga" className="services-nav">
+      <NavHashLink to="/yoga" className="current-serv">
   <div className="svg"><img src={require('./excercise.png')} alt="yoga"/> 
           <h2>Hatha Yoga</h2>
          <h5>Beginners levels</h5>
@@ -21,7 +21,7 @@ const services = props => {
          <h5>zoom classes</h5>
   </div>
   </NavHashLink>
-  <NavHashLink to="/facials" className="services-nav">
+  <NavHashLink to="/facials" className="current-serv">
      <div className="svg"><img src={require('./massage.png')} alt="facials"/>
           <h2>Ayurvedic Facials</h2>
          <h5> Pitta Facial</h5>
@@ -31,7 +31,7 @@ const services = props => {
       </div>
      </NavHashLink>
 
-     <NavHashLink to="/handsFeet" className="services-nav">
+     <NavHashLink to="/handsFeet" className="current-serv">
      <div className="svg"><img src={require('./manicure.png')} alt="mani"/> 
           <h2>Hands &amp; Feet</h2> 
          <h5>Classic Manicure</h5>
@@ -41,7 +41,7 @@ const services = props => {
      </div>
      </NavHashLink>
 
-     <NavHashLink to="massages" className="services-nav">
+     <NavHashLink to="massages" className="current-serv">
       <div className="svg"><img src={require('./spa.png')} alt="massage"/> 
           <h2>Massages</h2>
          <h5> Ayurvedic Massage</h5>
@@ -50,7 +50,7 @@ const services = props => {
          <h5>and more...</h5>
       </div>
   </NavHashLink>
-  <NavHashLink to="pamper" className="services-nav">
+  <NavHashLink to="pamper" className="current-serv">
   <div className="svg"><img src={require('./work.png')} alt="work"/> 
       <h2>Corporate &amp; Pamper Parties</h2>
      <h5>At Home &amp; Office</h5>

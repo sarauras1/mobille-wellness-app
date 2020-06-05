@@ -1,16 +1,26 @@
+.Yoga {
+    display: flex;
+    margin-top: 100px;
+}
+
 .Yoga-h1-div {
+    margin: 50px;
     text-align: center;
+    width: 50%;
  }
  
  #Yoga-h1 {
      font-size: 30px;
      font-weight: 700;
-     color: black;
-     margin-top: 100px;
-     margin-bottom: 30px;
+     color: inherit;
+ }
+
+ .Yoga-image {
+     width: 50%;
+     margin: 50px;
  }
 
  .Yoga-image img {
-     width: 400px;
-     margin: 50px;
- }
+    width: 500px;
+  
+}

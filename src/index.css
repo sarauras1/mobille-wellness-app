@@ -5,6 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  color: rgb(88,88,88);
 }
 
 code {
@@ -14,4 +15,10 @@ code {
 
  #about, #services, #gallery{
   margin-top: 80px;
+}
+
+.hline-bottom {
+ margin:0 40px;
+ padding: 5px;
+ border-bottom: 1.5px solid rgb(88,88,88); 
 }

@@ -3,15 +3,36 @@
     align-items: center;
     display: flex;
     flex-wrap: wrap;
+    max-width: 1000px;
+    text-align: center;
+    margin: auto;
+}
+
+   
+.first-line  {
+   border: 10px transparent solid;
+    width: 300px;
+ 
   
 }
-.Gallery img {
-   border: 10px transparent solid;
-    width: 250px;
-   text-align: center;
+.second-line {
+    border: 10px transparent solid;
+    width: 300px;
+    
+}
+.third-line {
+    border: 10px transparent solid;
+    width: 400px;
+    
+}
+.fourth-line {
+    border: 10px transparent solid;
+    width: 400px;
   
 }
 .yoga {
+    border: 10px transparent solid;
+    width: 250px;
     height: 400px;
 }
 

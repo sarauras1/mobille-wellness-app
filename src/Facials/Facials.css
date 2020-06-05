@@ -1,16 +1,24 @@
-.Facilas-h1-div {
+ .Facials {
+     display: flex;
+     margin-top: 100px;
+
+ }
+.Facials-h1-div {
     text-align: center;
+    width: 50%;
+    height: 100%;
  }
  
  #Facials-h1 {
      font-size: 30px;
      font-weight: 700;
-     color: black;
-     margin-top: 100px;
+     color: inherit;
+  
      margin-bottom: 30px;
  }
  
  .Facials-image {
-     width: 400px;
-     margin: 50px;
+     width: 50%;
+     height: 100%;
  }
+ 

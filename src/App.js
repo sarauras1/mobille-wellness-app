@@ -54,7 +54,7 @@ backdropClickHandler = () => {
     
         <Navbar drawerClickHandler={this.drawerToggleClickHandler} />
         {backdrop}
-        <SideDrawer show={this.state.sideDrawerOpen } />
+        <SideDrawer show={this.state.sideDrawerOpen} />
 
         <Switch>
           <Route exact path="/" >
