@@ -1,14 +1,19 @@
 import React from 'react';
+
+import ValidationForm from '../ValidationForm/ValidationForm';
 import './Contact.css';
 
-const shop = props => {
+const contact = props => {
   return (
       <div className="Contact" id="contact">
-          <h1 id="Contact-h1">Coming Soon</h1>
+          <div id="Form">
+        
+          <ValidationForm/>
+          </div>
       </div>
   )
 }
 
 
 
-export default shop;
+export default contact;
