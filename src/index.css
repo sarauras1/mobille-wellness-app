@@ -26,14 +26,14 @@ code {
 .service-component {
   display: flex;
   margin-top: 80px;
-  
+   width: 100%;
 }
 
 .service-h1-div-component {
  margin:10px auto;
   text-align: center;
-  min-width: 400px;
-  max-width: 500px;
+  
+  max-width: 600px;
 }
 
 .service-h1-component {
@@ -43,9 +43,87 @@ code {
   
 }
 
+.price {
+  font-size: 15px;
+  font-weight: 700;
+  color: rgb(88,88,88);
+  text-align: center;
+}
 
+.service-image-component img{ 
+   max-width: 600px;
+}
+@media(max-width: 900px) {
+  .service-component {
+    width: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 30px;
+    
+  }
+  .service-image-component img{
+   margin: auto;
+    width: 750px;
+}
+.service-h1-div-component {
+  margin:10px auto;
+   text-align: center;
+   width: 750px;
+ }
+}
 
-.service-image-component img{
-   min-width: 400px;
-   max-width: 500px;
+@media(max-width: 769px) {
+  .service-component {
+    width: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 30px;
+    
+  }
+  .service-image-component img{
+   margin: auto;
+    width: 600px;
+}
+.service-h1-div-component {
+  margin:10px auto;
+   text-align: center;
+   width: 600px;
+ }
+}
+
+@media(max-width: 600px) {
+  .service-component {
+    width: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 30px;
+    
+  }
+  .service-image-component img{
+    margin: auto;
+     width: 400px;
+ }
+
+}
+
+@media(max-width: 500px) {
+  .service-component {
+   max-width: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 30px;
+    
+  }
+  .service-image-component img{
+    margin: auto;
+     width: 100%;
+ }
 }

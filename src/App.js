@@ -17,7 +17,7 @@ import Waxing from './Waxing/Waxing';
 import Pamper from './Pamper/Pamper';
 import Shop from './Shop/Shop';
 import Contact from './Contact/Contact';
-
+import MainText from './TextSlice/MainText';
 
 
 
@@ -129,7 +129,10 @@ backdropClickHandler = () => {
               <Waxing />
             </Route>
         </Switch>
-
+       <section>
+        <MainText/>
+       </section>
+       
         <footer>
           <Footer/>
         </footer>  

@@ -1,5 +1,4 @@
 import React from 'react';
-import Button from '../Button/Button';
 import './Yoga.css';
 
 
@@ -12,7 +11,7 @@ const yoga = (props) => {
          <img className="Yoga-image"src={require('./balance-city.jpg')} alt="yoga"/> 
          <div className="yoga-h3">
           <h3>One to one zoom classes are now available</h3>
-         <Button/>
+     
       </div>
      </div>
       <div className="service-h1-div-component">

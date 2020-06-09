@@ -1,8 +1,8 @@
 import React, {useState}  from "react";
 import { motion } from "framer-motion";
-import Button from '../Button/Button';
 
-const  OpenWindow = () => {
+
+const  OpenWindowPita = () => {
   const [framerState, framerSetState] = useState(false);
 
 
@@ -21,12 +21,12 @@ const  OpenWindow = () => {
        margin: 'auto',
        padding: '10px',
        boxShadow: '0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22)'}}>
-       In 1980 I took part in one of the first courses on Ayurveda which was held in New Delhi.
-        I decided to take part in the course because at that time I used to teach yoga and meditation. 
-        The course was entitled “Pioneers of Ayurveda”. During the course we learned the deep value of 
-        Ayurveda and a new way of perceiving the life on earth of human beings. It was a deep vision that
-         described the connection between man and seasons, the influence of food on our health, 
-        <Button/>
+      24 hour non-stop moisturization. Skin protection against extreme climatic conditions. 
+      Tests have shown that 30 minutes after application hydration improves and irritations and 
+      congestions are reduced by 21%. Immediate reduction of that unpleasant “tight skin” feeling.
+       Tired and taut skin becomes fresh and relaxed. Plumping effect, small wrinkles are visibly reduced. 
+       <br/>
+        <span className="price">From £ 45</span>
         </div>}
       </motion.div>
      
@@ -35,4 +35,4 @@ const  OpenWindow = () => {
  }
 
 
-export default OpenWindow;
+export default OpenWindowPita;

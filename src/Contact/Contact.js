@@ -1,6 +1,6 @@
 import React from 'react';
 
-import ValidationForm from '../ValidationForm/ValidationForm';
+import GoogleApi from '../GoogleApi/GoogleApi';
 import './Contact.css';
 
 const contact = props => {
@@ -8,7 +8,7 @@ const contact = props => {
       <div className="Contact" id="contact">
           <div id="Form">
         
-          <ValidationForm/>
+          <GoogleApi/>
           </div>
       </div>
   )

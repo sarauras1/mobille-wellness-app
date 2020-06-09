@@ -9,3 +9,31 @@
  .facials-h4 h4:hover {
    color:  rgb(163, 157, 157);
 }
+.facials-img {
+   display: flex;
+   flex-direction: column;
+   margin-top: 100px;
+  justify-content: center;
+  align-self: center;
+ 
+}
+.Gold{
+   font-weight: 600;
+   font-size: 25px;
+   text-align: center;
+   color:  rgb(159,131,41);
+   margin-top: 0;
+}
+.lakshmi-para {
+   width: 600px;
+   margin: auto;
+   text-align: center;
+   padding: 10px;
+}
+#lakshmi{
+   margin: auto;
+   text-align: center;
+   width: 300px;
+   height: 150px; 
+}
+
