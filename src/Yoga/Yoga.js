@@ -5,17 +5,16 @@ import './Yoga.css';
 const yoga = (props) => {
     return (
 
- <div className="service-component" id="yoga">
+ <div className="yoga-component" id="yoga">
 
-      <div className="service-image-component">
+      <div className="yoga-image-component">
          <img className="Yoga-image"src={require('./balance-city.jpg')} alt="yoga"/> 
          <div className="yoga-h3">
-          <h3>One to one zoom classes are now available</h3>
      
       </div>
      </div>
-      <div className="service-h1-div-component">
-          <h1 className="service-h1-component">Hatha Yoga</h1>
+      <div className="yoga-div-component">
+          <h1 className="yoga-h1-component">Hatha Yoga</h1>
         <div className="block_1 hline-bottom"></div>
 
      <div className="yoga-paragraph">
@@ -29,6 +28,7 @@ const yoga = (props) => {
                not just sense of equilibrium in the body and mind, the balance between effort and surrender 
                in each posture.
           Hatha Flow is great to build foundations for your pratice. Suitable for all levels.</p>
+          <h3>One to one zoom classes are now available</h3>
     </div>
   </div> 
  </div>

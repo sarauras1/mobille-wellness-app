@@ -1,0 +1,11 @@
+.massage-h4 h4 {
+    cursor: pointer;
+    margin-bottom: 0;
+    margin-left: 60px;
+    margin-right: 60px;
+   border-bottom: 0.5px solid rgb(88,88,88) ;
+}
+
+.massage-h4 h4:hover {
+  color:  rgb(163, 157, 157);
+}

@@ -2,3 +2,70 @@
     text-align: center;
     margin-bottom: 20px;
 }
+ .yoga-paragraph{
+     padding:0 20px;
+ }
+.yoga-component{
+    margin-top: 100px;
+}
+ .yoga-h1-component, .hline-bottom-yoga{
+     text-align: center;
+ }
+ .hline-bottom-yoga{
+     margin:0 60px;
+ }
+ @media(min-width: 769px) {
+    .yoga-image-component img{
+        float: left;
+        max-width: 500px;
+        margin: 20px;
+    }
+  }
+ 
+  
+ @media(max-width: 768px) {
+    .yoga-component {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+     
+      
+    }
+    .yoga-image-component img{
+     margin:0 auto;
+      width: 400px;
+      height: 300px;
+  }
+  .yoga-div-component {
+    padding:0 25px;
+    margin:10px 20px;
+     text-align: center;
+     width: 100%;
+   }
+  }
+
+  @media(max-width: 400px) {
+    .yoga-component {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+     
+      
+    }
+    .yoga-image-component img{
+     margin:0 auto;
+      width: 300px;
+      height: 200px;
+  }
+  .yoga-div-component {
+    padding:0 25px;
+    margin:10px 20px;
+     text-align: center;
+     width: 100%;
+   }
+  }
+  

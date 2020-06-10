@@ -23,18 +23,7 @@ code {
  border-bottom: 1.5px solid rgb(88,88,88); 
 }
 
-.service-component {
-  display: flex;
-  margin-top: 80px;
-   width: 100%;
-}
 
-.service-h1-div-component {
- margin:10px auto;
-  text-align: center;
-  
-  max-width: 600px;
-}
 
 .service-h1-component {
   font-size: 30px;
@@ -50,80 +39,44 @@ code {
   text-align: center;
 }
 
-.service-image-component img{ 
-   max-width: 600px;
-}
-@media(max-width: 900px) {
-  .service-component {
-    width: 800px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    padding: 0 30px;
-    
-  }
-  .service-image-component img{
-   margin: auto;
-    width: 750px;
-}
-.service-h1-div-component {
-  margin:10px auto;
-   text-align: center;
-   width: 750px;
- }
-}
 
-@media(max-width: 769px) {
+@media(min-width: 1000px){
   .service-component {
-    width: 700px;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    padding: 0 30px;
-    
-  }
-  .service-image-component img{
-   margin: auto;
-    width: 600px;
-}
-.service-h1-div-component {
-  margin:10px auto;
-   text-align: center;
-   width: 600px;
- }
-}
-
-@media(max-width: 600px) {
-  .service-component {
-    width: 500px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    padding: 0 30px;
-    
-  }
-  .service-image-component img{
-    margin: auto;
-     width: 400px;
- }
-
-}
-
-@media(max-width: 500px) {
-  .service-component {
-   max-width: 350px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    padding: 0 30px;
-    
-  }
-  .service-image-component img{
-    margin: auto;
+    margin: 80px  20px;
      width: 100%;
+  }
+  
+  .service-h1-div-component {
+   margin:10px auto;
+    text-align: center;
+     width: 500px;
+  }
+  .service-image-component img{
+    margin: auto;
+     width: 500px;
  }
 }
+@media(max-width: 999px) {
+  .service-component {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+   
+    
+  }
+  .service-image-component img{
+   margin: auto;
+    width: 100%;
+}
+.service-h1-div-component {
+  padding:0 25px;
+  margin:10px 20px;
+   text-align: center;
+   width: 100%;
+ }
+}
+
+

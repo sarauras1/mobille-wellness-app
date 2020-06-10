@@ -1,6 +1,7 @@
 import React from "react";
 import ReactFormValidation from "react-form-input-validation";
-
+import GoogleApi from '../GoogleApi/GoogleApi';
+import './ValidationForm.css';
 
 class ValidationForm extends React.Component {
   constructor(props) {
@@ -10,7 +11,7 @@ class ValidationForm extends React.Component {
         customer_name: "",
         email_address: "",
         phone_number: "",
-        address: "",
+        house_address: "",
         pickupTratment: "",
         comments: "",
         dropoff_place: "",
@@ -22,6 +23,7 @@ class ValidationForm extends React.Component {
     this.form.useRules({
       customer_name: "required|username_available",
       email_address: "required|email",
+      house_address: "required|address",
       phone_number: "required|numeric|digits_between:10,12",
       pickup_time: "required|date",
        comments: "required|max:200",
@@ -45,11 +47,11 @@ class ValidationForm extends React.Component {
     ReactFormValidation.setMessages('en', messages);
     ReactFormValidation.useLang('en') */
   }
-
+    
   render() {
     return (
-        <div style={{maxWidth: "600px", margin: "0 auto"}}>
-          <h3>React Form Input Validation</h3>
+    
+        <div className="container">
           <form
             className="myForm"
             noValidate
@@ -57,6 +59,7 @@ class ValidationForm extends React.Component {
             onSubmit={this.form.handleSubmit}
           >
             <p>
+            <h3 className="text-centre-form">Book your treatment!</h3>
               <label>
                 Name
                 <input
@@ -136,16 +139,16 @@ class ValidationForm extends React.Component {
             <label>
                 Address
                 <input
-                  type="Location"
-                  name="Home_address"
+                  type="text"
+                  name="house_address"
                   onBlur={this.form.handleBlurEvent}
                   onChange={this.form.handleChangeEvent}
-                  value={this.state.fields.Home_address}
+                  value={this.state.fields.house_address}
                 />
               </label>
               <label className="error">
-                {this.state.errors.Home_address
-                  ? this.state.errors.Home_address
+                {this.state.errors.house_address
+                  ? this.state.errors.house_address
                   : ""}
               </label>
             </p>
@@ -244,7 +247,7 @@ class ValidationForm extends React.Component {
 
             <p>
               <label>
-                Specify treatment name
+                Specify treatment
                 <textarea
                   name="comments"
                   maxLength="200"
@@ -261,7 +264,9 @@ class ValidationForm extends React.Component {
             </p>
 
             <p>
-              <button type="submit">Submit Booking</button>
+            <GoogleApi>
+              <button  className="form-button" type="submit">Submit Booking</button>
+            </GoogleApi>
             </p>
           </form>
         </div>

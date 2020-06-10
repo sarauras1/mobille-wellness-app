@@ -41,13 +41,21 @@ const facials = (props) => {
 
 <div className="lakshmi-para">
   <p>
-  Now it is one of the largest laboratories of natural products in Europe, with more than 2 millions pieces produced every year. At last in our laboratory we could make our dream come true, thanks also to two great cosmetologists with a passion for natural products. Today almost all our products are completely natural and have been certified as natural by ICEA, the association that certifies natural products. Lakshmi represents our dream come true: Ethical Beauty.  Lakshmi’s deepest and most vital aim is to transfer the inseparable “Beauty and Well-being” combination into everyday life. The result is an extraordinary line of cosmetics “Made with Joy”, conceived and produced with joy, love and respect.
+  One of the largest laboratories of natural products in Europe, with more than 2 millions pieces produced every year.
+   Thanks also to two great cosmetologists with a passion for natural products, Today almost all our products are completely natural and have been certified as natural by ICEA, the association that certifies natural products.
+  Lakshmi’s deepest and most vital aim is to transfer the inseparable “Beauty and Well-being” combination into everyday life.
+   The result is an extraordinary line of cosmetics “Made with Joy”, conceived and produced with joy, love and respect.</p>
 
-THE COMPANY Lakshmi, for over 26 years (Since 1990) in the wellness sector and natural cosmetics, comes from a deep passion for the East and the ancient wisdom of Ayurveda.
 
-Lakshmi has developed a line of absolutely extraordinary cosmetics by combining the wisdom of Ayurveda, Naturopathy and Aromatherapy with the most advanced cosmetic knowledge, the organic natural products and the essential oils to bring beauty and excellence to skin of all types based on the Doshas (Vata, Pitta or Kapha).
+   <p>THE COMPANY Lakshmi, for over 26 years (Since 1990) in the wellness sector and natural cosmetics, comes from a deep 
+passion for the East and the ancient wisdom of Ayurveda.</p>
 
-For over twenty years Lakshmi has been producing more than 300 Certified Eco-Organic products, not tested on animals. Showing coherence and commitment to its ethical values.
+<p>Lakshmi has developed a line of absolutely extraordinary cosmetics by combining the wisdom of Ayurveda, Naturopathy and Aromatherapy with the most advanced cosmetic knowledge,
+ the organic natural products and the essential oils to bring beauty and excellence to skin of all types based on the 
+ Doshas (Vata, Pitta or Kapha).</p>
+
+ <p>For over twenty years Lakshmi has been producing more than 300 Certified Eco-Organic products, 
+not tested on animals. Showing coherence and commitment to its ethical values.
   </p>
 </div>
 </div>

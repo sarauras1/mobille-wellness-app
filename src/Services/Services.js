@@ -1,6 +1,8 @@
 import React from 'react';
 import './Services.css';
 import { NavHashLink } from "react-router-hash-link";
+import MainText from '../TextSlice/MainText';
+
 const services = props => {
         return (
           <div className="Services" id="services">
@@ -58,6 +60,9 @@ const services = props => {
      <h5>Convenience</h5>
   </div>
   </NavHashLink>
+  <section>
+        <MainText/>
+       </section>
  </div>
         );
       }

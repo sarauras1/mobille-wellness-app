@@ -24,6 +24,7 @@
    color:  rgb(159,131,41);
    margin-top: 0;
 }
+@media(min-width: 768px) {
 .lakshmi-para {
    width: 600px;
    margin: auto;
@@ -36,4 +37,32 @@
    width: 300px;
    height: 150px; 
 }
-
+}
+@media(max-width: 767px) {
+   .lakshmi-para {
+      max-width: 400px;
+      margin: auto;
+      text-align: center;
+       padding: auto;
+   }
+   #lakshmi{
+      margin: auto;
+      text-align: center;
+      width: 250px;
+      height: 100px; 
+   }
+   }
+   @media(max-width: 468px) {
+      .lakshmi-para {
+         max-width: 300px;
+         margin: auto;
+         text-align: center;
+          padding: auto;
+      }
+      #lakshmi{
+         margin: auto;
+         text-align: center;
+         width: 250px;
+         height: 100px; 
+      }
+      }

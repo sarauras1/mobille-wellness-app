@@ -17,7 +17,7 @@ import Waxing from './Waxing/Waxing';
 import Pamper from './Pamper/Pamper';
 import Shop from './Shop/Shop';
 import Contact from './Contact/Contact';
-import MainText from './TextSlice/MainText';
+
 
 
 
@@ -51,12 +51,13 @@ backdropClickHandler = () => {
 
     return (
       <div style={{height: '100%'}}>
-    
-        <Navbar drawerClickHandler={this.drawerToggleClickHandler} />
-        {backdrop}
+       {backdrop}
+    <Navbar drawerClickHandler={this.drawerToggleClickHandler} />
+      
         <SideDrawer show={this.state.sideDrawerOpen} />
 
         <Switch>
+      
           <Route exact path="/" >
             {backdrop}
 
@@ -129,9 +130,7 @@ backdropClickHandler = () => {
               <Waxing />
             </Route>
         </Switch>
-       <section>
-        <MainText/>
-       </section>
+      
        
         <footer>
           <Footer/>
