@@ -40,7 +40,7 @@ Sara and acting in the course of their employment or (ii) engaged as a consulta
  providing services to All Beauty By Sara and accessing the Website in connection with the provision
   of such services; and<br></br>
   <strong>Website</strong><br></br>
-the website that you are currently using, mobilewellness.surge.sh, and any sub-domains
+the website that you are currently using, www.allbeautybysara.co.uk, and any sub-domains
  of this site unless expressly excluded by their own terms and conditions.<br></br>
 2.  In this privacy policy, unless the context requires a different interpretation:<br></br>
 a. the singular includes the plural and vice versa;<br></br>
