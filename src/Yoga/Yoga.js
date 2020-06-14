@@ -4,8 +4,8 @@ import './Yoga.css';
 
 const yoga = (props) => {
     return (
-
- <div className="yoga-component" id="yoga">
+        <div id="yoga">
+    <div className="yoga-component">
 
       <div className="yoga-image-component">
          <img className="Yoga-image"src={require('./balance-city.jpg')} alt="yoga"/> 
@@ -14,7 +14,7 @@ const yoga = (props) => {
       </div>
      </div>
       <div className="yoga-div-component">
-          <h1 className="yoga-h1-component">Hatha Yoga</h1>
+          <h1 className="yoga-h1-component">One-to-one Hatha Yoga</h1>
         <div className="block_1 hline-bottom"></div>
 
      <div className="yoga-paragraph">
@@ -26,11 +26,16 @@ const yoga = (props) => {
               covering slow motion sequence movement to improve flexibily and strenght. One translation of the 
               sansKrit word Hatha means sun-moon, so through this pratice you will learn to find balance -
                not just sense of equilibrium in the body and mind, the balance between effort and surrender 
-               in each posture.
-          Hatha Flow is great to build foundations for your pratice. Suitable for all levels.</p>
-          <h3>One to one zoom classes are now available</h3>
+               in each posture. Hatha Flow is great to build foundations for your pratice. Suitable for everyone.</p>
+
+          <p>One-to-one classes are available from the price of £ 30, depending on time and location! 
+               And small groups classes from £ 15 per person.</p>
+
+          <h3>One-to-one zoom classes are now available with 50% discount.Try out 30 min free class</h3>
     </div>
   </div> 
+  <span className="price-yoga">From £ 30 per 1 hour class</span>
+ </div>
  </div>
     );
 }

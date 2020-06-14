@@ -9,3 +9,14 @@
 .massage-h4 h4:hover {
   color:  rgb(163, 157, 157);
 }
+@media(min-width: 801px){
+    #massage-image {
+        max-height: 500px;
+    }   
+}
+@media(max-width: 800px){
+    #massage-image {
+        margin-top: 100px;
+        max-height: 400px;
+    }   
+}

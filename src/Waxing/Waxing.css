@@ -14,3 +14,34 @@
      width: 400px;
      margin: 50px;
  }
+.waxing-h2 {
+    text-align: center;
+    margin-bottom: 0;
+}
+.waxing-para{
+    padding:0 20px;
+}
+ #waxing-image{
+     margin-top: 100px;
+ }
+ #waxing-span{
+     padding:0 20px;
+     font-size: 15px;
+     text-align: center;
+ }
+.margin-bottom-span{
+    margin-bottom: 20px;
+}
+ .price-div-waxing {
+     text-align: center;
+     margin-bottom: 20px;
+ }
+  .price-waxing {
+     position: relative;
+     text-align: center;
+     width: 80px;
+     font-weight: 500;
+     font-size: 15px;
+     border-bottom: 1px solid grey;
+
+ }

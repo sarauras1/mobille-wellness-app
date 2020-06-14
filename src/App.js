@@ -17,6 +17,7 @@ import Waxing from './Waxing/Waxing';
 import Pamper from './Pamper/Pamper';
 import Shop from './Shop/Shop';
 import Contact from './Contact/Contact';
+import PrivacyPolicy from './GoogleApi/PrivacyPolicy';
 
 
 
@@ -128,6 +129,9 @@ backdropClickHandler = () => {
             </Route>
             <Route path ="/waxing">
               <Waxing />
+            </Route>
+            <Route path ="/privacy">
+              <PrivacyPolicy/>
             </Route>
         </Switch>
       

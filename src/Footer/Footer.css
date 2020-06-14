@@ -8,6 +8,17 @@
 li {
     list-style: none;
 }
+#privacy-li {
+  text-align: center;
+}
+.current-footer:hover{
+  color: rgb(211, 211, 211);
+}
+.current-footer {
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+}
 .hline-bottom-footer{
     margin:0 40px;
     padding: 5px;

@@ -1,6 +1,6 @@
 import React from 'react';
 import './Footer.css';
-
+import { NavHashLink } from "react-router-hash-link";
 const footer = props => {
   return (
       <div className="footer">
@@ -9,12 +9,12 @@ const footer = props => {
 <div id="container">
    <div className="left">
      <h3>Services</h3>
-   <li>Hatha Yoga</li>
-   <li>Facials</li>
-   <li>Massages</li>
-   <li>Hands &amp; Feet</li>
-   <li>Pamper Parties</li>
-   <li>Hair Removal</li>
+     <NavHashLink to="/yoga" className="current-footer"> <li>Hatha Yoga</li> </NavHashLink>
+     <NavHashLink to="/facials" className="current-footer"><li>Facials</li></NavHashLink>
+     <NavHashLink to="/massages" className="current-footer"><li>Massages</li></NavHashLink>
+     <NavHashLink to="/handsFeet" className="current-footer"><li>Hands &amp; Feet</li></NavHashLink>
+     <NavHashLink to="/pamper" className="current-footer"><li>Pamper Parties</li></NavHashLink>
+     <NavHashLink to="/waxing" className="current-footer"><li>Hair Removal</li></NavHashLink>
 
    </div>
    <div className="center">
@@ -34,6 +34,7 @@ const footer = props => {
      </div>
 </div> 
 <div className="hline-bottom-footer"></div>
+<NavHashLink to="/privacy" className="current-footer"><li id="privacy-li">Privacy and Policy</li></NavHashLink>
 <div className="copiright"><small>&copy; All Rights reserved by SaraWebDev</small></div>
       </div>
   )

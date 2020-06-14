@@ -1,15 +1,15 @@
 import React  from "react";
 
- const gapi = window.gapi
-  const CLIENT_ID = "205346488083-8ur1n2rm2peaanob4lmstfnt2o9pslqe.apps.googleusercontent.com"
-  const API_KEY = "AIzaSyCQGidG7MdteGpF387souo0tSCEsEdagrE"
+ var gapi = window.gapi
+  var CLIENT_ID = "205346488083-8ur1n2rm2peaanob4lmstfnt2o9pslqe.apps.googleusercontent.com"
+  var API_KEY = "AIzaSyCQGidG7MdteGpF387souo0tSCEsEdagrE"
  
   // Array of API discovery doc URLs for APIs used by the quickstart
-  const DISCOVERY_DOCS = ["https://www.googleapis.com/discovery/v1/apis/calendar/v3/rest"]
+  var DISCOVERY_DOCS = ["https://www.googleapis.com/discovery/v1/apis/calendar/v3/rest"]
 
   // Authorization scopes required by the API; multiple scopes can be
   // included, separated by spaces.
-   const SCOPES = "https://www.googleapis.com/auth/calendar.events.readonly"
+   var SCOPES = "https://www.googleapis.com/auth/calendar.events"
   
   const googleApi = () => {
    /**
@@ -61,7 +61,7 @@ import React  from "react";
               }
             };
 
- const request = gapi.client.calendar.events.insert({
+ var request = gapi.client.calendar.events.insert({
   'calendarId': 'primary',
   'resource': event
 });
@@ -76,7 +76,7 @@ return (
      <div>
       <div >
     
-      <button  className="form-button" type="submit" onClick={handleClick}>submit booking</button>
+      <button  className="button-style"  onClick={handleClick}>book</button>
     
       </div>
   </div>

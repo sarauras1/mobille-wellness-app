@@ -6,13 +6,13 @@ import Swedish from './Swedish';
 import Thaimassage from './Thaimassage';
 import Deeptissue from './Deeptissue';
 import Ayurveda from './Ayurveda';
-
+import GoogleApi from '../GoogleApi/GoogleApi';
 const massages = (props) => {
     return (
 <div className="service-component" id="massage">
 
 <div className="service-image-component">
-  <img src={require('./m.unsplash.jpg')} alt="massage"/> 
+  <img id="massage-image"src={require('./m.unsplash.jpg')} alt="massage"/> 
 </div>
 
 <div className="service-h1-div-component">
@@ -36,7 +36,9 @@ const massages = (props) => {
 <div className="massage-h4">
 <Ayurveda/>
 </div>
-
+<div className="margin-bottom">
+<GoogleApi/>
+</div>
 </div>
 </div>
     );
