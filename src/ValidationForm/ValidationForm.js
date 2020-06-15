@@ -49,10 +49,14 @@ class ValidationForm extends React.Component {
   }
     
   render() {
+
     return (
     
         <div className="container">
           <form
+            name="contact"
+             method="POST" 
+             data-netlify="true"
             className="myForm"
             noValidate
             autoComplete="off"
@@ -264,8 +268,8 @@ class ValidationForm extends React.Component {
             </p>
 
             <p>
-            <GoogleApi>
-              <button  className="form-button" type="submit">Submit Booking</button>
+            <GoogleApi
+               className="form-button" type="submit">Submit Booking
               </GoogleApi>
             </p>
           </form>
