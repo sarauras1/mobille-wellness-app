@@ -6,7 +6,7 @@ import Swedish from './Swedish';
 import Thaimassage from './Thaimassage';
 import Deeptissue from './Deeptissue';
 import Ayurveda from './Ayurveda';
-import GoogleApi from '../GoogleApi/GoogleApi';
+
 const massages = (props) => {
     return (
 <div className="service-component" id="massage">
@@ -37,7 +37,6 @@ const massages = (props) => {
 <Ayurveda/>
 </div>
 <div className="margin-bottom">
-<GoogleApi/>
 </div>
 </div>
 </div>

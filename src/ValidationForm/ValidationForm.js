@@ -1,6 +1,6 @@
 import React from "react";
 import ReactFormValidation from "react-form-input-validation";
-
+import GoogleApi from '../GoogleApi/GoogleApi';
 import './ValidationForm.css';
 
 class ValidationForm extends React.Component {
@@ -264,9 +264,9 @@ class ValidationForm extends React.Component {
             </p>
 
             <p>
-           
+            <GoogleApi>
               <button  className="form-button" type="submit">Submit Booking</button>
-          
+              </GoogleApi>
             </p>
           </form>
         </div>
