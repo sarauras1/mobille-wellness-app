@@ -87,7 +87,7 @@ class ValidationForm extends React.Component {
                   name="customer_Surname"
                   onBlur={this.form.handleBlurEvent}
                   onChange={this.form.handleChangeEvent}
-                  value={this.state.fields.customer_name}
+                  value={this.state.fields.customer_surname}
                   // To override the attribute name
                   data-attribute-name="Customer Surname"
                   data-async
