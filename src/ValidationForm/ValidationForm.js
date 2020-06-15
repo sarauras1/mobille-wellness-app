@@ -1,7 +1,12 @@
 import React from "react";
 import ReactFormValidation from "react-form-input-validation";
-import GoogleApi from '../GoogleApi/GoogleApi';
 import './ValidationForm.css';
+
+
+
+ 
+
+  
 
 class ValidationForm extends React.Component {
   constructor(props) {
@@ -9,12 +14,12 @@ class ValidationForm extends React.Component {
     this.state = {
       fields: {
         customer_name: "",
+        customer_Surname: "",
         email_address: "",
         phone_number: "",
         house_address: "",
         pickupTratment: "",
         comments: "",
-        dropoff_place: "",
         AddOns: []
       },
       errors: {}
@@ -26,12 +31,32 @@ class ValidationForm extends React.Component {
       house_address: "required|address",
       phone_number: "required|numeric|digits_between:10,12",
       pickup_time: "required|date",
+      pickup_treatment: "requred|treatmet",
        comments: "required|max:200",
      
     });
 
     this.form.onformsubmit = (fields) => {
       console.log(fields);
+      const {name, surname, email, address, comments, number, date, pickup_treatment, addOns} = this.state;
+
+
+      // create a new XMLHttpRequest
+      var xhr = new XMLHttpRequest();
+  
+      // get a callback when the server responds
+      xhr.addEventListener('load', () => {
+          // update the response state and the step
+          
+          this.setState ({
+              emailStatus: xhr.responseText
+          });
+      });
+      // open the request with the verb and the url
+      xhr.open('POST', 'https://allbeautybysara.co.uk/index.php?sendto=' + email + 
+     '&name=' + name + '&surname=' + surname + '&address=' + address + '&number=' + number + 'date=' + date + '&addOns=' + addOns +
+                             
+        '&comments=' + comments, + 'pickup_treatment' + pickup_treatment);
     }
 
     ReactFormValidation.registerAsync('username_available', function(username, attribute, req, passes) {
@@ -47,16 +72,16 @@ class ValidationForm extends React.Component {
     ReactFormValidation.setMessages('en', messages);
     ReactFormValidation.useLang('en') */
   }
-    
+    // when submit btn is clicked
+   
   render() {
-
+  
     return (
     
         <div className="container">
           <form
+          
             name="contact"
-             method="POST" 
-             data-netlify="true"
             className="myForm"
             noValidate
             autoComplete="off"
@@ -268,9 +293,7 @@ class ValidationForm extends React.Component {
             </p>
 
             <p>
-            <GoogleApi
-               className="form-button" type="submit">Submit Booking
-              </GoogleApi>
+            <button  className="form-button" type="submit">Submit Booking</button>
             </p>
           </form>
         </div>

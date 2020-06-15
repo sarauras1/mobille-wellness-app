@@ -1,9 +1,11 @@
 import React  from "react";
 
+
  var gapi = window.gapi
-  var CLIENT_ID = "205346488083-8ur1n2rm2peaanob4lmstfnt2o9pslqe.apps.googleusercontent.com"
-  var API_KEY = "AIzaSyCQGidG7MdteGpF387souo0tSCEsEdagrE"
- 
+  // var CLIENT_ID = "205346488083-8ur1n2rm2peaanob4lmstfnt2o9pslqe.apps.googleusercontent.com"
+  // var API_KEY = "AIzaSyCQGidG7MdteGpF387souo0tSCEsEdagrE"
+     var CLIENT_ID = "613831671825-6g565j6pv8rovbmssu8ma21una4tlm83.apps.googleusercontent.com"
+     var API_KEY = "AIzaSyDjHIB19pK0EDsakK_xeeF-xTEwJaACDsM"
   // Array of API discovery doc URLs for APIs used by the quickstart
   var DISCOVERY_DOCS = ["https://www.googleapis.com/discovery/v1/apis/calendar/v3/rest"]
 
@@ -11,10 +13,9 @@ import React  from "react";
   // included, separated by spaces.
    var SCOPES = "https://www.googleapis.com/auth/calendar.events"
   
-  const googleApi = () => {
-   /**
-       *  On load, called to load the auth2 library and API client library.
-       */
+  
+   
+
       const handleClick = () => {
         gapi.load('client:auth2',  () => {;
       
@@ -33,24 +34,25 @@ import React  from "react";
         
           gapi.auth2.getAuthInstance().signIn()
           .then(() =>  {
+        
             var event = {
-              'summary': 'Google I/O 2015',
-              'location': '800 Howard St., San Francisco, CA 94103',
-              'description': 'A chance to hear more about Google\'s developer products.',
+              'summary': 'Google I/O 2020',
+              'location': 'London/Uk',
+              'description': 'Book appointament',
               'start': {
-                'dateTime': '2015-05-28T09:00:00-07:00',
-                'timeZone': 'America/Los_Angeles'
+                'dateTime': '2020-06-12T9:00:00-19:00',
+                'timeZone': 'London/Uk'
               },
               'end': {
-                'dateTime': '2015-05-28T17:00:00-07:00',
-                'timeZone': 'America/Los_Angeles'
+                'dateTime': '2020-06-12T17:00:00-07:00',
+                'timeZone': 'London/Uk'
               },
               'recurrence': [
                 'RRULE:FREQ=DAILY;COUNT=2'
               ],
               'attendees': [
-                {'email': 'lpage@example.com'},
-                {'email': 'sbrin@example.com'}
+                {'email': 'example.com'},
+                {'email': 'example.com'}
               ],
               'reminders': {
                 'useDefault': false,
@@ -72,16 +74,7 @@ import React  from "react";
    })
   })
 }
-return (
-     <div>
-      <div >
-    
-      <button  className="button-style"  onClick={handleClick}>book</button>
-    
-      </div>
-  </div>
-)
-  }
-export default googleApi;
+
+
 
 
