@@ -1,10 +1,7 @@
 import React from "react";
 import ReactFormValidation from "react-form-input-validation";
 import './ValidationForm.css';
-
-
-
- 
+import Popup from './Popup';
 
   
 
@@ -38,27 +35,11 @@ class ValidationForm extends React.Component {
 
     this.form.onformsubmit = (fields) => {
       console.log(fields);
-      const {name, surname, email, address, comments, number, date, pickup_treatment, addOns} = this.state;
-
-
-      // create a new XMLHttpRequest
-      var xhr = new XMLHttpRequest();
-  
-      // get a callback when the server responds
-      xhr.addEventListener('load', () => {
-          // update the response state and the step
-          
-          this.setState ({
-              emailStatus: xhr.responseText
-          });
-      });
-      // open the request with the verb and the url
-      xhr.open('POST', 'https://allbeautybysara.co.uk/index.php?sendto=' + email + 
-     '&name=' + name + '&surname=' + surname + '&address=' + address + '&number=' + number + 'date=' + date + '&addOns=' + addOns +
-                             
-        '&comments=' + comments, + 'pickup_treatment' + pickup_treatment);
+    
     }
 
+   
+  
     ReactFormValidation.registerAsync('username_available', function(username, attribute, req, passes) {
       setTimeout(() => {
         if (username === "foo")
@@ -80,7 +61,8 @@ class ValidationForm extends React.Component {
     
         <div className="container">
           <form
-          
+            method="POST"
+           data-netlify="true"
             name="contact"
             className="myForm"
             noValidate
@@ -293,7 +275,7 @@ class ValidationForm extends React.Component {
             </p>
 
             <p>
-            <button  className="form-button" type="submit">Submit Booking</button>
+            <Popup className="form-button" type="submit"></Popup>
             </p>
           </form>
         </div>
