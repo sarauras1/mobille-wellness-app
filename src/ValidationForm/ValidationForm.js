@@ -81,7 +81,6 @@ class ValidationForm extends React.Component {
            data-netlify="true"
             name="contact"
             className="myForm"
-            noValidate
             autoComplete="off"
             onSubmit={this.form.handleSubmit}
           
