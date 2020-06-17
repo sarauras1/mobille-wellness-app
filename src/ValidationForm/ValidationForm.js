@@ -28,6 +28,7 @@ class ValidationForm extends React.Component {
     this.form = new ReactFormValidation(this, { locale: "en" });
     this.form.useRules({
       customer_name: "required|username_available",
+      customer_Surname: "required|surname",
       email_address: "required|email",
       house_address: "required|address",
       phone_number: "required|numeric|digits_between:10,12",
@@ -52,7 +53,7 @@ class ValidationForm extends React.Component {
 
    
 
-   
+    this.form.onHandleChange = e => this.setState({ [e.target.name]: e.target.value });
 
   
     ReactFormValidation.registerAsync('username_available', function(username, attribute, req, passes) {
@@ -71,7 +72,7 @@ class ValidationForm extends React.Component {
     // when submit btn is clicked
    
   render() {
-  
+    
     return (
      
         <div className="container">
@@ -83,7 +84,6 @@ class ValidationForm extends React.Component {
             className="myForm"
             autoComplete="off"
             onSubmit={this.form.handleSubmit}
-          
           >
             <p>
             <h3 className="text-centre-form">Book your treatment!</h3>
