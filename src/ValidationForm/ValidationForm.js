@@ -38,9 +38,9 @@ class ValidationForm extends React.Component {
      
     });
 
-    this.form.onformsubmit = (fields, event) => {
-      console.log(fields);
-      fetch("https://zapier.com/shared/e740c80c23536f75a9def0db3ae05230899c2f26git ", {
+       onsubmit = ( event) => {
+     
+      fetch("https://zapier.com/shared/e740c80c23536f75a9def0db3ae05230899c2f26git", {
         method: "POST",
         headers: { "Content-Type": "application/x-www-form-urlencoded" },
         body: encode({ "form-name": "contact", ...this.state })
@@ -53,7 +53,7 @@ class ValidationForm extends React.Component {
 
    
 
-    this.form.onformHandleChange = e => this.setState({ [e.target.name]: e.target.value });
+    
 
   
     ReactFormValidation.registerAsync('username_available', function(username, attribute, req, passes) {
@@ -83,7 +83,7 @@ class ValidationForm extends React.Component {
             name="contact"
             className="myForm"
             autoComplete="off"
-            onSubmit={this.form.handleSubmit}
+            onSubmit={this.handleSubmit}
           >
             <p>
             <h3 className="text-centre-form">Book your treatment!</h3>
@@ -169,7 +169,7 @@ class ValidationForm extends React.Component {
                 <input
                   type="text"
                   name="house_address"
-                  onBlur={this.form.handleBlurEvent}
+                  onBlur={this.form.handleBlurEvent}              
                   onChange={this.form.handleChangeEvent}
                   value={this.state.fields.house_address}
                 />
@@ -260,6 +260,7 @@ class ValidationForm extends React.Component {
                 <input
                   type="date"
                   name="pickup_time"
+               
                   onChange={this.form.handleChangeEvent}
                   onBlur={this.form.handleBlurEvent}
                   value={this.state.fields.pickup_time}
@@ -281,6 +282,7 @@ class ValidationForm extends React.Component {
                   name="comments"
                   maxLength="200"
                   value={this.state.fields.comments}
+              
                   onChange={this.form.handleChangeEvent}
                   onBlur={this.form.handleBlurEvent}
                 ></textarea>
