@@ -28,7 +28,6 @@ class ValidationForm extends React.Component {
     this.form = new ReactFormValidation(this, { locale: "en" });
     this.form.useRules({
       customer_name: "required|username_available",
-      customer_Surname: "required|surname",
       email_address: "required|email",
       house_address: "required|address",
       phone_number: "required|numeric|digits_between:10,12",
