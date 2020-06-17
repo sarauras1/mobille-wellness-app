@@ -3,7 +3,11 @@ import ReactFormValidation from "react-form-input-validation";
 import './ValidationForm.css';
 import Popup from './Popup';
 
-  
+const encode = (data) => {
+  return Object.keys(data)
+      .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+      .join("&");
+}
 
 class ValidationForm extends React.Component {
   constructor(props) {
@@ -33,12 +37,23 @@ class ValidationForm extends React.Component {
      
     });
 
-    this.form.onformsubmit = (fields) => {
+    this.form.onformsubmit = (fields, event) => {
       console.log(fields);
-    
+      fetch("/", {
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: encode({ "form-name": "contact", ...this.state })
+      })
+        .then(() => alert("Success!"))
+        .catch(error => alert(error));
+
+      event.preventDefault();
     }
 
    
+
+   
+
   
     ReactFormValidation.registerAsync('username_available', function(username, attribute, req, passes) {
       setTimeout(() => {
@@ -58,16 +73,18 @@ class ValidationForm extends React.Component {
   render() {
   
     return (
-    
+     
         <div className="container">
           <form
             method="POST"
+            type="file"
            data-netlify="true"
             name="contact"
             className="myForm"
             noValidate
             autoComplete="off"
             onSubmit={this.form.handleSubmit}
+          
           >
             <p>
             <h3 className="text-centre-form">Book your treatment!</h3>
@@ -77,6 +94,7 @@ class ValidationForm extends React.Component {
                   type="text"
                   name="customer_name"
                   onBlur={this.form.handleBlurEvent}
+            
                   onChange={this.form.handleChangeEvent}
                   value={this.state.fields.customer_name}
                   // To override the attribute name
@@ -260,6 +278,7 @@ class ValidationForm extends React.Component {
               <label>
                 Specify treatment
                 <textarea
+                  type="file"
                   name="comments"
                   maxLength="200"
                   value={this.state.fields.comments}
