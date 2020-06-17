@@ -40,7 +40,7 @@ class ValidationForm extends React.Component {
 
     this.form.onformsubmit = (fields, event) => {
       console.log(fields);
-      fetch("https://www.allbeautybysara.co.uk/contact", {
+      fetch("/", {
         method: "POST",
         headers: { "Content-Type": "application/x-www-form-urlencoded" },
         body: encode({ "form-name": "contact", ...this.state })
@@ -53,7 +53,7 @@ class ValidationForm extends React.Component {
 
    
 
-    this.form.onHandleChange = e => this.setState({ [e.target.name]: e.target.value });
+    this.form.onformHandleChange = e => this.setState({ [e.target.name]: e.target.value });
 
   
     ReactFormValidation.registerAsync('username_available', function(username, attribute, req, passes) {
