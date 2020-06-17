@@ -40,7 +40,7 @@ class ValidationForm extends React.Component {
 
     this.form.onformsubmit = (fields, event) => {
       console.log(fields);
-      fetch("/api/v1/sites/:site_id/deploys", {
+      fetch("https://zapier.com/shared/e740c80c23536f75a9def0db3ae05230899c2f26git ", {
         method: "POST",
         headers: { "Content-Type": "application/x-www-form-urlencoded" },
         body: encode({ "form-name": "contact", ...this.state })
