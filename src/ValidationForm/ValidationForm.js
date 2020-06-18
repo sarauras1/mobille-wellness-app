@@ -1,7 +1,7 @@
 import React from "react";
 import ReactFormValidation from "react-form-input-validation";
 import './ValidationForm.css';
-import Popup from './Popup';
+
 
 const encode = (data) => {
   return Object.keys(data)
@@ -63,10 +63,10 @@ class ValidationForm extends React.Component {
           passes();
       }, 1000);
     });
-    /* let messages = ReactFormValidation.getMessages('en');
+    let messages = ReactFormValidation.getMessages('en');
     messages.required = 'Whoops, :attribute field is required.';
     ReactFormValidation.setMessages('en', messages);
-    ReactFormValidation.useLang('en') */
+    ReactFormValidation.useLang('en')
   }
     // when submit btn is clicked
    
@@ -92,7 +92,6 @@ class ValidationForm extends React.Component {
                   type="text"
                   name="customer_name"
                   onBlur={this.form.handleBlurEvent}
-            
                   onChange={this.form.handleChangeEvent}
                   value={this.state.fields.customer_name}
                   // To override the attribute name
@@ -294,7 +293,7 @@ class ValidationForm extends React.Component {
             </p>
 
             <p>
-            <Popup className="form-button" type="submit"></Popup>
+            <button className="form-button" type="submit">Submit Booking</button>
             </p>
           </form>
         </div>
