@@ -1,8 +1,16 @@
 /* Top left text */
-
+@media(min-width: 700px) {
 .Banner-Slicer img{
    height: 450px;
     display: flex;
      width: 100%;
     
  }
+}
+@media(max-width: 699px) {
+    .Banner-Slicer img{
+        display: flex;
+         width: 100%;
+        
+     }
+    }
