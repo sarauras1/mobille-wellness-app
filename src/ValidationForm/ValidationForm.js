@@ -76,6 +76,7 @@ class ValidationForm extends React.Component {
      
         <div className="container">
           <form
+            netlify-honeypot="bot-field" 
             method="POST"
             type="file"
            data-netlify="true"
@@ -94,8 +95,7 @@ class ValidationForm extends React.Component {
                   name="customer_name"
                   onBlur={this.form.handleBlurEvent}
                   onChange={this.form.handleChangeEvent}
-                  value={this.state.fields.customer_name}
-                  // To override the attribute name
+                  value={this.state.fields.customer_name} 
                   data-attribute-name="Customer Name"
                   data-async
                 />
