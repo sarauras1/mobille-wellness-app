@@ -49,12 +49,9 @@ class ValidationForm extends React.Component {
 
       event.preventDefault();
     }
-
-   
-
     
 
-  
+   
     ReactFormValidation.registerAsync('username_available', function(username, attribute, req, passes) {
       setTimeout(() => {
         if (username === "foo")
@@ -78,7 +75,6 @@ class ValidationForm extends React.Component {
           <form
             netlify-honeypot="bot-field" 
             method="POST"
-            type="file"
            data-netlify="true"
             name="contact"
             action="https://app.netlify.com/sites/cranky-swanson-a8c119/overviewgi"
