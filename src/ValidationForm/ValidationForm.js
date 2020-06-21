@@ -80,6 +80,7 @@ class ValidationForm extends React.Component {
             type="file"
            data-netlify="true"
             name="contact"
+            action="https://allbeautybysara.co.uk"
             className="myForm"
             autoComplete="off"
             onSubmit={this.handleSubmit}
