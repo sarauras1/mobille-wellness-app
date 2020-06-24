@@ -44,7 +44,7 @@ class ValidationForm extends React.Component {
         headers: { "Content-Type": "application/x-www-form-urlencoded" },
         body: encode({ "form-name": "contact", ...this.state })
       })
-        .then(() => alert("Thank you for your booking! We will contact you as soon has possible time to cofirm."))
+        .then(() => alert("Thank you for your booking! We will contact you as soon has possible time for confirmation."))
         .catch(error => alert(error));
 
       event.preventDefault();
@@ -77,7 +77,7 @@ class ValidationForm extends React.Component {
             method="POST"
            data-netlify="true"
             name="contact"
-            action="https://app.netlify.com/sites/cranky-swanson-a8c119"
+            action="https://app.netlify.com/sites/allbeautybysara.co.uk/forms"
             className="myForm"
             autoComplete="off"
             onSubmit={this.handleSubmit}
