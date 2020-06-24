@@ -13,3 +13,11 @@
         
      }
     }
+  @media(max-width: 400px) {
+      .Banner-Slicer img {
+          display: flex;
+          width: 100%;
+          margin-top: 50px;
+
+      }
+  }
