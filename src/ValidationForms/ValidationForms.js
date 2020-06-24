@@ -72,12 +72,13 @@ class ValidationForms extends React.Component {
     return (
      
         <div className="container">
-          <form
-            netlify-honeypot="bot-field" 
+        <form
+           honeypot = "bot-field"
+            hidden 
             method="POST"
            data-netlify="true"
             name="contact"
-            action="https://app.netlify.com/sites/allbeautybysara.co.uk/forms"
+            action="app.netlify.com/sites/allbeautybysara/forms"
             className="myForm"
             autoComplete="off"
             onSubmit={this.handleSubmit}
