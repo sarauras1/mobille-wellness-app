@@ -6,8 +6,6 @@ import ValidationForm from '../ValidationForm/ValidationForm';
 const contact = props => {
   return (
       <div className="Contact" id="contact">
-         
-    
           <ValidationForm/>
          
       </div>

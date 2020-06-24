@@ -79,7 +79,7 @@ class ValidationForm extends React.Component {
             method="POST"
             data-netlify="true"
             name="contact"
-            action="app.netlify.com/sites/allbeautybysara/forms"
+            action="/www.allbeautybysara.co.uk/contact"
             className="myForm"
             autoComplete="off"
             onSubmit={this.handleSubmit}
