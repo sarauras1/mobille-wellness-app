@@ -79,9 +79,9 @@ backdropClickHandler = () => {
             </Route>
            
             <Route  path="/services" >
-              <motion.div
+              <motion.div style={{position:'absolute'}}
                 initial={{ opacity: 0,
-                y: 100}}
+                y: 300}}
                 animate={{ opacity: 1,
                 y: 0}}
                 transition={{duration: 1}}

@@ -39,7 +39,7 @@ class ValidationForms extends React.Component {
 
        onsubmit = ( event) => {
      
-      fetch("https://app.netlify.com/sites/allbeautybysara/forms", {
+      fetch("/", {
         method: "POST",
         headers: { "Content-Type": "application/x-www-form-urlencoded" },
         body: encode({ "form-name": "contact", ...this.state })
@@ -77,7 +77,7 @@ class ValidationForms extends React.Component {
             method="POST"
            data-netlify="true"
             name="contact"
-            action="https://app.netlify.com/sites/allbeautybysara/forms"
+            action="https://app.netlify.com/sites/allbeautybysara.co.uk/forms"
             className="myForm"
             autoComplete="off"
             onSubmit={this.handleSubmit}
