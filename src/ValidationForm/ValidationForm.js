@@ -74,12 +74,10 @@ class ValidationForm extends React.Component {
         <div className="container">
         <form
           data-netlify-honeypot = "bot-field"
-          type="hidden"
-           value="contact"
             method="POST"
             data-netlify="true"
             name="contact"
-            action="/www.allbeautybysara.co.uk/contact"
+            action="/Thank you for your booking/contact"
             className="myForm"
             autoComplete="off"
             onSubmit={this.handleSubmit}
@@ -89,11 +87,11 @@ class ValidationForm extends React.Component {
               <label>
                 Name
                 <input
-                  type="text"
-                  name="customer_name"
+                   type = "hidden"
+                   name = "form-name"
+                   value = "contact"
                   onBlur={this.form.handleBlurEvent}
                   onChange={this.form.handleChangeEvent}
-                  value={this.state.fields.customer_name} 
                   data-attribute-name="Customer Name"
                   data-async
                 />
@@ -108,11 +106,11 @@ class ValidationForm extends React.Component {
               <label>
                 Surname
                 <input
-                  type="text"
-                  name="customer_Surname"
+                  type = "hidden"
+                  name = "form-name"
+                  value = "contact"
                   onBlur={this.form.handleBlurEvent}
-                  onChange={this.form.handleChangeEvent}
-                  value={this.state.fields.customer_surname}
+                onChange={this.form.handleChangeEvent}
                   // To override the attribute name
                   data-attribute-name="Customer Surname"
                   data-async
@@ -129,11 +127,12 @@ class ValidationForm extends React.Component {
               <label>
                 Phone
                 <input
-                  type="tel"
-                  name="phone_number"
+                   type = "hidden"
+                   name = "form-name"
+                   value = "contact"
                   onBlur={this.form.handleBlurEvent}
                   onChange={this.form.handleChangeEvent}
-                  value={this.state.fields.phone_number}
+                 
                 />
               </label>
               <label className="error">
@@ -147,11 +146,11 @@ class ValidationForm extends React.Component {
               <label>
                 Email
                 <input
-                  type="email"
-                  name="email_address"
-                  onBlur={this.form.handleBlurEvent}
-                  onChange={this.form.handleChangeEvent}
-                  value={this.state.fields.email_address}
+                type="hidden"
+                name="form-name"
+                value="contact"
+                onBlur={this.form.handleBlurEvent}
+                onChange={this.form.handleChangeEvent}
                 />
               </label>
               <label className="error">
@@ -164,11 +163,11 @@ class ValidationForm extends React.Component {
             <label>
                 Address
                 <input
-                  type="text"
-                  name="house_address"
+                 type = "hidden"
+                 name = "form-name"
+                 value = "contact"
                   onBlur={this.form.handleBlurEvent}              
                   onChange={this.form.handleChangeEvent}
-                  value={this.state.fields.house_address}
                 />
               </label>
               <label className="error">
@@ -190,14 +189,14 @@ class ValidationForm extends React.Component {
                   onChange={this.form.handleChangeEvent}
                   onBlur={this.form.handleBlurEvent}
                 >
-                  <option value="Waxing">Waxing</option>
-                  <option value="Facial">Facial</option>
-                  <option value="Massage">Massage</option>
-                  <option value="Yoga">Yoga</option>
-                  <option value="Manicure">Manicure</option>
-                  <option value="Pedicure">Pedicure</option>
-                  <option value="">Shellac Manicure</option>
-                  <option value="Yoga">Shellac Pedicure</option>
+                  <option value="contact">Waxing</option>
+                  <option value="contact">Facial</option>
+                  <option value="contact">Massage</option>
+                  <option value="contact">Yoga</option>
+                  <option value="contact">Manicure</option>
+                  <option value="contact">Pedicure</option>
+                  <option value="contact">Shellac Manicure</option>
+                  <option value="contact">Shellac Pedicure</option>
                 </select>
               </label>
               <label className="error">
@@ -212,10 +211,10 @@ class ValidationForm extends React.Component {
                 <label className="choice">
                   {" "}
                   <input
-                    type="checkbox"
-                    name="AddOns"
+                    type="hidden" 
+                    name="form-name"
                     onChange={this.form.handleChangeEvent}
-                    value="shellac removal"
+                    value="contact"
                   />{" "}
                   Shellac removal{" "}
                 </label>
@@ -224,10 +223,8 @@ class ValidationForm extends React.Component {
                 <label className="choice">
                   {" "}
                   <input
-                    type="checkbox"
-                    name="addOns"
+                   type="hidden" name="form-name" value="contact"
                     onChange={this.form.handleChangeEvent}
-                    value="Nails Repeir"
                   />{" "}
                   Nails Repeir{" "}
                 </label>
@@ -236,10 +233,9 @@ class ValidationForm extends React.Component {
                 <label className="choice">
                   {" "}
                   <input
-                    type="checkbox"
-                    name="addOns"
+                   type="hidden" name="form-name" value="contact"
                     onChange={this.form.handleChangeEvent}
-                    value="wax"
+                    
                   />{" "}
                   Upper lips wax{" "}
                 </label>
@@ -255,9 +251,7 @@ class ValidationForm extends React.Component {
               <label>
                 Pickup Date
                 <input
-                  type="date"
-                  name="pickup_time"
-               
+                  type="hidden" name="form-name" value="contact"
                   onChange={this.form.handleChangeEvent}
                   onBlur={this.form.handleBlurEvent}
                   value={this.state.fields.pickup_time}
@@ -275,11 +269,10 @@ class ValidationForm extends React.Component {
               <label>
                 Specify treatment
                 <textarea
-                  type="file"
-                  name="comments"
+                  type="hidden"
+                   name="form-name"
+                    value="contact"
                   maxLength="200"
-                  value={this.state.fields.comments}
-              
                   onChange={this.form.handleChangeEvent}
                   onBlur={this.form.handleBlurEvent}
                 ></textarea>
