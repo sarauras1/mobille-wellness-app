@@ -1,6 +1,6 @@
 import React from "react";
 import ReactFormValidation from "react-form-input-validation";
-import './ValidationForm.css';
+import './ValidationForms.css';
 
 
 const encode = (data) => {
@@ -9,7 +9,7 @@ const encode = (data) => {
       .join("&");
 }
 
-class ValidationForm extends React.Component {
+class ValidationForms extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -298,6 +298,6 @@ class ValidationForm extends React.Component {
   }
 }
 
-export default ValidationForm;
+export default ValidationForms;
 
 

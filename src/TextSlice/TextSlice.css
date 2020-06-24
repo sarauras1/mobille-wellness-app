@@ -82,20 +82,26 @@
  @media(max-width: 468px){
  
   #top-right-h1 {
-    font-size: 35px;
-    font-weight: 900;
-    font-style: oblique;
-   }
-
- }
- @media(max-width: 375px){
- 
-  #top-right-h1 {
     font-size: 30px;
     font-weight: 900;
     font-style: oblique;
    }
-  
+  .top-right {
+    top: 17%;
+    right: 10px;
+  }
+ }
+ @media(max-width: 375px){
+ 
+  #top-right-h1 {
+    font-size: 25px;
+    font-weight: 900;
+    font-style: oblique;
+   }
+   .top-right {
+     top: 16.5%;
+     right: 5px;
+   }
  }
  @media(max-width: 320px){
  
@@ -104,6 +110,9 @@
     font-weight: 900;
     font-style: oblique;
    }
-
+   .top-right {
+     top: 16%;
+     right: 5px;
+   }
  }
   

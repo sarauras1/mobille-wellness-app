@@ -1,6 +1,6 @@
 import React from 'react';
 import './Contact.css';
-import ValidationForm from '../ValidationForm/ValidationForm';
+import ValidationForms from '../ValidationForms/ValidationForms';
 
 
 const contact = props => {
@@ -8,7 +8,7 @@ const contact = props => {
       <div className="Contact" id="contact">
          
     
-          <ValidationForm/>
+          <ValidationForms/>
          
       </div>
   )
