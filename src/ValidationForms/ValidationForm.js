@@ -9,7 +9,7 @@ const encode = (data) => {
       .join("&");
 }
 
-class ValidationForms extends React.Component {
+class ValidationForm extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -73,10 +73,11 @@ class ValidationForms extends React.Component {
      
         <div className="container">
         <form
-           honeypot = "bot-field"
-            hidden 
+          data-netlify-honeypot = "bot-field"
+          type="hidden"
+           value="contact"
             method="POST"
-           data-netlify="true"
+            data-netlify="true"
             name="contact"
             action="app.netlify.com/sites/allbeautybysara/forms"
             className="myForm"
@@ -299,6 +300,6 @@ class ValidationForms extends React.Component {
   }
 }
 
-export default ValidationForms;
+export default ValidationForm;
 
 
