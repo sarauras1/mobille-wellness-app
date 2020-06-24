@@ -3,6 +3,7 @@
     align-items: center;
     display: flex;
     flex-wrap: wrap;
+    
 }
  .svg {
  cursor: pointer;
@@ -12,6 +13,7 @@
   text-align: center;
   border:rgb(88,88,88) 1px solid;
   border-radius: 20px;
+  background-color: white;
   box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
  .svg, h2, h5 {

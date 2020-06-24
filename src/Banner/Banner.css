@@ -1,7 +1,6 @@
 /* Top left text */
 @media(min-width: 700px) {
 .Banner-Slicer img{
-   height: 450px;
     display: flex;
      width: 100%;
     

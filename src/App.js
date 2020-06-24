@@ -15,7 +15,6 @@ import HandsFeet from './HandsFeet/HandsFeet';
 import Yoga from './Yoga/Yoga';
 import Waxing from './Waxing/Waxing';
 import Pamper from './Pamper/Pamper';
-import Shop from './Shop/Shop';
 import Contact from './Contact/Contact';
 import PrivacyPolicy from './GoogleApi/PrivacyPolicy';
 
@@ -100,10 +99,6 @@ backdropClickHandler = () => {
           <Route path="/gallery">
             <Gallery />
           </Route>
-
-          <Route path ="/shop">
-              <Shop />
-            </Route>
 
             <Route path ="/contact">
               <Contact />

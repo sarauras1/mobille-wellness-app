@@ -4,18 +4,16 @@ import { motion } from "framer-motion";
 
 
 const textSlice = props => {
- 
-      
+   
  return (
-  <div  className="top-left">
-<motion.div 
+  <div  className="top-right">
+<motion.div
   
-  transition={{duration: 0.5}} 
-  initial={{ opacity: 0 }}
-  animate={{ opacity: 1,
-  }}
+  transition={{duration: 0.1}} 
+  initial={{ scale: 0 }}
+ animate={{ scale: 1, }}
 >
-<h1 id="top-left-h1">MOBILE WELLNESS</h1>
+<h1 id="top-right-h1">MOBILE WELLNESS</h1>
 </motion.div>
    
 

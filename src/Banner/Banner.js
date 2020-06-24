@@ -10,7 +10,7 @@ const banner = (props) => {
      
       <div className="Banner-Slicer">
         
-    <div><img src={require('./bg_3.jpg')} alt="corals"/> </div>  
+    <div><img src={require('./bg_2.jpg')} alt="corals"/> </div>  
    
      <TextSlice/>
 
