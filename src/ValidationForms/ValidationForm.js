@@ -1,6 +1,6 @@
 import React from "react";
 import ReactFormValidation from "react-form-input-validation";
-import './ValidationForms.css';
+import './ValidationForm.css';
 
 
 const encode = (data) => {
