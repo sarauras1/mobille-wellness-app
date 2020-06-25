@@ -60,6 +60,7 @@ class Contact extends React.Component {
           netlify-honeypot="bot-field"
           method="POST"
           name="contact"
+          action="/www.allbeautybysara.co.uk/contact"
           data-netlify="true"
         >
           <input type="hidden" name="contact" value="Contact" />
