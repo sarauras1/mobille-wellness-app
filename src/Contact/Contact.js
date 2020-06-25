@@ -14,9 +14,11 @@ class Contact extends React.Component {
       name: "",
       surname: "",
       email: "",
-      phone: "",
+      tel: "",
       address: "",
       message: "",
+      time: "",
+      date:""
     };
   }
 
@@ -49,7 +51,7 @@ class Contact extends React.Component {
     });
 
   render() {
-    const { name, surname, email, phone, address, date, message } = this.state;
+    const { name, surname, email, tel, address, date, time, message } = this.state;
     return (
       <div id="contact" className="container">
         <form
@@ -60,7 +62,7 @@ class Contact extends React.Component {
           name="contact"
           data-netlify="true"
         >
-          <input type="hidden" name="contact" value="contact" />
+          <input type="hidden" name="contact" value="Contact" />
           <h3>Book your treatments</h3>
           <p>
             <label>
@@ -105,10 +107,10 @@ class Contact extends React.Component {
             <label>
               Your phone number:{" "}
               <input
-                type="number"
-                name="number"
+                type="tel"
+                name="tel"
                 required
-                value={phone}
+                value={tel}
                 onChange={this.handleChange}
               />
             </label>
@@ -140,15 +142,22 @@ class Contact extends React.Component {
           <p>
             <label>
               Select time:
-              <input type="time" id="appt" name="appt"></input>
+              <input
+                type="time"
+                name="appt"
+                required
+                value={time}
+                onChange={this.handleChange}
+              ></input>
             </label>
           </p>
           <p>
             <label>
-              Message:{" "}
+             treatments to book:{" "}
               <textarea
                 className="input-textarea"
                 required
+                type="message"
                 name="message"
                 value={message}
                 onChange={this.handleChange}
