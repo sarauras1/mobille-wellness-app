@@ -1,8 +1,6 @@
 import React from 'react';
 import './Contact.css';
 
-
-
 const encode = (data) => {
   return Object.keys(data)
     .map((key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
@@ -51,19 +49,19 @@ class Contact extends React.Component {
     });
 
   render() {
+    
     const { name, surname, email, phone, address, date, message } = this.state;
     return (
       <div id="contact" className="container">
         <form
-         
           className="myForm"
           onSubmit={this.handleSubmit}
-          data-netlify-honeypot="bot-field"
+           netlify-honeypot="bot-field"
           method="POST"
-          data-netlify="true"
           name="contact"
-          action="/Thank you for your booking/contact"
+          action="/Thank you for your booking/"
         >
+          <input type="hidden" name="contact" value="contact" />
           <h3>Book your treatments</h3>
           <p>
             <label>
