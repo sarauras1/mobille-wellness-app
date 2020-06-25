@@ -56,10 +56,11 @@ class Contact extends React.Component {
         <form
           className="myForm"
           onSubmit={this.handleSubmit}
-           netlify-honeypot="bot-field"
+          netlify-honeypot="bot-field"
           method="POST"
           name="contact"
-          action="/Thank you for your booking/"
+          action="/allbeautybysara.co.uk/contact"
+          data-netlify="true"
         >
           <input type="hidden" name="contact" value="contact" />
           <h3>Book your treatments</h3>
@@ -67,6 +68,7 @@ class Contact extends React.Component {
             <label>
               Your Name:{""}
               <input
+                type="text"
                 name="name"
                 value={name}
                 onChange={this.handleChange}
@@ -79,6 +81,7 @@ class Contact extends React.Component {
             <label>
               Your Surname:{" "}
               <input
+                type="text"
                 name="surname"
                 value={surname}
                 onChange={this.handleChange}
@@ -91,6 +94,7 @@ class Contact extends React.Component {
             <label>
               Your Email:{" "}
               <input
+                type="email"
                 required
                 name="email"
                 value={email}
@@ -103,7 +107,8 @@ class Contact extends React.Component {
             <label>
               Your phone number:{" "}
               <input
-                name="phone"
+                type="number"
+                name="number"
                 required
                 value={phone}
                 onChange={this.handleChange}
@@ -114,6 +119,7 @@ class Contact extends React.Component {
             <label>
               Address:{" "}
               <input
+                type="address"
                 name="address"
                 required
                 value={address}
@@ -126,6 +132,7 @@ class Contact extends React.Component {
               Select Date:
               <input
                 required
+                name="date"
                 type="date"
                 onChange={this.handleChange}
                 value={date}
@@ -133,13 +140,13 @@ class Contact extends React.Component {
             </label>
           </p>
           <p>
-            <label for="appt">
+            <label >
               Select time:
-              <input type="time" name="appt"></input>
+              <input type="time" id="appt" name="appt"></input>
             </label>
           </p>
           <p>
-            <label>
+            <label >
               Message:{" "}
               <textarea
                 className="input-textarea"
@@ -152,9 +159,9 @@ class Contact extends React.Component {
           </p>
 
           <p>
-            <button className="form-button" type="submit">
+            <input className="form-button" type="submit">
               Submit booking
-            </button>
+            </input>
           </p>
         </form>
       </div>
