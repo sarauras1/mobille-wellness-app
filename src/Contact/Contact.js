@@ -1,5 +1,5 @@
-import React from 'react';
-import './Contact.css';
+import React from "react";
+import "./Contact.css";
 
 const encode = (data) => {
   return Object.keys(data)
@@ -49,7 +49,6 @@ class Contact extends React.Component {
     });
 
   render() {
-    
     const { name, surname, email, phone, address, date, message } = this.state;
     return (
       <div id="contact" className="container">
@@ -59,7 +58,6 @@ class Contact extends React.Component {
           netlify-honeypot="bot-field"
           method="POST"
           name="contact"
-          action="/allbeautybysara.co.uk/contact"
           data-netlify="true"
         >
           <input type="hidden" name="contact" value="contact" />
@@ -140,13 +138,13 @@ class Contact extends React.Component {
             </label>
           </p>
           <p>
-            <label >
+            <label>
               Select time:
               <input type="time" id="appt" name="appt"></input>
             </label>
           </p>
           <p>
-            <label >
+            <label>
               Message:{" "}
               <textarea
                 className="input-textarea"
@@ -159,9 +157,9 @@ class Contact extends React.Component {
           </p>
 
           <p>
-            <input className="form-button" type="submit">
+            <button className="form-button" type="submit">
               Submit booking
-            </input>
+            </button>
           </p>
         </form>
       </div>
@@ -170,4 +168,3 @@ class Contact extends React.Component {
 }
 
 export default Contact;
-
