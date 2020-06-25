@@ -17,7 +17,7 @@ class Contact extends React.Component {
       tel: "",
       address: "",
       message: "",
-      time: "",
+    
       date:""
     };
   }
@@ -145,15 +145,15 @@ class Contact extends React.Component {
               <input
                 type="time"
                 name="appt"
-                required
-                value={time}
+                id="appt"
                 onChange={this.handleChange}
+                value={time}
               ></input>
             </label>
           </p>
           <p>
             <label>
-             treatments to book:{" "}
+              treatments to book:{" "}
               <textarea
                 className="input-textarea"
                 required
