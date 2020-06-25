@@ -11,8 +11,8 @@
   }
   
       label {
-    font-size: 0.9em;
-    font-weight: normal;
+    font-size: 1em;
+    font-weight: 500;
   }
   
     label {
@@ -20,47 +20,44 @@
     display: block;
   }
   
-      input[type="text"],
-      input[type="tel"],
-      input[type="email"],
-      input[type="text"]
-      input[type="datetime-local"],
+     
+      input,
       select,
       textarea {
     float: right;
-    width: 60%;
+    width: 50%;
     border: 1px solid #ccc;
     font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
     font-size: 0.9em;
     padding: 0.3em;
+    
   }
   
      textarea {
     height: 100px;
+    width: 50%;
   }
   
-   input[type="radio"],
-   input[type="checkbox"] {
-    margin-left: 40%;
+   input,
+   input {
+    margin-left: 30px;
   }
   
+     
       .form-button {
-    padding: 1em;
-    border-radius: 0.5em;
-    background: #eee;
-    border: none;
-    font-weight: bold;
-    margin-left: 40%;
-    margin-top: 1.8em;
-  }
-  
-     .form-button:hover {
-    background: #ccc;
-    cursor: pointer;
-  }
-  .error {
-    color: red;
-  }
+        padding: 1em;
+        border-radius: 0.5em;
+        background: #eee;
+        border: none;
+        font-weight: bold;
+        margin-left: 40%;
+        margin-top: 1.8em;
+      }
+
+      .form-button:hover {
+        background: #ccc;
+        cursor: pointer;
+      }
   
   @media(min-width: 768px){
     .myForm {
@@ -68,7 +65,7 @@
       font-size: 0.8em;
       min-width: 600px;
       padding: 1em;
-      border: 1px solid #fff;
+      border: 3px solid #fff;
      margin: auto;
     }
   }
@@ -126,14 +123,12 @@
   
   .input-textarea {
     min-height: 120px;
-    width: 100%;
     padding: 0.625rem;
     resize: vertical;
   }
   
   .submit-button {
     display: block;
-    width: 100%;
     padding: 0.75rem;
     color: inherit;
     border-radius: 2px;
