@@ -58,7 +58,7 @@ class Contact extends React.Component {
           onSubmit={this.handleSubmit}
           data-netlify="true"
         >
-          <input type="hidden" name="contact" value="contact" />
+         
           <h3>Book your treatments</h3>
           <p>
             <label>
