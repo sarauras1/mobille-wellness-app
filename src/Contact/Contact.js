@@ -59,7 +59,7 @@ class Contact extends React.Component {
           data-netlify-honeypot="bot-field"
           method="POST"
           name="contact"
-          action="/contact/success"
+          action="/contact/alert"
           data-netlify="true"
         >
           <input type="hidden" name="contact" value="Contact" />
