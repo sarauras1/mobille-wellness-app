@@ -17,7 +17,6 @@ class Contact extends React.Component {
       tel: "",
       address: "",
       message: "",
-    
       date:""
     };
   }
@@ -57,17 +56,17 @@ class Contact extends React.Component {
         <form
           className="myForm"
           onSubmit={this.handleSubmit}
-          netlify-honeypot="bot-field"
+          data-netlify-honeypot="bot-field"
           method="POST"
           name="contact"
-          action="/www.allbeautybysara.co.uk/contact"
+          action="/allbeautybysara.co.uk/contact"
           data-netlify="true"
         >
           <input type="hidden" name="contact" value="Contact" />
           <h3>Book your treatments</h3>
           <p>
             <label>
-              Your Name:{""}
+              Your Name:{" "}
               <input
                 type="text"
                 name="name"
@@ -130,7 +129,7 @@ class Contact extends React.Component {
           </p>
           <p>
             <label>
-              Select Date:
+              Select Date:{" "}
               <input
                 required
                 name="date"
@@ -142,7 +141,7 @@ class Contact extends React.Component {
           </p>
           <p>
             <label>
-              Select time:
+              Select time:{" "}
               <input
                 type="time"
                 name="appt"
