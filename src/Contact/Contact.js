@@ -56,12 +56,9 @@ class Contact extends React.Component {
         <form
           className="myForm"
           onSubmit={this.handleSubmit}
-          data-netlify-honeypot="bot-field"
-          action="POST"
-          name="Contact"
           data-netlify="true"
         >
-          <input type="hidden" name="Contact" value="Contact" />
+          <input type="hidden" name="contact" value="contact" />
           <h3>Book your treatments</h3>
           <p>
             <label>
