@@ -30,7 +30,7 @@ class Contact extends React.Component {
         "Content-Type": "application/x-www-form-urlencoded",
       },
       body: encode({
-        "form-name": "Contact",
+        "form-name": "contact",
         ...this.state,
       }),
     })
