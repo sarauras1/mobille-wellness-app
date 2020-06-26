@@ -30,7 +30,7 @@ class Contact extends React.Component {
         "Content-Type": "application/x-www-form-urlencoded",
       },
       body: encode({
-        "form-name": "contact",
+        "form-name": "Contact",
         ...this.state,
       }),
     })
@@ -58,10 +58,10 @@ class Contact extends React.Component {
           onSubmit={this.handleSubmit}
           data-netlify-honeypot="bot-field"
           method="POST"
-          form-name="Contact"
+          name="Contact"
           data-netlify="true"
         >
-          <input type="hidden" name="contact" value="Contact" />
+          <input type="hidden" name="Contact" value="Contact" />
           <h3>Book your treatments</h3>
           <p>
             <label>
