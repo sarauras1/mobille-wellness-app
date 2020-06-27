@@ -87,6 +87,29 @@ select,
         align-self: center;
     }
 }
+@media(max-width: 500px) {
+    .myForm {
+        font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+        font-size: 0.8em;
+        width: 400px;
+        padding: 1em;
+        border: 1px solid #fff;
+        margin: auto;
+        align-self: center;
+    }
+}
+
+@media(max-width: 400px) {
+    .myForm {
+        font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+        font-size: 0.5em;
+        width: 289px;
+        padding: 2px;
+        border: 1px solid #fff;
+        margin: auto;
+        align-self: center;
+    }
+}
 
 .container {
     display: flex;
