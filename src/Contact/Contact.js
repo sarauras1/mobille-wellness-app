@@ -1,180 +1,138 @@
-import React from "react";
-import "./Contact.css";
 
-const encode = (data) => {
-  return Object.keys(data)
-    .map((key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
-    .join("&");
-};
+import './Contact.css'
+import { Form } from "react-form";
+import React from 'react'
+import axios from 'axios'
 
-class Contact extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      name: "",
-      surname: "",
-      email: "",
-      tel: "",
-      address: "",
-      message: "",
-      date:""
-    };
-  }
 
-  /* Here’s the juicy bit for posting the form submission */
 
-  handleSubmit = (e) => {
-    fetch("/", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/x-www-form-urlencoded",
-      },
-      body: encode({
-        "form-name": "contact",
-        ...this.state,
-      }),
-    })
-      .then(() =>
-        alert(
-          "Success! Thank you for your booking! We will contact you as soon has possible time for confirmation"
-        )
-      )
-      .catch((error) => alert(error));
+const encode = data =>
+  Object.keys(data)
+    .map(key => `${encodeURIComponent(key)}=${encodeURIComponent(data[key])}`)
+    .join('&')
 
-    e.preventDefault();
-  };
+ export default class Contact extends React.Component {
+   state = {
+     submitted: false,
+   };
+   render() {
+     return (
+       <div className="container" id="contact">
+         {this.state.submitted ? (
+           <p className="thanks">
+             Thanks for submitting your information! We'll be in contact with
+             you as soon as possible.
+           </p>
+         ) : (
+           <Form
+             onSubmit={async (values) => {
+               try {
+                 await axios.post(
+                   "/",
+                   encode({ "form-name": "contact", ...values }),
+                   {
+                     headers: {
+                       "Content-Type": "application/x-www-form-urlencoded",
+                     },
+                   }
+                 );
+                 this.setState({ submitted: true });
+               } catch (err) {
+                 window.alert(
+                   "There was a problem submitting your form! Try again or reload the page :)"
+                 );
+                 this.setState({ submitted: true });
+               }
+             }}
+           >
+             {({ submitForm }) => (
+               <div>
+                 <form
+                   className="myForm"
+                   name="contact"
+                   netlify="true"
+                   netlify-honeypot="bot-field"
+                   onSubmit={submitForm}
+                 >
+                   <h3>Book your treatments</h3>
+                   <p>
+                     <label>
+                       Your Name:
+                       <input id="name" field="text" name="name" required />
+                     </label>
+                   </p>
+                   <p>
+                     <label>
+                       Your Surname:
+                       <input
+                         id="surname"
+                         field="text"
+                         name="surname"
+                         required
+                       />
+                     </label>
+                   </p>
+                   <p>
+                     <label>
+                       Your Email:
+                       <input field="email" required id="email" name="email" />
+                     </label>
+                   </p>
+                   <p>
+                     <label>
+                       Your phone number:
+                       <input field="tel" name="tel" id="tel" required />
+                     </label>
+                   </p>
+                   <p>
+                     <label>
+                       Address:
+                       <input
+                         field="address"
+                         name="address"
+                         id="address"
+                         required
+                       />
+                     </label>
+                   </p>
+                   <p>
+                     <label>
+                       Select Date:
+                       <input required name="date" field="date" type="date" id="date" />
+                     </label>
+                   </p>
+                   <p>
+                     <label>
+                       Select time:
+                       <input field="time"type="time" name="appt" id="appt"/>
+                     </label>
+                   </p>
+                   <p>
+                     <label>
+                       treatments to book:
+                       <textarea
+                         className="input-textarea"
+                         required
+                         id="message"
+                         field="message"
+                         name="message"
+                       />
+                     </label>
+                   </p>
+                   <p>
+                     <button id="submit" className="form-button" type="submit">
+                       Submit booking
+                     </button>
+                   </p>
+                 </form>
+               </div>
+             )}
+           </Form>
+         )}
+       </div>
+     );
+   }
+ }
+       
 
-  handleChange = (e) =>
-    this.setState({
-      [e.target.name]: e.target.value,
-    });
-    
-  render() {
-    const { name, surname, email, tel, address, date, time, message } = this.state;
-    return (
-     <div id="contact" className="container">
-      <form className="myForm"
-        name="contact"
-        method="post"
-        data-netlify="true"
-        data-netlify-honeypot="bot-field"
-        onSubmit={this.handleSubmit}>
-         
-          <input type="hidden" name="contact" value="contact"/>
-          <h3>Book your treatments</h3>
-          <p>
-            <label>
-              Your Name:{" "}
-            <input
-                 id=""
-                type="text"
-                name="name"
-                value={name}
-                onChange={this.handleChange}
-                required
-              />
-            </label>
-          </p>
-          <p>
-            <label>
-              Your Surname:{" "}
-            <input
-                 id="surname"
-                type="text"
-                name="surname"
-                value={surname}
-                onChange={this.handleChange}
-                required
-              />
-            </label>
-          </p>
-          <p>
-            <label>
-              Your Email:{" "}
-              <input
-                type="email"
-                 required
-                 id="email"
-                name="email"
-                value={email}
-                onChange={this.handleChange}
-              />
-            </label>
-          </p>
-          <p>
-            <label>
-              Your phone number:{" "}
-              <input
-                type="tel"
-                name="tel"
-                 id="tel"
-                required
-                value={tel}
-                onChange={this.handleChange}
-              />
-            </label>
-          </p>
-          <p>
-            <label>
-              Address:{" "}
-              <input
-                type="address"
-                name="address"
-                 id="address"
-                required
-                value={address}
-                onChange={this.handleChange}
-              />
-            </label>
-          </p>
-          <p>
-            <label>
-              Select Date:{" "}
-              <input
-                required
-                name="date"
-                type="date"
-                 id="date"
-                onChange={this.handleChange}
-                value={date}
-              />
-            </label>
-          </p>
-          <p>
-            <label>
-              Select time:{" "}
-              <input
-                type="time"
-                name="appt"
-                id="appt"
-                onChange={this.handleChange}
-                value={time}
-              ></input>
-            </label>
-          </p>
-          <p>
-            <label>
-              treatments to book:{" "}
-              <textarea
-                className="input-textarea"
-              required
-                 id="message"
-                type="message"
-                name="message"
-                value={message}
-                onChange={this.handleChange}
-              />
-            </label>
-          </p>
-          <p>
-            <button    id="submit"className="form-button" type="submit">
-              Submit booking
-            </button>
-          </p>
-        </form>
-      </div>
-    );
-  }
-}
-
-export default Contact;
+   
