@@ -24,13 +24,13 @@ class Contact extends React.Component {
   /* Here’s the juicy bit for posting the form submission */
 
   handleSubmit = (e) => {
-    fetch("https://www.allbeautybysara.co.uk", {
+    fetch("/", {
       method: "POST",
       headers: {
         "Content-Type": "application/x-www-form-urlencoded",
       },
       body: encode({
-        "form-name": "Contact",
+        "form-name": "contact",
         ...this.state,
       }),
     })
@@ -55,20 +55,18 @@ class Contact extends React.Component {
       <div id="contact" className="container">
         <form
           name="contact"
-          data-netlify-recaptcha="true"
-          netlify
-          netlify-honeypot="bot-field"
-          hidden
+          method="post"
+          data-netlify="true"
+          data-netlify-honeypot="bot-field"
         >
-          <input type="text" name="name" />
-          <input type="email" name="email" />
-          <textarea name="message"></textarea>
+          {/* You still need to add the hidden input with the form name to your JSX form */}
+          <input type="hidden" name="contact" value="contact" />
+          ...
         </form>
         <form
           className="myForm"
           onSubmit={this.handleSubmit}
-          name="contact"
-          method="post"
+    
         >
           <h3>Book your treatments</h3>
           <p>
