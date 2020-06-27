@@ -24,7 +24,7 @@ class Contact extends React.Component {
   /* Here’s the juicy bit for posting the form submission */
 
   handleSubmit = (e) => {
-    fetch("/", {
+    fetch("/https://www.albeautybysara.co.uk", {
       method: "POST",
       headers: {
         "Content-Type": "application/x-www-form-urlencoded",
@@ -57,6 +57,7 @@ class Contact extends React.Component {
           className="myForm"
           onSubmit={this.handleSubmit}
           data-netlify="true"
+          action="/alert/contact"
         >
          
           <h3>Book your treatments</h3>
