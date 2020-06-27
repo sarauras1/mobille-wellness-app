@@ -52,27 +52,21 @@ class Contact extends React.Component {
   render() {
     const { name, surname, email, tel, address, date, time, message } = this.state;
     return (
-      <div id="contact" className="container">
-        <form
-          name="contact"
-          method="post"
-          data-netlify="true"
-          data-netlify-honeypot="bot-field"
-        >
-          {/* You still need to add the hidden input with the form name to your JSX form */}
-          <input type="hidden" name="contact" value="contact" />
-          ...
-        </form>
-        <form
-          className="myForm"
-          onSubmit={this.handleSubmit}
-    
-        >
+     
+      <form className="myForm"
+        name="contact"
+        method="post"
+        data-netlify="true"
+        data-netlify-honeypot="bot-field"
+        onSubmit={this.handleSubmit}>
+         
+          <input type="hidden" name="contact" value="contact"/>
           <h3>Book your treatments</h3>
           <p>
             <label>
               Your Name:{" "}
-              <input
+            <input
+                 id="name"
                 type="text"
                 name="name"
                 value={name}
@@ -81,11 +75,11 @@ class Contact extends React.Component {
               />
             </label>
           </p>
-
           <p>
             <label>
               Your Surname:{" "}
-              <input
+            <input
+                 id="surname"
                 type="text"
                 name="surname"
                 value={surname}
@@ -94,26 +88,26 @@ class Contact extends React.Component {
               />
             </label>
           </p>
-
           <p>
             <label>
               Your Email:{" "}
               <input
                 type="email"
-                required
+                 required
+                 id="email"
                 name="email"
                 value={email}
                 onChange={this.handleChange}
               />
             </label>
           </p>
-
           <p>
             <label>
               Your phone number:{" "}
               <input
                 type="tel"
                 name="tel"
+                 id="tel"
                 required
                 value={tel}
                 onChange={this.handleChange}
@@ -126,6 +120,7 @@ class Contact extends React.Component {
               <input
                 type="address"
                 name="address"
+                 id="address"
                 required
                 value={address}
                 onChange={this.handleChange}
@@ -139,6 +134,7 @@ class Contact extends React.Component {
                 required
                 name="date"
                 type="date"
+                 id="date"
                 onChange={this.handleChange}
                 value={date}
               />
@@ -161,7 +157,8 @@ class Contact extends React.Component {
               treatments to book:{" "}
               <textarea
                 className="input-textarea"
-                required
+              required
+                 id="message"
                 type="message"
                 name="message"
                 value={message}
@@ -169,9 +166,8 @@ class Contact extends React.Component {
               />
             </label>
           </p>
-
           <p>
-            <button className="form-button" type="submit">
+            <button    id="submit"className="form-button" type="submit">
               Submit booking
             </button>
           </p>
