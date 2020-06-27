@@ -52,7 +52,7 @@ class Contact extends React.Component {
   render() {
     const { name, surname, email, tel, address, date, time, message } = this.state;
     return (
-     
+     <div id="contact" className="container">
       <form className="myForm"
         name="contact"
         method="post"
@@ -66,7 +66,7 @@ class Contact extends React.Component {
             <label>
               Your Name:{" "}
             <input
-                 id="name"
+                 id=""
                 type="text"
                 name="name"
                 value={name}
