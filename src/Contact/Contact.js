@@ -8,7 +8,8 @@ import React from 'react'
 const contact = () => {
      return (
        <div id="contact" className="container">
-        <form
+             <form
+            action="/Thank you for your booking will will contact you as soon as possible time to confirm/"
            className="myForm"
            name="contact"
            method="post"
