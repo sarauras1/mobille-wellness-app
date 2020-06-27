@@ -1,6 +1,6 @@
 
 import './Contact.css'
-import { Form } from "react-form";
+import { Form, Text } from "react-form";
 import React from 'react'
 import axios from 'axios'
 
@@ -19,10 +19,10 @@ const encode = data =>
      return (
        <div className="container" id="contact">
          {this.state.submitted ? (
-           <p className="thanks">
-             Thanks for submitting your information! We'll be in contact with
-             you as soon as possible.
-           </p>
+           <h1 className="thanks">
+             Thanks for submitting your Booking! We'll be in contact with you as
+             soon as possible to confirm.
+           </h1>
          ) : (
            <Form
              onSubmit={async (values) => {
@@ -55,16 +55,32 @@ const encode = data =>
                    onSubmit={submitForm}
                  >
                    <h3>Book your treatments</h3>
+                   <div
+                     style={{
+                       height: 0,
+                       overflow: "hidden",
+                     }}
+                   >
+                     <Text field="bot-field" name="bot-field" />
+                   </div>
                    <p>
                      <label>
                        Your Name:
-                       <input id="name" field="text" name="name" required />
+                       <input
+                         className="input"
+                         id="name"
+                         field="text"
+                         name="name"
+                         required
+                       />
                      </label>
                    </p>
+
                    <p>
                      <label>
                        Your Surname:
                        <input
+                         className="input"
                          id="surname"
                          field="text"
                          name="surname"
@@ -75,19 +91,32 @@ const encode = data =>
                    <p>
                      <label>
                        Your Email:
-                       <input field="email" required id="email" name="email" />
+                       <input
+                         className="input"
+                         field="email"
+                         required
+                         id="email"
+                         name="email"
+                       />
                      </label>
                    </p>
                    <p>
                      <label>
                        Your phone number:
-                       <input field="tel" name="tel" id="tel" required />
+                       <input
+                         className="input"
+                         field="tel"
+                         name="tel"
+                         id="tel"
+                         required
+                       />
                      </label>
                    </p>
                    <p>
                      <label>
                        Address:
                        <input
+                         className="input"
                          field="address"
                          name="address"
                          id="address"
@@ -98,19 +127,32 @@ const encode = data =>
                    <p>
                      <label>
                        Select Date:
-                       <input required name="date" field="date" type="date" id="date" />
+                       <input
+                         className="input"
+                         required
+                         name="date"
+                         field="date"
+                         type="date"
+                         id="date"
+                       />
                      </label>
                    </p>
                    <p>
                      <label>
                        Select time:
-                       <input field="time"type="time" name="appt" id="appt"/>
+                       <input
+                         className="input"
+                         field="time"
+                         type="time"
+                         name="appt"
+                         id="appt"
+                       />
                      </label>
                    </p>
                    <p>
                      <label>
                        treatments to book:
-                       <textarea
+                       <textArea
                          className="input-textarea"
                          required
                          id="message"

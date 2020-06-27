@@ -25,9 +25,9 @@ label {
 }
 
 
-input,
+.input,
 select,
-textarea {
+.input-textarea {
     float: right;
     width: 50%;
     border: 1px solid #ccc;
@@ -37,13 +37,13 @@ textarea {
 
 }
 
-textarea {
+.input-textarea {
     height: 100px;
     width: 50%;
 }
 
-input,
-input {
+.input,
+.input {
     margin-left: 30px;
 }
 
