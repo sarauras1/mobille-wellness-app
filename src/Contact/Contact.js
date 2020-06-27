@@ -9,7 +9,8 @@ const contact = () => {
      return (
        <div id="contact" className="container">
          <form
-           action="/pages/Thank you for your booking will will contact you as soon as possible time to confirm"
+          action="/Thank you for your booking will will contact 
+           you as soon as possible time to confirm"
            className="myForm"
            name="contact"
            method="post"
