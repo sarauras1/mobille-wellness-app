@@ -24,13 +24,13 @@ class Contact extends React.Component {
   /* Here’s the juicy bit for posting the form submission */
 
   handleSubmit = (e) => {
-    fetch("https://www.allbeautybysara.co.uk/contact", {
+    fetch("https://www.allbeautybysara.co.uk", {
       method: "POST",
       headers: {
         "Content-Type": "application/x-www-form-urlencoded",
       },
       body: encode({
-        "form-name": "contact",
+        "form-name": "Contact",
         ...this.state,
       }),
     })
@@ -48,18 +48,28 @@ class Contact extends React.Component {
     this.setState({
       [e.target.name]: e.target.value,
     });
-
+    
   render() {
     const { name, surname, email, tel, address, date, time, message } = this.state;
     return (
       <div id="contact" className="container">
         <form
+          name="contact"
+          data-netlify-recaptcha="true"
+          netlify
+          netlify-honeypot="bot-field"
+          hidden
+        >
+          <input type="text" name="name" />
+          <input type="email" name="email" />
+          <textarea name="message"></textarea>
+        </form>
+        <form
           className="myForm"
           onSubmit={this.handleSubmit}
-          data-netlify="true"
-          action="/alert/contact"
+          name="contact"
+          method="post"
         >
-         
           <h3>Book your treatments</h3>
           <p>
             <label>
