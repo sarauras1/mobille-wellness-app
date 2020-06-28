@@ -5,8 +5,9 @@ import React from 'react'
     const contact = (props) => {
 
      return (
-     
+       <div id="contact"  className="container">
          <NetlifyForm
+        
          name='Form With Invisible Recaptcha'
         recaptcha={{
         sitekey: '6LdhlaoZAAAAALRZzu5l8R97PMfsBhpuRyUbMOdf',
@@ -29,7 +30,7 @@ import React from 'react'
       }
       {!loading && !success &&
       
-         <div id="contact"  className="container">
+         <div className="myForm">
            <h3>Book your treatments</h3>
            <p>
              <label>
@@ -38,7 +39,7 @@ import React from 'react'
                  id=""
                  type="text"
                  name="Name"
-                 className="input"
+                  className="input"
                  required   
                />
              </label>
@@ -145,6 +146,7 @@ import React from 'react'
     </div>
   )}
 </NetlifyForm>
+ </div>
     );
   }
 
