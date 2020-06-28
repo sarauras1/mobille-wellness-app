@@ -1,20 +1,32 @@
-
+import NetlifyForm from 'react-netlify-form'
 import './Contact.css'
 import React from 'react'
 
     const contact = (props) => {
 
      return (
-       <div id="contact" className="container">
-         <form
-          action="/ThankPage"
-           className="myForm"
-           name="contact"
-           method="post"
-           data-netlify="true"
-           data-netlify-honeypot="bot-field"
+     
+         <NetlifyForm
+         name='Form With Invisible Recaptcha'
+        recaptcha={{
+        sitekey: '6LdhlaoZAAAAALRZzu5l8R97PMfsBhpuRyUbMOdf',
+        size: 'invisible'
+  }}
          >
-           <input type="hidden" name="contact" value="contact" />
+         {({ loading, error, success }) => (
+    <div>
+      {loading &&
+        <div>Loading...</div>
+      }
+      {error &&
+        <div>Your information was not sent. Please try again later.</div>
+      }
+      {success &&
+        <div>Thank you for contacting us!</div>
+      }
+      {!loading && !success &&
+        <div id="contact" className="container">
+          
            <h3>Book your treatments</h3>
            <p>
              <label>
@@ -22,7 +34,7 @@ import React from 'react'
                <input
                  id=""
                  type="text"
-                 name="name"
+                 name="Name"
                  className="input"
                  required
                 
@@ -35,7 +47,7 @@ import React from 'react'
                <input
                  id="surname"
                  type="text"
-                 name="surname"
+                 name="Surname"
                  className="input"
                  required
                
@@ -49,7 +61,7 @@ import React from 'react'
                  type="email"
                  required
                  id="email"
-                 name="email"
+                 name="Email"
                  className="input"
                
                />
@@ -60,7 +72,7 @@ import React from 'react'
                Your phone number:{" "}
                <input
                  type="tel"
-                 name="tel"
+                 name="Tel"
                  id="tel"
                  className="input"
                  required
@@ -86,7 +98,7 @@ import React from 'react'
                Select Date:{" "}
                <input
                  required
-                 name="date"
+                 name="Date"
                  type="date"
                  className="input"
                  id="date"
@@ -99,7 +111,7 @@ import React from 'react'
                Select time:{" "}
                <input
                  type="time"
-                 name="appt"
+                 name="Appt"
                  className="input"
                  id="appt"
                 
@@ -114,18 +126,23 @@ import React from 'react'
                  required
                  id="message"
                  type="message"
-                 name="message"
+                 name="Message"
                  
                />
              </label>
            </p>
            <p>
-             <button id="submit" className="form-button" type="submit"  value="submit" >
+             <button id="submit" className="form-button" type="submit"  >
                Submit booking
              </button>
            </p>
-         </form>
-       </div>
+          }
+      {/* Invisible reCAPTCHA must be kept outside of conditionals */}
+      {recaptcha}
+    </div>
+  )}
+</NetlifyForm>
+
      );
   }
 
