@@ -3,7 +3,9 @@ import './Contact.css'
 import React from 'react'
 import React, { useState } from "react";
 
-const NameForm = (props) => {
+
+  
+const contact = (props) => {
   const [name, setName] = useState("");
 
   // This function puts all the form fields into a FormData constructor, which we later encode with the URLSearchParams constructor
@@ -33,10 +35,10 @@ const NameForm = (props) => {
     e.preventDefault();
   };
 
-const contact = () => {
      return (
        <div id="contact" className="container">
          <form
+          onSubmit={handleSubmit}
           action="/"
            className="myForm"
            name="contact"
@@ -55,6 +57,8 @@ const contact = () => {
                  name="name"
                  className="input"
                  required
+                  value={name}
+                  onChange={e => setName(e.target.value)}
                />
              </label>
            </p>
@@ -67,6 +71,8 @@ const contact = () => {
                  name="surname"
                  className="input"
                  required
+                   value={surname}
+                  onChange={e => setName(e.target.value)}
                />
              </label>
            </p>
@@ -79,6 +85,8 @@ const contact = () => {
                  id="email"
                  name="email"
                  className="input"
+                   value={email}
+                  onChange={e => setName(e.target.value)}
                />
              </label>
            </p>
@@ -91,6 +99,8 @@ const contact = () => {
                  id="tel"
                  className="input"
                  required
+                   value={tel}
+                 onChange={e => setName(e.target.value)}
                />
              </label>
            </p>
@@ -102,6 +112,8 @@ const contact = () => {
                  name="address"
                  id="address"
                  className="input"
+                   value={address}
+                  onChange={e => setName(e.target.value)}
                  required
                />
              </label>
@@ -115,6 +127,8 @@ const contact = () => {
                  type="date"
                  className="input"
                  id="date"
+                   value={date}
+                  onChange={e => setName(e.target.value)}
                />
              </label>
            </p>
@@ -126,6 +140,8 @@ const contact = () => {
                  name="appt"
                  className="input"
                  id="appt"
+                   value={time}
+                  onChange={e => setName(e.target.value)}
                ></input>
              </label>
            </p>
@@ -138,11 +154,13 @@ const contact = () => {
                  id="message"
                  type="message"
                  name="message"
+                  value={message}
+                  onChange={e => setName(e.target.value)}
                />
              </label>
            </p>
            <p>
-             <button id="submit" className="form-button" type="submit">
+             <button id="submit" className="form-button" type="submit"  value={submit} >
                Submit booking
              </button>
            </p>
