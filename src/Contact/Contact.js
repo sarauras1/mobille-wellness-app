@@ -11,9 +11,9 @@ import React from 'react'
         recaptcha={{
         sitekey: '6LdhlaoZAAAAALRZzu5l8R97PMfsBhpuRyUbMOdf',
         size: 'invisible'
-  }}
+        }}
          >
-         {({ loading, error, success }) => (
+     {({ loading, error, recaptchaError, success, recaptcha }) => (
     <div>
       {loading &&
         <div>Loading...</div>
@@ -21,12 +21,15 @@ import React from 'react'
       {error &&
         <div>Your information was not sent. Please try again later.</div>
       }
+      {recaptchaError &&
+        <div>Recaptcha did not match. Please make sure the box is checked.</div>
+      }
       {success &&
         <div>Thank you for contacting us!</div>
       }
       {!loading && !success &&
-        <div id="contact" className="container">
-          
+      
+         <div id="contact"  className="container">
            <h3>Book your treatments</h3>
            <p>
              <label>
@@ -36,8 +39,7 @@ import React from 'react'
                  type="text"
                  name="Name"
                  className="input"
-                 required
-                
+                 required   
                />
              </label>
            </p>
@@ -69,7 +71,7 @@ import React from 'react'
            </p>
            <p>
              <label>
-               Your phone number:{" "}
+               Your phone number:
                <input
                  type="tel"
                  name="Tel"
@@ -82,7 +84,7 @@ import React from 'react'
            </p>
            <p>
              <label>
-               Address:{" "}
+               Address:
                <input
                  type="address"
                  name="address"
@@ -95,7 +97,7 @@ import React from 'react'
            </p>
            <p>
              <label>
-               Select Date:{" "}
+               Select Date:
                <input
                  required
                  name="Date"
@@ -108,7 +110,7 @@ import React from 'react'
            </p>
            <p>
              <label>
-               Select time:{" "}
+               Select time:
                <input
                  type="time"
                  name="Appt"
@@ -120,7 +122,7 @@ import React from 'react'
            </p>
            <p>
              <label>
-               treatments to book:{" "}
+               treatments to book:
                <textarea
                  className="input-textarea"
                  required
@@ -136,14 +138,14 @@ import React from 'react'
                Submit booking
              </button>
            </p>
-          }
+        </div>
+      }
       {/* Invisible reCAPTCHA must be kept outside of conditionals */}
       {recaptcha}
     </div>
   )}
 </NetlifyForm>
-
-     );
+    );
   }
 
 
