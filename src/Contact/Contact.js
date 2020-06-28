@@ -7,8 +7,10 @@ import React from 'react'
      return (
        <div id="contact"  className="container">
          <NetlifyForm
-        
-         name='Form With Invisible Recaptcha'
+        method="POST"  
+        netlify-honeypot="bot-field"
+        data-netlify="true"
+        name="contact" 
         recaptcha={{
         sitekey: '6LdhlaoZAAAAALRZzu5l8R97PMfsBhpuRyUbMOdf',
         size: 'invisible'
@@ -32,6 +34,9 @@ import React from 'react'
       
          <div className="myForm">
            <h3>Book your treatments</h3>
+            <p class="hidden">
+    <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
+        </p>
            <p>
              <label>
                Your Name:
