@@ -7,7 +7,7 @@ import React from 'react'
      return (
        <div id="contact" className="container">
          <form
-          action="/ThankPage/"
+          action="/ThankPage"
            className="myForm"
            name="contact"
            method="post"
