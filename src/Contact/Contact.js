@@ -25,7 +25,7 @@ class Contact extends React.Component {
   /* Here’s the juicy bit for posting the form submission */
 
   handleSubmit = (e) => {
-    fetch("/https://allbeautybysara.co.uk", {
+    fetch("https://allbeautybysara.co.uk", {
       method: "POST",
       headers: {
         "Content-Type": "application/x-www-form-urlencoded",
