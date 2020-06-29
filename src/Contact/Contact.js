@@ -3,10 +3,13 @@ import './Contact.css'
 import React from 'react'
 
     const contact = (props) => {
-
+ 
+  
      return (
        <div id="contact"  className="container">
          <NetlifyForm
+        enctype="application/x-www-form-urlencoded"
+        action="/"
         method="POST"  
         netlify-honeypot="bot-field"
         data-netlify="true"
