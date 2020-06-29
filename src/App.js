@@ -61,9 +61,9 @@ backdropClickHandler = () => {
           <Route exact path="/" >
             {backdrop}
 
-            <banner style={{marginTop: '100px'}}>
+            <section style={{marginTop: '100px'}}>
               <Banner/>
-            </banner>
+            </section>
 
             <section style={{marginTop: '-150px'}}>
             <motion.div

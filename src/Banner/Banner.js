@@ -5,7 +5,7 @@ import './Banner.css';
 
 
 
-const banner = (props) => {
+const Banner = (props) => {
   return( 
      
       <div className="Banner-Slicer">
@@ -20,6 +20,6 @@ const banner = (props) => {
   };
 
 
-  export default banner;
+  export default Banner;
 
 
