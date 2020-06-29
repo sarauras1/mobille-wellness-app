@@ -190,7 +190,7 @@ class Contact extends React.Component {
               Submit booking
             </button>
           </p>
-        <input  type="hidden" name="bot-field" /></label>
+            <input  type="hidden" name="bot-field" />
          
            <div data-netlify-recaptcha="true"></div>
         </form>
