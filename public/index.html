@@ -30,7 +30,28 @@
   <body>
     
     <div id="root"></div>
-     
+          <form name="contact" netlify netlify-honeypot="bot-field" hidden>
+  
+                 <input id="name" type="text" name="name"/>
+             
+                 <input id="surname" type="text" name="surname" />
+         
+                 <input type="email" required id="email" name="email" />
+           
+                 <input type="tel" name="tel" id="tel" />
+          
+                 <input type="address" name="address" id="address"/>
+         
+                 <input name="date" type="date" id="date"/>
+            
+                 <input type="time" name="appt" id="appt"></input>
+           
+                 <textarea id="message" type="message" name="message"></textarea>
+         
+            <button id="submit" className="form-button" type="submit">
+              Submit booking
+            </button>
+        </form>
     <script src="https://apis.google.com/js/api.js">
   </script>
    

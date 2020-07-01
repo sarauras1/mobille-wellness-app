@@ -64,12 +64,8 @@ class Contact extends React.Component {
     return (
       <div id="contact" className="container">
         <form
-         data-netlify-recaptcha="true"
           className="myForm"
-          name="contact"
           method="post"
-          data-netlify="true"
-          data-netlify-honeypot="bot-field"
           onSubmit={this.handleSubmit}
         >
           <input type="hidden" name="contact" value="contact" />
@@ -190,9 +186,7 @@ class Contact extends React.Component {
               Submit booking
             </button>
           </p>
-            <input  type="hidden" name="bot-field" />
-         
-           <div data-netlify-recaptcha="true"></div>
+    
         </form>
       
       </div>
