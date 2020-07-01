@@ -3,7 +3,7 @@
     align-items: center;
     display: flex;
     flex-wrap: wrap;
- 
+   
 }
  .svg {
  cursor: pointer;
@@ -20,9 +20,10 @@
      color:	rgb(88,88,88);
  }
  
+ 
 
  .current-serv {
-    text-decoration: none;
- 
+    text-decoration: none !important;
+   
  }
  

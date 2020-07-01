@@ -5,54 +5,54 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: rgb(88,88,88);
-  height: 100%;
+  color: rgb(88,88,88) !important;
   text-align: justify;
+  font-size: 16px !important;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+    monospace !important;
 }
 
  #about, #services, #gallery{
-  margin-top: 80px;
+  margin-top: 80px !important;
 }
 
 .hline-bottom {
- margin:0 40px;
- padding:0 25px;
- border-bottom: 1.5px solid rgb(88,88,88); 
+ margin:0 40px !important;
+ padding:0 25px !important;
+ border-bottom: 1.5px solid rgb(88, 88, 88) !important;
 }
 
 
 
 .service-h1-component {
-  font-size: 30px;
-  font-weight: 700;
-  color: inherit;
+  font-size: 30px !important;
+  font-weight: 700 !important;
+  color: inherit !important;
   
 }
 
 .price {
-  font-size: 15px;
-  font-weight: 700;
-  color: rgb(88,88,88);
-  text-align: center;
+  font-size: 15px !important;
+  font-weight: 700 !important;
+  color: rgb(88, 88, 88) !important;
+  text-align: center !important;
 }
 
 
 @media(min-width: 1000px){
   .service-component {
     display: flex;
-    margin: 80px  20px;
-     width: 100%;
+    margin: 80px 20px !important;
+     width: 100% !important;
   }
   
   .service-h1-div-component {
-   margin:10px auto;
-    text-align: center;
-     width: 500px;
+   margin:10px auto !important;
+    text-align: center !important;
+     width: 500px !important;
   }
   .service-image-component img{
     margin: auto;

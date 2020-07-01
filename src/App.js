@@ -1,5 +1,5 @@
 import React from 'react';
-import {Switch, Route} from "react-router-dom";
+import { Switch, Route } from "react-router-dom";
 import Navbar from './Navbar/Navbar';
 import SideDrawer from './SideDrawer/SideDrawer';
 import Backdrop from './Backdrop/Backdrop';
@@ -16,14 +16,11 @@ import Yoga from './Yoga/Yoga';
 import Waxing from './Waxing/Waxing';
 import Pamper from './Pamper/Pamper';
 import Contact from './Contact/Contact';
-import PrivacyPolicy from './GoogleApi/PrivacyPolicy';
-
-
+import PrivacyPolicy from './PrivacyPolicy/PrivacyPolicy';
 
 
 class App extends React.Component  {
     
-  
  state = {
   sideDrawerOpen: false
  
@@ -50,91 +47,85 @@ backdropClickHandler = () => {
   }  
 
     return (
-      <div style={{height: '100%'}}>
-       {backdrop}
-    <Navbar drawerClickHandler={this.drawerToggleClickHandler} />
-      
+      <div style={{ height: "100%" }}>
+        {backdrop}
+        <Navbar drawerClickHandler={this.drawerToggleClickHandler} />
+
         <SideDrawer show={this.state.sideDrawerOpen} />
 
         <Switch>
-      
-          <Route exact path="/" >
+          <Route exact path="/">
             {backdrop}
 
-            <section style={{marginTop: '100px'}}>
-              <Banner/>
+            <section style={{ marginTop: "100px" }}>
+              <Banner />
             </section>
 
-            <section style={{marginTop: '-150px'}}>
-            <motion.div
-                initial={{ opacity: 0,
-                y: 100}}
-                animate={{ opacity: 1,
-                y: 0}}
-                transition={{duration: 1}}
-              >  
-              <Services/>
+            <section style={{ marginTop: "-150px" }}>
+              <motion.div
+                initial={{ opacity: 0, y: 100 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 1 }}
+              >
+                <Services />
               </motion.div>
-              </section>
-            </Route>
-           
-            <Route  path="/services" >
-              <motion.div style={{position:'absolute'}}
-                initial={{ opacity: 0,
-                y: 300}}
-                animate={{ opacity: 1,
-                y: 0}}
-                transition={{duration: 1}}
-              >  
-              <Services/>
-              </motion.div>
-              </Route>
-             
-              
+            </section>
+          </Route>
 
-              <Route  path="/about" >
-              <About />
-              </Route>
+          <Route path="/services">
+            <motion.div
+              initial={{ opacity: 0, y: 300 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 1 }}
+            >
+              <Services />
+            </motion.div>
+          </Route>
+
+          <Route path="/about">
+            <About />
+          </Route>
 
           <Route path="/gallery">
             <Gallery />
           </Route>
 
-            <Route path ="/contact">
-              <Contact />
-            </Route>
+          <Route path="/contact">
+            <Contact />
+          </Route>
+
+         
         </Switch>
-        
-        <Switch>
-           <Route path ="/massages">
+
+        <section>
+          <Switch>
+            <Route path="/massages">
               <Massages />
             </Route>
-
-            <Route path ="/facials">
+            <Route path="/facials">
               <Facials />
             </Route>
-            <Route path ="/handsFeet">
+            <Route path="/handsFeet">
               <HandsFeet />
             </Route>
-            <Route path ="/pamper">
+            <Route path="/pamper">
               <Pamper />
             </Route>
-            <Route path ="/yoga">
+            <Route path="/yoga">
               <Yoga />
             </Route>
-            <Route path ="/waxing">
+            <Route path="/waxing">
               <Waxing />
             </Route>
-            <Route path ="/privacy">
-              <PrivacyPolicy/>
+            <Route path="/privacy">
+              <PrivacyPolicy />
             </Route>
-        </Switch>
-      
-       
+          </Switch>
+        </section>
+
         <footer>
-          <Footer/>
-        </footer>  
-                
+          <Footer />
+        </footer>
       </div>
     );
   }
