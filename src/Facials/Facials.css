@@ -5,7 +5,9 @@
      margin-right: 60px;
     border-bottom: 0.5px solid rgb(88,88,88) ;
  }
-
+#facimage {
+   margin-top: 50px;
+}
  .facials-h4 h4:hover {
    color:  rgb(163, 157, 157);
 }

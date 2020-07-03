@@ -9,9 +9,9 @@ const services = props => {
         <NavHashLink to="/waxing" className="current-serv">
      <div className="svg"><img src={require('./depilation.png')} alt="waxing"/>
          <h2>Hair Removal</h2>
-         <h5> Wax Hot</h5>
-         <h5> Strep Wax</h5>
-         <h5> Threading</h5>
+         <h5>Hot wax</h5>
+         <h5>Strip Wax</h5>
+         <h5>Threading</h5>
       </div>
       </NavHashLink>
       <NavHashLink to="/yoga" className="current-serv">
@@ -19,14 +19,14 @@ const services = props => {
           <h2>Hatha Yoga</h2>
          <h5>Beginners levels</h5>
          <h5>Intermediate levels</h5>
-         <h5>1 to 1 classes or small groups</h5>
-         <h5>zoom classes</h5>
+         <h5>One to one classes <br></br>or<br></br> small groups</h5>
+         <h5>Zoom classes</h5>
   </div>
   </NavHashLink>
   <NavHashLink to="/facials" className="current-serv">
      <div className="svg"><img src={require('./massage.png')} alt="facials"/>
           <h2>Ayurvedic Facials</h2>
-         <h5> Pitta Facial</h5>
+         <h5>Pitta Facial</h5>
          <h5>Vata Facial</h5>
          <h5>Kapha Facial</h5>
          <h5>Anti age Facial</h5>
@@ -45,8 +45,8 @@ const services = props => {
 
      <NavHashLink to="massages" className="current-serv">
       <div className="svg"><img src={require('./spa.png')} alt="massage"/> 
-          <h2>Massages</h2>
-         <h5> Ayurvedic Massage</h5>
+         <h2>Massages</h2>
+         <h5>Ayurvedic Massage</h5>
          <h5>Thai Massage </h5>
          <h5>Deep Tissue Massage</h5>
          <h5>and more...</h5>

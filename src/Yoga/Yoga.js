@@ -34,8 +34,9 @@ const yoga = (props) => {
           <h3>One-to-one zoom classes are now available with 50% discount.Try out 30 min free class</h3>
     </div>
   </div> 
-  <span className="price-yoga">From £ 30 per 1 hour class</span>
- </div>
+ 
+            </div>
+     <span className="price-yoga">From £ 30 per 1 hour class</span>       
  </div>
     );
 }

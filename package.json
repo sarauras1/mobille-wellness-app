@@ -6,11 +6,8 @@
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
     "@testing-library/user-event": "^7.2.1",
-    "bootstrap": "^4.5.0",
     "framer": "^1.2.2",
     "framer-motion": "^1.11.0",
-    "google": "^2.1.0",
-    "googleapis": "^39.2.0",
     "install": "^0.13.0",
     "motion": "^5.0.0-beta26",
     "prop-types": "^15.7.2",
@@ -19,13 +16,11 @@
     "react-dom": "^16.13.1",
     "react-form": "^2.15.0",
     "react-form-input-validation": "^2.0.3",
-    "react-paypal-express-checkout": "^1.0.5",
     "react-router": "^5.2.0",
     "react-router-dom": "^5.2.0",
     "react-router-hash-link": "^1.2.2",
     "react-scripts": "3.1.1",
-    "reactjs-popup": "^1.5.0",
-    "styled-components": "^5.1.1"
+    "reactjs-popup": "^1.5.0"
   },
   "scripts": {
     "start": "react-scripts start",

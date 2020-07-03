@@ -11,7 +11,7 @@ const facials = (props) => {
 <div  id="facials">
 <div className="service-component" >
 <div className="service-image-component">
-  <img src={require('./facials.jpg')} alt="massage"/> 
+  <img id="facimage" src={require('./facials.jpg')} alt="massage"/> 
 </div>
 
 <div className="service-h1-div-component">

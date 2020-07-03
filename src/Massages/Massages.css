@@ -20,3 +20,9 @@
         max-height: 400px;
     }   
 }
+@media(max-width: 400px) {
+    #massage-image {
+        margin-top: -50px;
+        max-height: 400px;
+    }
+}

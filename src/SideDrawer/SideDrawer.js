@@ -25,7 +25,7 @@ return(
              <DropdownMenu />
             </div>
          
-            <div> <li><NavHashLink to="/shop">Shop</NavHashLink></li></div>
+            <div> <li><NavHashLink to="/blog">Blog</NavHashLink></li></div>
             <div> <li><NavHashLink to="/contact">Contact</NavHashLink></li></div>
             <div> <li><NavLink to="/gallery">Gallery</NavLink></li></div>
           </ul>

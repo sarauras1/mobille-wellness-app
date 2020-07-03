@@ -17,7 +17,7 @@ import Waxing from './Waxing/Waxing';
 import Pamper from './Pamper/Pamper';
 import Contact from './Contact/Contact';
 import PrivacyPolicy from './PrivacyPolicy/PrivacyPolicy';
-
+import Blog from './Blog/Blog';
 
 class App extends React.Component  {
     
@@ -93,7 +93,9 @@ backdropClickHandler = () => {
           <Route path="/contact">
             <Contact />
           </Route>
-
+         <Route path="/blog">
+            <Blog />
+          </Route>
          
         </Switch>
 

@@ -11,7 +11,7 @@ const handsFeet = (props) => {
   <div className="service-component" id="handsFeet">
 
    <div className="service-image-component">
-     <img src={require('./manicure.jpg')} alt="manicure"/> 
+     <img id="hfimage" src={require('./manicure.jpg')} alt="manicure"/> 
    </div>
 
   <div className="service-h1-div-component">
