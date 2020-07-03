@@ -1,3 +1,18 @@
 .pamper-para{
  padding:0 20px;
 }
+
+
+@media(max-width: 768px){
+#pamper-image {
+   margin-top: 80px;
+    max-width: 500px;
+  
+}
+}
+@media(min-width: 769px) {
+    #pamper-image {
+     margin-top: 40px;
+      max-width: 600px;
+    }
+}
