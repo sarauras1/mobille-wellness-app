@@ -17,10 +17,10 @@ const services = props => {
       <NavHashLink to="/yoga" className="current-serv">
   <div className="svg"><img src={require('./excercise.png')} alt="yoga"/> 
           <h2>Hatha Yoga</h2>
-         <h5>Beginners levels</h5>
-         <h5>Intermediate levels</h5>
-         <h5>One to one classes <br></br>or<br></br> small groups</h5>
-         <h5>Zoom classes</h5>
+         <h5>One to one classes <br></br>
+         or<br></br> 
+         small groups</h5>
+       <h5>Zoom classes</h5>
   </div>
   </NavHashLink>
   <NavHashLink to="/facials" className="current-serv">
