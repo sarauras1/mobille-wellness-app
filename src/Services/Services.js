@@ -26,10 +26,10 @@ const services = props => {
   <NavHashLink to="/facials" className="current-serv">
      <div className="svg"><img src={require('./massage.png')} alt="facials"/>
           <h2>Ayurvedic Facials</h2>
-         <h5>Pitta Facial</h5>
-         <h5>Vata Facial</h5>
-         <h5>Kapha Facial</h5>
-         <h5>Anti age Facial</h5>
+         <h5>Pitta Facials</h5>
+         <h5>Vata facials</h5>
+         <h5>Kapha Facials</h5>
+         <h5>Anti age Facials</h5>
       </div>
      </NavHashLink>
 
@@ -57,7 +57,7 @@ const services = props => {
       <h2>Corporate &amp; Pamper Parties</h2>
      <h5>At Home &amp; Office</h5>
       <h5>Affordable</h5>
-     <h5>Convenience</h5>
+     <h5>Convenient</h5>
   </div>
   </NavHashLink>
   <section>
