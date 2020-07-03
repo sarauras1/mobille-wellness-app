@@ -6,7 +6,7 @@
 @media(max-width: 768px){
 #pamper-image {
    margin-top: 80px;
-    max-width: 500px;
+    min-width: 300px;
   
 }
 }
