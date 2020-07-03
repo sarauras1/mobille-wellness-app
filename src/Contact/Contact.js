@@ -63,11 +63,15 @@ class Contact extends React.Component {
     } = this.state;
     return (
       <div id="contact" className="container">
-        <form
-          className="myForm"
-          method="post"
-          onSubmit={this.handleSubmit}
-        >
+        <p>
+          Thanks for choosing All Beauty By Sara London Mobile Beauty Services.
+           Book your treatment using the form below. If you have inqueries about my
+            services do not esited to contact me via whatzApp or email.
+          Please note that All Beauty By Sara does not accept bookings under £
+          30/50 depending on the area you live.
+        </p>
+
+        <form className="myForm" method="post" onSubmit={this.handleSubmit}>
           <input type="hidden" name="contact" value="contact" />
           <h3>Book your treatments</h3>
           <p>
@@ -186,9 +190,7 @@ class Contact extends React.Component {
               Submit booking
             </button>
           </p>
-    
         </form>
-      
       </div>
     );
   }
