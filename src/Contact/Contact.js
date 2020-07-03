@@ -62,135 +62,136 @@ class Contact extends React.Component {
       message,
     } = this.state;
     return (
-      <div id="contact" className="container">
-        <p>
-          Thanks for choosing All Beauty By Sara London Mobile Beauty Services.
-           Book your treatment using the form below. If you have inqueries about my
-            services do not esited to contact me via whatzApp or email.
-          Please note that All Beauty By Sara does not accept bookings under £
-          30/50 depending on the area you live.
-        </p>
-
-        <form className="myForm" method="post" onSubmit={this.handleSubmit}>
-          <input type="hidden" name="contact" value="contact" />
-          <h3>Book your treatments</h3>
-          <p>
-            <label>
-              Your Name:{" "}
-              <input
-                id=""
-                type="text"
-                name="name"
-                className="input"
-                value={name}
-                onChange={this.handleChange}
-                required
-              />
-            </label>
-          </p>
-          <p>
-            <label>
-              Your Surname:{" "}
-              <input
-                id="surname"
-                type="text"
-                name="surname"
-                className="input"
-                value={surname}
-                onChange={this.handleChange}
-                required
-              />
-            </label>
-          </p>
-          <p>
-            <label>
-              Your Email:{" "}
-              <input
-                type="email"
-                required
-                id="email"
-                name="email"
-                className="input"
-                value={email}
-                onChange={this.handleChange}
-              />
-            </label>
-          </p>
-          <p>
-            <label>
-              Your phone number:{" "}
-              <input
-                type="tel"
-                name="tel"
-                id="tel"
-                className="input"
-                required
-                value={tel}
-                onChange={this.handleChange}
-              />
-            </label>
-          </p>
-          <p>
-            <label>
-              Address:{" "}
-              <input
-                type="address"
-                name="address"
-                id="address"
-                required
-                className="input"
-                value={address}
-                onChange={this.handleChange}
-              />
-            </label>
-          </p>
-          <p>
-            <label>
-              Select Date:{" "}
-              <input
-                required
-                name="date"
-                type="date"
-                id="date"
-                className="input"
-                onChange={this.handleChange}
-                value={date}
-              />
-            </label>
-          </p>
-          <p>
-            <label>
-              Select time:{" "}
-              <input
-                type="time"
-                name="appt"
-                id="appt"
-                className="input"
-                onChange={this.handleChange}
-                value={time}
-              ></input>
-            </label>
-          </p>
-          <p>
-            <label>
-              treatments to book:{" "}
-              <textarea
-                className="input-textarea"
-                required
-                id="message"
-                type="message"
-                name="message"
-                value={message}
-                onChange={this.handleChange}
-              />
-            </label>
-          </p>
-          <p>
-            <button id="submit" className="form-button" type="submit">
-              Submit booking
-            </button>
-          </p>
-        </form>
+      <div id="contact">
+        <div className="container">
+          <form className="myForm" method="post" onSubmit={this.handleSubmit}>
+            <input type="hidden" name="contact" value="contact" />
+            <h3 id="form-h3">Book your treatments</h3>
+            <p id="contact-para">
+              Thanks for choosing All Beauty By Sara London Mobile Beauty
+              Services. Book your treatment using the form below. If you have
+              inqueries about my services do not esited to contact me via
+              whatzApp or email. Please note that All Beauty By Sara does not
+              accept bookings under £ 30/50 depending on the area you live and the time you book.
+            </p>
+            <p>
+              <label>
+                Your Name:{" "}
+                <input
+                  id=""
+                  type="text"
+                  name="name"
+                  className="input"
+                  value={name}
+                  onChange={this.handleChange}
+                  required
+                />
+              </label>
+            </p>
+            <p>
+              <label>
+                Your Surname:{" "}
+                <input
+                  id="surname"
+                  type="text"
+                  name="surname"
+                  className="input"
+                  value={surname}
+                  onChange={this.handleChange}
+                  required
+                />
+              </label>
+            </p>
+            <p>
+              <label>
+                Your Email:{" "}
+                <input
+                  type="email"
+                  required
+                  id="email"
+                  name="email"
+                  className="input"
+                  value={email}
+                  onChange={this.handleChange}
+                />
+              </label>
+            </p>
+            <p>
+              <label>
+                Your phone number:{" "}
+                <input
+                  type="tel"
+                  name="tel"
+                  id="tel"
+                  className="input"
+                  required
+                  value={tel}
+                  onChange={this.handleChange}
+                />
+              </label>
+            </p>
+            <p>
+              <label>
+                Address:{" "}
+                <input
+                  type="address"
+                  name="address"
+                  id="address"
+                  required
+                  className="input"
+                  value={address}
+                  onChange={this.handleChange}
+                />
+              </label>
+            </p>
+            <p>
+              <label>
+                Select Date:{" "}
+                <input
+                  required
+                  name="date"
+                  type="date"
+                  id="date"
+                  className="input"
+                  onChange={this.handleChange}
+                  value={date}
+                />
+              </label>
+            </p>
+            <p>
+              <label>
+                Select time:{" "}
+                <input
+                  type="time"
+                  name="appt"
+                  id="appt"
+                  className="input"
+                  onChange={this.handleChange}
+                  value={time}
+                ></input>
+              </label>
+            </p>
+            <p>
+              <label>
+                treatments to book:{" "}
+                <textarea
+                  className="input-textarea"
+                  required
+                  id="message"
+                  type="message"
+                  name="message"
+                  value={message}
+                  onChange={this.handleChange}
+                />
+              </label>
+            </p>
+            <p>
+              <button id="submit" className="form-button" type="submit">
+                Submit booking
+              </button>
+            </p>
+          </form>
+        </div>
       </div>
     );
   }

@@ -2,7 +2,9 @@
     margin-top: 70px;
     padding: 40px 10px;
 }
-
+#contact-para {
+    max-width: 600px;
+}
 fieldset {
     border: none;
     padding: 0;
@@ -24,7 +26,10 @@ label {
     display: block;
 }
 
-
+ #form-h3 {
+     margin: 10px auto;
+     text-align: center;
+ }
 .input,
 select,
 .input-textarea {

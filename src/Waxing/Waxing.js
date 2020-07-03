@@ -23,11 +23,9 @@ const waxing = (props) => {
  Carefully exfoliate  1 day before and 1 time per week after waxing, followed by moisturized, will ensure
  a long-lasting waxing treatment and a better result.</p>
  
-                   <p>ATTENTION: You must avoid waxing treatments if you are under
+               <p>ATTENTION: You must avoid waxing treatments if you are under
     acne medications or chemotherapy.</p>
-     <p>Please note that All Beauty By Sara does not accept bookings 
-                   under £ 30/50 
-      depending on the area you live.</p>            
+              
 </div>     
       </div>
       </div>
