@@ -26,7 +26,7 @@ const  Thaimassage = () => {
      or nuad boran in the Thai language, 
      stands in sharp contrast to western massage therapies.
       <br/>
-        <span className="price">From £ 50</span>
+        <span className="price">From £ 55 per 60 min</span>
         </div>}
       </motion.div>
      
