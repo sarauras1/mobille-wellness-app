@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 
-const Indian = () => {
+const Indiano = () => {
   const [framerState, framerSetState] = useState(false);
 
   const framerEventHandler = () => {
@@ -41,4 +41,4 @@ const Indian = () => {
   );
 };
 
-export default Indian;
+export default Indiano;
