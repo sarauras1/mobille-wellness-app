@@ -24,7 +24,7 @@ const  Relaxing = () => {
      massage which will use all kinds of techniques including long slow movements, gentle kneading and rolling of skin and muscle, and perhaps some rhythmic rocking from side to side. It is a passive treatment. You probably won't be stretched or 
      manoeuvred into any yoga-like positions, as you are, for example, in Thai massage. You just lie there and take it.
       <br/>
-        <span className="price">From £ 45</span>
+        <span className="price">From £ 45 per 45 min</span>
         </div>}
       </motion.div>
      

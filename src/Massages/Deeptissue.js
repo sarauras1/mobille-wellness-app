@@ -26,7 +26,7 @@ const  Deeptissue = () => {
      classic massage therapy, but the movement is slower and the pressure is deeper and concentrated on areas of tension 
      and pain in order to reach the sub-layer of muscles and the fascia (the connective tissue surrounding muscles).
       <br/>
-        <span className="price">From £ 55</span>
+        <span className="price">From £ 55 per 60 min</span>
         </div>}
       </motion.div>
      

@@ -23,7 +23,7 @@ const  Ayurveda = () => {
     Marma therapy is an ancient Indian practice whose focus is the manipulation of subtle energy 
     (prana) in the body for the purposes of supporting the healing process. Marma therapy is based on the utilization of 107 points in the body which are considered to be access points to body, mind, and consciousness. Knowledge of Marma allows the practitioner to influence the flow of prana through both the gross and subtle bodies for the purposes of restoring health and peace of mind.
       <br/>
-        <span className="price">From £ 45</span>
+        <span className="price">From £ 45 per 45min</span>
         </div>}
       </motion.div>
      

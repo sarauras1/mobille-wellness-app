@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 
-const Combine = () => {
+const Indian = () => {
   const [framerState, framerSetState] = useState(false);
 
   const framerEventHandler = () => {
@@ -12,7 +12,7 @@ const Combine = () => {
     <div className="Window-Open">
       <motion.div>
         <div onClick={framerEventHandler}>
-          <h4>All Beauty By Sara Massage</h4>
+          <h4>Indian Head Massage</h4>
         </div>
         {framerState && (
           <div
@@ -25,11 +25,15 @@ const Combine = () => {
                 "0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22)",
             }}
           >
-            Combination of all Sara knowledge accumulated in the past 14 years
-            of my career taking the best from all the massage tecnique in a
-            unique sensational bespoke massage designed for all clients needs.
+            Indian head massage is an ancient therapeutic treatment that has
+            been practiced in India for thousands of years. Part of the Hindu
+            health care practice of Ayurveda, Indian head massage focuses on
+            your head, neck and shoulders and was originally used to improve
+            scalp and hair condition. It is a deep massage, using a variety of
+            pressure and techniques, including circular massage strokes on your
+            scalp, deep tissue work on your shoulders, and stretching the neck.
             <br />
-            <span className="price">From £ 55 per 60 min</span>
+            <span className="price">From £ 45 per 45min</span>
           </div>
         )}
       </motion.div>
@@ -37,4 +41,4 @@ const Combine = () => {
   );
 };
 
-export default Combine;
+export default Indian;

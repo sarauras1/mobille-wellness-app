@@ -25,7 +25,7 @@ const Swedish = () => {
    part of the massage. The benefits of Swedish massage include increased blood circulation,
    mental and physical relaxation, decreased stress and muscle tension, and improved range of motion.
       <br/>
-        <span className="price">From £ 50</span>
+        <span className="price">From £ 50 per 60 min</span>
         </div>}
       </motion.div>
      
