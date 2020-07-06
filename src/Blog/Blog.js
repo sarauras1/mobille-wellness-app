@@ -37,11 +37,10 @@ const blog = (props) => {
               </strong>
               composed of Space and Air. It governs breathing, blinking, muscle
               and tissue movement, pulsation of the heart, and all movements in
-              the cytopVata skin unbalance is dry with a tendency to age earlier
-              than normal.lasm and cell membranes. In balance, vata promotes
-              creativity and flexibility. Out of balance, vata produces fear and
-              anxiety. Vata skin unbalance is dry with a tendency to age earlier
-              than normal.
+              the cytopVata skin unbalance lasm and cell membranes. In balance,
+              vata promotes creativity and flexibility. Out of balance, vata
+              produces fear and anxiety, skin unbalance with dryness and a
+              tendency to age earlier than normal.
             </p>
 
             <p>
@@ -49,9 +48,9 @@ const blog = (props) => {
               made up of Fire and Water. It governs digestion, absorption,
               assimilation, nutrition, metabolism and body temperature. In
               balance, pitta promotes understanding and intelligence. Out of
-              balance, pitta arouses anger, hatred and jealousy.
-               Pita skin unbalance is sensitivity.
-               </p>
+              balance, pitta arouses anger, hatred and jealousy and on the skin
+              sensitivity in general redness that can degenerate to eczema.
+            </p>
 
             <p>
               <strong>
@@ -63,16 +62,12 @@ const blog = (props) => {
               systems. It lubricates joints, moisturizes the skin, and maintains
               immunity. In balance, kapha is expressed as love, calmness and
               forgiveness. Out of balance, it leads to attachment, greed and
-              envy. Kapha skin unbalance is oily and combined skin.
+              envy with a tendency of having oily, comedic skin, or acne..
             </p>
-
-                      
-              </div>
-            </div>
           </div>
         </div>
-    
-   
+      </div>
+    </div>
   );
 };
 
