@@ -72,7 +72,8 @@ class Contact extends React.Component {
               Services. Book your treatment using the form below. If you have
               inqueries about my services do not esited to contact me via
               whatzApp or email. Please note that All Beauty By Sara does not
-              accept bookings under £ 30/50 depending on the area you live and the time you book.
+              accept bookings under £ 30/50 depending on the area you live and
+              the time you book.
             </p>
             <p>
               <label>
@@ -166,6 +167,9 @@ class Contact extends React.Component {
                   name="appt"
                   id="appt"
                   className="input"
+                  min="07:00"
+                  max="21:00"
+                  required
                   onChange={this.handleChange}
                   value={time}
                 ></input>

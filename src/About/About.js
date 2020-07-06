@@ -6,7 +6,7 @@ import './About.css';
 const about = (props) => {
     return(
         <div className="about" id="about">
-             <h1>About the Business</h1>
+             <h1>About me</h1>
      <div className="about-img">
     
      <div><img src={require('./thailand.jpg')} alt="me"/> </div>
