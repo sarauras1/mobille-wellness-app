@@ -19,11 +19,11 @@ const waxing = (props) => {
        moisturizing with organic oils from the Lakhsmi skincare brand.</p>
        <p>Available for Male and Female</p>
 
-    <p>I recommend avoiding sauna, hot baths, sun exposure before or after waxing treatment.
- Carefully exfoliate  1 day before and 1 time per week after waxing, followed by moisturized, will ensure
+<p>I recommend avoiding sauna, hot baths, sun exposure before or after waxing treatment.
+ Carefully exfoliate 1 day before and 1 time per week after waxing, followed by moisturized, will ensure
  a long-lasting waxing treatment and a better result.</p>
  
-               <p>ATTENTION: You must avoid waxing treatments if you are under
+   <p>ATTENTION: You must avoid waxing treatments if you are under
     acne medications or chemotherapy.</p>
               
 </div>     
@@ -31,13 +31,13 @@ const waxing = (props) => {
       </div>
       <div class="price-div-waxing">
       <h2 className="waxing-h4">Prices</h2><br></br>
-      <span className="price-waxing">Upper lip wax or threding £ 5</span><br></br>
+      <span className="price-waxing">Upper lip wax or threading £ 5</span><br></br>
       <div className="margin-bottom-span"></div>
-      <span className="price-waxing">Chin wax or threding £ 5</span><br></br>
+      <span className="price-waxing">Chin wax or threading £ 5</span><br></br>
       <div className="margin-bottom-span"></div>
-      <span className="price-waxing">Eyebrows wax or threding £ 15</span><br></br>
+      <span className="price-waxing">Eyebrows wax or threading £ 10</span><br></br>
       <div className="margin-bottom-span"></div>
-      <span className="price-waxing">Full face wax or threding £ 20</span><br></br>
+      <span className="price-waxing">Full face wax or threading £ 20</span><br></br>
       <div className="margin-bottom-span"></div>
       <span className="price-waxing">Small area body or face wax £ 5</span><br></br>
       <div className="margin-bottom-span"></div>
@@ -45,11 +45,11 @@ const waxing = (props) => {
       <div className="margin-bottom-span"></div>
       <span className="price-waxing">Half arms wax £ 20</span><br></br>
       <div className="margin-bottom-span"></div>
-      <span className="price-waxing">Full arms wax £ 30</span><br></br>
+      <span className="price-waxing">Full arms wax £ 25</span><br></br>
       <div className="margin-bottom-span"></div>
       <span className="price-waxing">Half legs £ 25</span><br></br>
       <div className="margin-bottom-span"></div>
-      <span className="price-waxing">Full legs wax wax £ 29</span><br></br>
+      <span className="price-waxing">Full legs wax £ 29</span><br></br>
       <div className="margin-bottom-span"></div>
       <span className="price-waxing">Bikini wax £ 15</span><br></br>
       <div className="margin-bottom-span"></div>
@@ -61,7 +61,7 @@ const waxing = (props) => {
       <div className="margin-bottom-span"></div>
       <span className="price-waxing">Male Chest and stomach wax £ 40</span><br></br>
       <div className="margin-bottom-span"></div>
-      <span className="price-waxing">Male back wax wax £ 35</span><br></br>
+      <span className="price-waxing">Male back wax £ 35</span><br></br>
       <div className="margin-bottom-span"></div>
     
  </div>
