@@ -19,32 +19,33 @@ import Contact from './Contact/Contact';
 import PrivacyPolicy from './PrivacyPolicy/PrivacyPolicy';
 import Blog from './Blog/Blog';
 
-class App extends React.Component  {
-    
- state = {
-  sideDrawerOpen: false
- 
-};
+class App extends React.Component {
+  state = {
+    sideDrawerOpen: false,
+  };
 
-drawerToggleClickHandler = () => {
-  this.setState((prevState) => {
-    return {sideDrawerOpen: !prevState.sideDrawerOpen};
-  });
-};
+  drawerToggleClickHandler = () => {
+    this.setState((prevState) => {
+      return { sideDrawerOpen: !prevState.sideDrawerOpen };
+    });
+  };
 
-backdropClickHandler = () => {
-  this.setState({sideDrawerOpen: false});
-};
+  backdropClickHandler = () => {
+    this.setState({ sideDrawerOpen: false });
+  };
 
-  
-
+  componentDidUpdate(prevProps) {
+    const { location } = this.props;
+    if (location !== prevProps.location && this.state.sideDrawerOpen) {
+      this.setState({ sideDrawerOpen: false });
+    }
+  }
   render() {
-    
-  let backdrop;
+    let backdrop;
 
-  if (this.state.sideDrawerOpen) {
-    backdrop = <Backdrop click={this.backdropClickHandler} />
-  }  
+    if (this.state.sideDrawerOpen) {
+      backdrop = <Backdrop click={this.backdropClickHandler} />;
+    }
 
     return (
       <div style={{ height: "100%" }}>
@@ -93,14 +94,14 @@ backdropClickHandler = () => {
           <Route path="/contact">
             <Contact />
           </Route>
-         <Route path="/blog">
+          <Route path="/blog">
             <Blog />
           </Route>
-         
         </Switch>
 
         <section>
           <Switch>
+            {backdrop}
             <Route path="/massages">
               <Massages />
             </Route>

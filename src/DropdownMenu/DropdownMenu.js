@@ -55,12 +55,12 @@ class DropdownMenu extends Component {
               >
     
         <ul className="dropdown">
-           <li><NavHashLink to="yoga" className="current">Yoga</NavHashLink></li>
-           <li><NavHashLink to="massages" className="current">Massage </NavHashLink></li>
-           <li><NavHashLink to="handsFeet" className="current" >Hands &amp; Feet</NavHashLink></li>
-           <li><NavHashLink to="facials" className="current">Facials</NavHashLink></li>
-           <li><NavHashLink to="waxing" className="current">Hair Removal</NavHashLink></li>
-           <li><NavHashLink to="pamper" className="current">Corporate &amp; Pamper Parties</NavHashLink></li>
+           <li><NavHashLink to="/yoga" className="current">Yoga</NavHashLink></li>
+           <li><NavHashLink to="/massages" className="current">Massage </NavHashLink></li>
+           <li><NavHashLink to="/handsFeet" className="current" >Hands &amp; Feet</NavHashLink></li>
+           <li><NavHashLink to="/facials" className="current">Facials</NavHashLink></li>
+           <li><NavHashLink to="/waxing" className="current">Hair Removal</NavHashLink></li>
+           <li><NavHashLink to="/pamper" className="current">Corporate &amp; Pamper Parties</NavHashLink></li>
         </ul>    
      </div>
             )

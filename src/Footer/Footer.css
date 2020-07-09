@@ -1,4 +1,6 @@
 .footer {
+    margin-bottom: 0;
+    position: relative;
     margin: auto;
     color: white;
     font-weight: 300;

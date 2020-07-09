@@ -15,7 +15,9 @@
    .sidedrawer a:active{
     color: #cccccc;
    }
-   
+   .sidedrawer.close {
+       transform: translateX(0);
+   }
    .sidedrawer.open {
        transform: translateX(0);
      }
