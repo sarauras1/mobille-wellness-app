@@ -49,7 +49,9 @@ code {
  border-bottom: 1.5px solid rgb(88, 88, 88) !important;
 }
 
-
+.service-h1-div-component {
+  margin: 0 20px;
+}
 
 .service-h1-component {
   font-size: 30px !important;
@@ -81,7 +83,7 @@ code {
      width: 500px !important;
   }
   .service-image-component img{
-    margin: auto;
+    margin: 20px;
      width: 500px;
  }
 }
