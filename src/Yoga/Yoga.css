@@ -1,6 +1,8 @@
 .yoga-h3 {
     text-align: center;
     margin-bottom: 20px;
+     margin-top: 100px;
+     margin-bottom: 200px;
 }
 #yoga{
   margin-bottom: 30px;
@@ -16,24 +18,29 @@
  .yoga-paragraph{
      padding:0 20px;
  }
-.yoga-component{
-    margin-top: 100px;
-  
-}
+
  .yoga-h1-component, .hline-bottom-yoga{
      text-align: center;
  }
  .hline-bottom-yoga{
      margin:0 60px;
  }
- @media(min-width: 769px) {
-    .yoga-image-component img{
-        float: left;
-        max-width: 500px;
-        margin: 20px;
+
+  @media(min-width: 769px) {
+    .yoga-image-component img {
+      float: left;
+      max-width: 500px;
+      margin: 20px;
+    }
+    #yoga {
+      max-width: 1000px;
+      margin: auto;
     }
   }
- 
+  
+
+  
+
   
  @media(max-width: 768px) {
     .yoga-component {

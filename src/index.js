@@ -5,15 +5,14 @@ import App from './App';
 import * as serviceWorker from './serviceWorker';
 import {BrowserRouter as Router} from "react-router-dom";
 import ScrollToTop from './ScrollToTop';
-
+import Footer from "./Footer/Footer";
 
 ReactDOM.render(
   <React.StrictMode>
     <Router>
       <ScrollToTop>
-       
-          <App />
-        
+        <App />
+        <Footer />
       </ScrollToTop>
     </Router>
   </React.StrictMode>,
