@@ -1,11 +1,10 @@
 .yoga-h3 {
     text-align: center;
-    margin-bottom: 20px;
-     margin-top: 100px;
-     margin-bottom: 200px;
+  
+    
 }
-#yoga{
-  margin-bottom: 30px;
+#yoga {
+  margin-top: 100px;
 }
 .price-yoga {
   display: flex;
@@ -19,12 +18,10 @@
      padding:0 20px;
  }
 
- .yoga-h1-component, .hline-bottom-yoga{
+ .yoga-h1-component {
      text-align: center;
  }
- .hline-bottom-yoga{
-     margin:0 60px;
- }
+ 
 
   @media(min-width: 769px) {
     .yoga-image-component img {
@@ -34,7 +31,7 @@
     }
     #yoga {
       max-width: 1000px;
-      margin: auto;
+      margin: 200px auto;
     }
   }
   
@@ -53,7 +50,7 @@
       
     }
     .yoga-image-component img{
-     margin:0 auto;
+     margin: 0 auto;
       width: 400px;
       height: 300px;
   }
@@ -73,12 +70,11 @@
       justify-content: center;
       flex-direction: column;
      
-      
     }
     .yoga-image-component img{
-     margin:0 auto;
-      width: 300px;
-      height: 200px;
+     margin: 0 auto;
+      max-width: 300px;
+      height: 200px
   }
   .yoga-div-component {
     padding:0 25px;

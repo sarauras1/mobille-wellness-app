@@ -7,7 +7,7 @@ import Gallery from './Gallery/Gallery';
 import Banner from './Banner/Banner';
 import Services from './Services/Services';
 import { motion } from "framer-motion";
-
+import Footer from "./Footer/Footer";
 import About from './About/About';
 import Massages from './Massages/Massages';
 import Facials from './Facials/Facials';
@@ -126,7 +126,7 @@ class App extends React.Component {
           </Switch>
         </section>
 
-     
+      <Footer />
       </div>
     );
   }
