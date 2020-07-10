@@ -101,7 +101,7 @@ class App extends React.Component {
 
         <section>
           <Switch>
-            {backdrop}
+          
             <Route path="/massages">
               <Massages />
             </Route>
@@ -125,8 +125,10 @@ class App extends React.Component {
             </Route>
           </Switch>
         </section>
-
-      <Footer />
+     
+        <footer>
+          <Footer />
+        </footer>
       </div>
     );
   }
