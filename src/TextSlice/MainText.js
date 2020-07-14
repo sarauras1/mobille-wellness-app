@@ -15,7 +15,8 @@ const mainText = props => {
      as WAXING, NAILS, MASSAGE, FACIALS, YOGA and more...to clients around London, England.</p>
     <p/>
    <h3> Why Choose My Services?</h3>
-   <p className = "text-justify" > Fully qualified beauty therapist whit more then 13 years of experice in the beauty industy.Also my spotless equipment and mono use set my business apart from most beauty service providers.
+   <p className="text-justify" > Fully qualified beauty therapist whit more then 13 years 
+   of experice in the beauty industy. Also my spotless equipment and mono use set my business apart from most beauty service providers.
     I offer bespoke treatments and use only carefully chosen products to ensure the best results.
     </p>
  </div>

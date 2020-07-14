@@ -26,11 +26,17 @@ const blog = (props) => {
               The principles of many of the natural healing systems now familiar
               in the West have their roots in Ayurveda. Used today as well in
               wellness treatments like facials and massages.The Ayurveda is
-              represented with 3 differents doshas with are Pita, kapha and
-              vata. in other words, these three doshas are different types of
-              personalities.
+              represented with 3 differents doshas with are Pita, Kapha and
+              Vata.
             </p>
             <h3 className="blog-h1-component">Doshas</h3>
+            <p>
+              The doshas in Ayurvedic medicine, each of three energies believed
+              to circulate in the body and govern physiological activity, their
+              differing proportions determining individual temperament and
+              physical constitution and when unbalanced, causing a disposition
+              to particular physical and mental disorders.
+            </p>
             <p>
               <strong>
                 Vata is the subtle energy associated with movement —
