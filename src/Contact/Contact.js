@@ -69,11 +69,15 @@ class Contact extends React.Component {
             <h3 id="form-h3">Book your treatments</h3>
             <p id="contact-para">
               Thanks for choosing All Beauty By Sara London Mobile Beauty
-              Services. Book your treatment using the form below. If you have
+              Services. Book your treatments using the form below. If you have
               inqueries about my services do not esited to contact me via
-              whatzApp or email. Please note that All Beauty By Sara does not
-              accept bookings under £ 30/50 depending on the area you live and
+              whatzApp or email, you will find it a the bottom of thr page.
+               Please note that All Beauty By Sara does not
+              accept bookings under £ 30/50 or more depending on the area you live and
               the time you book.
+               There may be a futher surcharge if you live in the congestion charge 
+               zone or if you don't have free parking readily available.
+               
             </p>
             <p>
               <label>
