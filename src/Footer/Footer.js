@@ -20,7 +20,7 @@ const footer = props => {
    <div className="center">
    <h3>Let's get in touch!</h3>
    <p>
-  Thank you for choosing All Beauty By Sara in London, England! Please send me an email whatsApp me for enquiries about my services. I will respond 
+  Thank you for choosing All Beauty By Sara in London, England! Please send me an email or WhatsApp me for enquiries about my services. I will respond 
   to you at the soonest possible time.
   </p>
    </div>

@@ -1,23 +1,23 @@
-import React from 'react';
+import React from "react";
 import { Switch, Route } from "react-router-dom";
-import Navbar from './Navbar/Navbar';
-import SideDrawer from './SideDrawer/SideDrawer';
-import Backdrop from './Backdrop/Backdrop';
-import Gallery from './Gallery/Gallery';
-import Banner from './Banner/Banner';
-import Services from './Services/Services';
+import Navbar from "./Navbar/Navbar";
+import SideDrawer from "./SideDrawer/SideDrawer";
+import Backdrop from "./Backdrop/Backdrop";
+import Gallery from "./Gallery/Gallery";
+import Banner from "./Banner/Banner";
+import Services from "./Services/Services";
 import { motion } from "framer-motion";
 import Footer from "./Footer/Footer";
-import About from './About/About';
-import Massages from './Massages/Massages';
-import Facials from './Facials/Facials';
-import HandsFeet from './HandsFeet/HandsFeet';
-import Yoga from './Yoga/Yoga';
-import Waxing from './Waxing/Waxing';
-import Pamper from './Pamper/Pamper';
-import Contact from './Contact/Contact';
-import PrivacyPolicy from './PrivacyPolicy/PrivacyPolicy';
-import Blog from './Blog/Blog';
+import About from "./About/About";
+import Massages from "./Massages/Massages";
+import Facials from "./Facials/Facials";
+import HandsFeet from "./HandsFeet/HandsFeet";
+import Yoga from "./Yoga/Yoga";
+import Waxing from "./Waxing/Waxing";
+import Pamper from "./Pamper/Pamper";
+import Contact from "./Contact/Contact";
+import PrivacyPolicy from "./PrivacyPolicy/PrivacyPolicy";
+import Blog from "./Blog/Blog";
 
 class App extends React.Component {
   state = {
@@ -34,12 +34,7 @@ class App extends React.Component {
     this.setState({ sideDrawerOpen: false });
   };
 
-  componentDidUpdate(prevProps) {
-    const { location } = this.props;
-    if (location !== prevProps.location && this.state.sideDrawerOpen) {
-      this.setState({ sideDrawerOpen: false });
-    }
-  }
+  
   render() {
     let backdrop;
 
@@ -52,12 +47,13 @@ class App extends React.Component {
         {backdrop}
         <Navbar drawerClickHandler={this.drawerToggleClickHandler} />
 
-        <SideDrawer show={this.state.sideDrawerOpen} />
+        <SideDrawer show={this.state.sideDrawerOpen}>
+         
+        </SideDrawer>
 
         <Switch>
+         
           <Route exact path="/">
-            {backdrop}
-
             <section style={{ marginTop: "100px" }}>
               <Banner />
             </section>
@@ -101,7 +97,6 @@ class App extends React.Component {
 
         <section>
           <Switch>
-          
             <Route path="/massages">
               <Massages />
             </Route>
@@ -125,7 +120,7 @@ class App extends React.Component {
             </Route>
           </Switch>
         </section>
-     
+
         <footer>
           <Footer />
         </footer>
@@ -133,9 +128,5 @@ class App extends React.Component {
     );
   }
 }
-
-
-
-
 
 export default App;
