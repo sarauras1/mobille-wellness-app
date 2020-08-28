@@ -7,6 +7,8 @@ import Thaimassage from './Thaimassage';
 import Deeptissue from './Deeptissue';
 import Ayurveda from './Ayurveda';
 import Indiano from './Indiano';
+import Button from '../Button/Button';
+
 const massages = (props) => {
     return (
       <div className="service-component" id="massage">
@@ -44,6 +46,7 @@ const massages = (props) => {
           </div>
           <div className="margin-bottom"></div>
         </div>
+        <Button></Button>
       </div>
     );
 }

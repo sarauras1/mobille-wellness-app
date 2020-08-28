@@ -47,12 +47,9 @@ class App extends React.Component {
         {backdrop}
         <Navbar drawerClickHandler={this.drawerToggleClickHandler} />
 
-        <SideDrawer show={this.state.sideDrawerOpen}>
-         
-        </SideDrawer>
+        <SideDrawer show={this.state.sideDrawerOpen}></SideDrawer>
 
         <Switch>
-         
           <Route exact path="/">
             <section style={{ marginTop: "100px" }}>
               <Banner />
@@ -82,14 +79,14 @@ class App extends React.Component {
           <Route path="/about">
             <About />
           </Route>
+          <Route path="/contact">
+            <Contact />
+          </Route>
 
           <Route path="/gallery">
             <Gallery />
           </Route>
 
-          <Route path="/contact">
-            <Contact />
-          </Route>
           <Route path="/blog">
             <Blog />
           </Route>
@@ -121,8 +118,8 @@ class App extends React.Component {
           </Switch>
         </section>
 
-        <footer>
-          <Footer />
+        <footer>          
+            <Footer />
         </footer>
       </div>
     );

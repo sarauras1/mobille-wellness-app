@@ -1,6 +1,6 @@
 import React from "react";
 import "./Waxing.css";
-
+import Button from "../Button/Button";
 const waxing = (props) => {
   return (
     <div id="waxing">
@@ -88,6 +88,7 @@ const waxing = (props) => {
         <br></br>
         <div className="margin-bottom-span"></div>
       </div>
+      <Button></Button>
     </div>
   );
 };

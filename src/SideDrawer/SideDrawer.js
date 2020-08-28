@@ -7,15 +7,12 @@ import DropdownMenu from '../DropdownMenu/DropdownMenu';
 
 const sideDrawer = props => {
  
-
  
    let drawerClasses = 'sidedrawer'
     if (props.show) {
       drawerClasses = 'sidedrawer open';
     }
   
-  
-
     return (
       <nav className={drawerClasses}>
         <div onClick={props.click}>
@@ -45,7 +42,7 @@ const sideDrawer = props => {
             </div>
             <div>
               <li>
-                <NavHashLink to="/contact">Contact</NavHashLink>
+                <NavHashLink to="/footer">Contact</NavHashLink>
               </li>
             </div>
             <div>

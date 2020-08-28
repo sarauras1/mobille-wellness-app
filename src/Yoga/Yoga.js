@@ -1,6 +1,6 @@
 import React from 'react';
 import './Yoga.css';
-
+import Button from '../Button/Button';
 
 const yoga = (props) => {
     return (
@@ -36,7 +36,8 @@ const yoga = (props) => {
   </div> 
  
             </div>
-     <span className="price-yoga">From £ 30 per 1 hour class</span>       
+            <span className="price-yoga">From £ 30 per 1 hour class</span>     
+            <Button></Button>     
  </div>
     );
 }

@@ -1,15 +1,20 @@
 import React from 'react';
 import './Pamper.css';
-
+import Button from '../Button/Button';
 
 
 const pamper = (props) => {
 
 
-    return (
-      <div className="service-component" id="pamper">
+  return (
+    <div id="pamper" >
+      <div className="service-component" >
         <div className="service-image-component">
-          <img id="pamper-image"src={require("./corporate.jpg")} alt="corporate" />
+          <img
+            id="pamper-image"
+            src={require("./corporate.jpg")}
+            alt="corporate"
+          />
         </div>
 
         <div className="service-h1-div-component">
@@ -29,7 +34,9 @@ const pamper = (props) => {
           </div>
         </div>
       </div>
-    );
+      <Button/>
+    </div>
+  );
 }
 
 
