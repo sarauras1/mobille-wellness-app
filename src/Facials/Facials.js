@@ -36,6 +36,7 @@ const facials = (props) => {
             </div>
           </div>
         </div>
+        <Button />
         <div className="facials-img">
           <img id="lakshmi" src={require("./gold-l.jpg")} alt="lakshmi" />
 
@@ -74,7 +75,6 @@ const facials = (props) => {
             </p>
           </div>
         </div>
-        <Button />
       </div>
     );
 }

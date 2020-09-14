@@ -111,28 +111,28 @@ const blog = (props) => {
             </h3>
             <p>
               If your skin appearance is typically dry, according with the
-              ayurveda, you have a Vata skin type. In this case I racommend to
+              Ayurveda, you have a Vata skin type. In this case I racommend to
               use the fantastic Vata line of the Lakshmi brand.
             </p>
 
             <h3 className="blog-h1-component">
-              Pitta/Sensitive skin routine with the lakshmi brand
+              Pitta/Sensitive skin routine with the Lakshmi brand
             </h3>
             <p>
               If your skin appearance is typically sensitive, thin or red,
-              according to the ayurveda, you have a Pitta skin type. In this case
-              I racommend to use the the awesome Pitta line of the lakshmi brand.
+              according to the Ayurveda, you have a Pitta skin type. In this case
+              I racommend to use the the awesome Pitta line of the Lakshmi brand.
             </p>
             <h3 className="blog-h1-component">
-              Kapha/Oily and Combinate skin routine with the lakshmi brand
+              Kapha/Oily and Combinate skin routine with the Lakshmi brand
             </h3>
             <p>
               If your skin appearance is typically oily, with brakeouts,
-              according to the ayurveda, you have a Kapha skin type. In this case
-              I racommend to use the the magic Kapha line of the lakshmi brand.
+              according to the Ayurveda, you have a Kapha skin type. In this case
+              I racommend to use the the magic Kapha line of the Lakshmi brand.
             </p>
             <h3 className="blog-h1-component">
-              Anti age skin routine with the lakshmi brand
+              Anti age skin routine with the Lakshmi brand
             </h3>
             <p>
               Use the antiage Lakshmi products
