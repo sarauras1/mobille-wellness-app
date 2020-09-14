@@ -30,7 +30,7 @@ import { NavHashLink } from "react-router-hash-link";
                </li>
                <li>
                  <NavHashLink
-                   to="/about"
+                   to="/#about"
                    isActive={(match, location) => {
                      if (!match) {
                        return false;

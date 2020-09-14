@@ -26,12 +26,20 @@
 .block_1 .hline-bottom{
     margin: 0 20px;
 }
-
-
+.blog-component {
+    max-width: 600px;
+    margin: 100px auto;
+   
+}
+  .blog-image-min {
+      float: left;
+      max-width: 200px;
+      margin:10px 20px;
+  }
 @media(min-width: 769px) {
     .blog-image {
         float: left;
-        max-width: 500px;
+        max-width: 300px;
         margin: 20px;
     }
 }
@@ -57,7 +65,7 @@
     .blog-div-component {
         padding: 0 25px;
         margin: 10px 20px;
-        text-align: center;
+        text-align: left;
         width: 100%;
     }
 }

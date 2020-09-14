@@ -26,7 +26,7 @@ const sideDrawer = props => {
             </div>
             <div>
               <li>
-                <NavHashLink to="/about">About</NavHashLink>
+                <NavHashLink to="/#about">About</NavHashLink>
               </li>
             </div>
 
@@ -41,7 +41,7 @@ const sideDrawer = props => {
             </div>
             <div>
               <li>
-                <NavHashLink to="/footer">Contact</NavHashLink>
+                <NavHashLink to="/#footer">Contact</NavHashLink>
               </li>
             </div>
             <div>

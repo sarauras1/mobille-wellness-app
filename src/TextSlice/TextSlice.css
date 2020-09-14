@@ -21,14 +21,15 @@
 
   #top-right-h1 {
     color: inherit;
+    max-width: 300px;
     font-weight: 900;
-    font-size: 80px;
+    font-size: 60px;
     font-style: oblique;
   }
 
   .top-right {
-    top: 20%;
-    right: 10px;
+    top: 30%;
+    right: 2%;
   }
 }
 @media(max-width: 899px){
@@ -36,12 +37,13 @@
   #top-right-h1 {
     color: inherit;
     font-weight: 900;
-    font-size:  60px;
+    font-size:  50px;
     font-style: oblique;
   }
   .top-right {
-   top: 30%;
-   right: 10px;
+   top: 40%;
+   right:10%;
+  
   } 
  }
  @media(max-width: 700px){
