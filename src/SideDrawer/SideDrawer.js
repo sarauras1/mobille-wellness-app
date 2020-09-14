@@ -19,15 +19,14 @@ const sideDrawer = props => {
           <ul className="side-list">
             <div>
               <li>
-                <NavLink to="/">Home</NavLink>
+                <NavLink to="/">
+                  Home
+                </NavLink>
               </li>
             </div>
             <div>
               <li>
-                <NavHashLink  to="/about">
-                
-                  About
-                </NavHashLink>
+                <NavHashLink to="/about">About</NavHashLink>
               </li>
             </div>
 

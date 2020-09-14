@@ -8,7 +8,7 @@ import Button from "../Button/Button";
 
 const facials = (props) => {
     return (
-      <div id="facials">
+      <div className="service" id="facials">
         <div className="service-component">
           <div className="service-image-component">
             <img id="facimage" src={require("./facials.jpg")} alt="massage" />

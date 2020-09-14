@@ -10,8 +10,9 @@ import Indiano from './Indiano';
 import Button from '../Button/Button';
 
 const massages = (props) => {
-    return (
-      <div className="service-component" id="massage">
+  return (
+    <div className="service" id="massage">
+      <div className="service-component">
         <div className="service-image-component">
           <img
             id="massage-image"
@@ -48,7 +49,8 @@ const massages = (props) => {
         </div>
         <Button></Button>
       </div>
-    );
+    </div>
+  );
 }
 
 

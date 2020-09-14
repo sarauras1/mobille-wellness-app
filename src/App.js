@@ -117,9 +117,9 @@ class App extends React.Component {
             </Route>
           </Switch>
         </section>
-
-        <footer>          
-            <Footer />
+       
+        <footer>
+          <Footer />
         </footer>
       </div>
     );

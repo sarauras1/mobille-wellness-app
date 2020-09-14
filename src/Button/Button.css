@@ -16,7 +16,10 @@
      text-align: center;
      margin: 20px;
 }
-
+.button:hover{
+    border: none;
+}
 .button-text:hover{
     color: rgb(216, 112, 147);
+   
 }

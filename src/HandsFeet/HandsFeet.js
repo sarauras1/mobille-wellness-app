@@ -7,8 +7,9 @@ import OpenWindowShPedi from './OpenWindowShPedi';
 import Button from '../Button/Button';
 
 const handsFeet = (props) => {
-    return (
-      <div className="service-component" id="handsFeet">
+  return (
+    <div className="service" id="handsFeet">
+      <div className="service-component">
         <div className="service-image-component">
           <img id="hfimage" src={require("./manicure.jpg")} alt="manicure" />
         </div>
@@ -35,7 +36,8 @@ const handsFeet = (props) => {
         <div class="margin-bottom"></div>
         <Button></Button>
       </div>
-    );
+    </div>
+  );
 }
 
 

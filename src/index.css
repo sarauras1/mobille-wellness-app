@@ -1,5 +1,5 @@
 body {
-  margin: 0;
+  margin: 0 auto;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -9,7 +9,6 @@ body {
   font-size: 16px;
 }
 p {
-
  padding: 0 10px;
  
 }
@@ -73,7 +72,7 @@ code {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 100px auto!important;
+    margin: auto!important;
      max-width: 1000px !important;
   }
   
@@ -85,6 +84,9 @@ code {
   .service-image-component img{
     margin: 20px;
      width: 500px;
+ }
+ .service {
+   margin-top: 200px;
  }
 }
 @media(max-width: 999px) {

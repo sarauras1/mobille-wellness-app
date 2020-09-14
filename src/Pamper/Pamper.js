@@ -7,8 +7,8 @@ const pamper = (props) => {
 
 
   return (
-    <div id="pamper" >
-      <div className="service-component" >
+    <div className="service" id="pamper">
+      <div className="service-component">
         <div className="service-image-component">
           <img
             id="pamper-image"
@@ -34,7 +34,7 @@ const pamper = (props) => {
           </div>
         </div>
       </div>
-      <Button/>
+      <Button />
     </div>
   );
 }

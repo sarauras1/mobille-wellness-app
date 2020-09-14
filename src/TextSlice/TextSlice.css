@@ -14,7 +14,8 @@
   padding: 50px;
 }
 .text-justify {
-  text-align: justify;
+  text-align: left;
+  max-width: 500px;
 }
 @media(min-width: 900px) {
 

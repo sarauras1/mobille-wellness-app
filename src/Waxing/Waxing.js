@@ -3,8 +3,8 @@ import "./Waxing.css";
 import Button from "../Button/Button";
 const waxing = (props) => {
   return (
-    <div id="waxing">
-      <div className="service-component" id="waxing">
+    <div className="service" id="waxing">
+      <div className="service-component">
         <div className="service-image-component">
           <img id="waxing-image" src={require("./armpit-wax.jpg")} alt="wax" />
         </div>
