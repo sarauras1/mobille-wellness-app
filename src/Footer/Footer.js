@@ -3,7 +3,7 @@ import './Footer.css';
 import { NavHashLink } from "react-router-hash-link";
 const footer = props => {
   return (
-      <div id="footer" className="footer">
+      <div className="footer">
       
 
 <div id="container">

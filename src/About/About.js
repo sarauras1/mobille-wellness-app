@@ -9,7 +9,7 @@ const about = (props) => {
         <div>
           <img src={require("./thailand.jpg")} alt="me" />{" "}
         </div>
-        <h4>Profile</h4>
+        <h4 className="about-h4">Profile</h4>
       </div>
       <div className="about-text">
         <p>

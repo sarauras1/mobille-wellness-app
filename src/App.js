@@ -118,7 +118,7 @@ class App extends React.Component {
           </Switch>
         </section>
        
-        <footer>
+        <footer id="footer">
           <Footer />
         </footer>
       </div>

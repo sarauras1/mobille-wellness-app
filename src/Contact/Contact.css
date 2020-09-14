@@ -94,6 +94,7 @@ select,
 }
 @media(max-width: 500px) {
     .myForm {
+       
         font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
         font-size: 0.8em;
         width: 400px;
@@ -114,6 +115,8 @@ select,
         margin: auto;
         align-self: center;
     }
+   
+
 }
 
 .container {

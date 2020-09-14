@@ -66,9 +66,9 @@ import { NavHashLink } from "react-router-hash-link";
                  </NavLink>
                </li>
                <li>
-                 <NavLink to="/footer" className="current">
+                 <NavHashLink to="/#footer" className="current">
                    Contact
-                 </NavLink>
+                 </NavHashLink>
                </li>
              </ul>
            </div>
