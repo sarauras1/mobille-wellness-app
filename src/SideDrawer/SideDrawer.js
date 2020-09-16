@@ -19,9 +19,7 @@ const sideDrawer = props => {
           <ul className="side-list">
             <div>
               <li>
-                <NavLink to="/">
-                  Home
-                </NavLink>
+                <NavLink to="/">Home</NavLink>
               </li>
             </div>
             <div>
@@ -36,17 +34,21 @@ const sideDrawer = props => {
 
             <div>
               <li>
-                <NavHashLink to="/blog">Blog</NavHashLink>
+                <NavLink to="/blog">Blog</NavLink>
               </li>
             </div>
             <div>
               <li>
-                <NavHashLink to="/#footer">Contact</NavHashLink>
+                <NavHashLink props="OnClickBackdrop" to="/#footer">
+                  Contact
+                </NavHashLink>
               </li>
             </div>
             <div>
               <li>
-                <NavLink to="/gallery">Gallery</NavLink>
+                <NavLink  to="/gallery">
+                  Gallery
+                </NavLink>
               </li>
             </div>
           </ul>

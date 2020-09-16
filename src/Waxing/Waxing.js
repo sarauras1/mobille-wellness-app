@@ -66,25 +66,25 @@ const waxing = (props) => {
         <span className="price-waxing">Half legs £ 25</span>
         <br></br>
         <div className="margin-bottom-span"></div>
-        <span className="price-waxing">Full legs wax £ 29</span>
+        <span className="price-waxing">Full legs wax £ 35</span>
         <br></br>
         <div className="margin-bottom-span"></div>
-        <span className="price-waxing">Bikini wax £ 15</span>
+        <span className="price-waxing">Bikini wax £ 20</span>
         <br></br>
         <div className="margin-bottom-span"></div>
-        <span className="price-waxing">Brasilian wax £ 30</span>
+        <span className="price-waxing">Brasilian wax £ 35</span>
         <br></br>
         <div className="margin-bottom-span"></div>
-        <span className="price-waxing">Hollywood wax £ 35</span>
+        <span className="price-waxing">Hollywood wax £ 40</span>
         <br></br>
         <div className="margin-bottom-span"></div>
-        <span className="price-waxing">Female back wax £ 20</span>
+        <span className="price-waxing">Female back wax £ 30</span>
         <br></br>
         <div className="margin-bottom-span"></div>
-        <span className="price-waxing">Male Chest and stomach wax £ 40</span>
+        <span className="price-waxing">Male Chest and stomach wax £ 50</span>
         <br></br>
         <div className="margin-bottom-span"></div>
-        <span className="price-waxing">Male back wax £ 35</span>
+        <span className="price-waxing">Male back wax £ 50</span>
         <br></br>
         <div className="margin-bottom-span"></div>
       </div>

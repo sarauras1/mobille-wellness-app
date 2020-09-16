@@ -64,7 +64,7 @@ class App extends React.Component {
                 <Services />
               </motion.div>
             </section>
-            <About/> 
+            <About />
           </Route>
 
           <Route path="/services">
@@ -77,7 +77,6 @@ class App extends React.Component {
             </motion.div>
           </Route>
 
-        
           <Route path="/contact">
             <Contact />
           </Route>
@@ -116,7 +115,7 @@ class App extends React.Component {
             </Route>
           </Switch>
         </section>
-       
+
         <footer id="footer">
           <Footer />
         </footer>
