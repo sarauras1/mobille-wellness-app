@@ -9,7 +9,7 @@ import Services from "./Services/Services";
 import { motion } from "framer-motion";
 import Footer from "./Footer/Footer";
 import About from "./About/About";
-import Massages from "./Massages/Massages";
+import Massages from "./Massages/massage";
 import Facials from "./Facials/Facials";
 import HandsFeet from "./HandsFeet/HandsFeet";
 import Yoga from "./Yoga/Yoga";

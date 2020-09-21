@@ -9,9 +9,10 @@ const textSlice = props => {
   <div  className="top-right">
 <motion.div
   
-  transition={{duration: 0.1}} 
+   transition={{ duration: 10 }}  
   initial={{ scale: 0 }}
- animate={{ scale: 1, }}
+ animate={{ scale: 1, rotate: 10}}
+      
 >
 <h1 id="top-right-h1">MOBILE WELLNESS</h1>
 </motion.div>
