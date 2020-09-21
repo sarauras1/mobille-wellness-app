@@ -28,7 +28,7 @@
   }
 
   .top-right {
-    top: 20%;
+    top: 30%;
     right: 2%;
   }
 }
@@ -38,7 +38,7 @@
     color: inherit;
     max-width: 300px;
     font-weight: 900;
-    font-size: 70px;
+    font-size: 60px;
     font-style: oblique;
   }
 
@@ -47,7 +47,7 @@
     right: 2%;
   }
 }
-@media(max-width: 800px){
+@media(max-width: 899px){
  
   #top-right-h1 {
     color: inherit;

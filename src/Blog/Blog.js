@@ -1,4 +1,5 @@
 import React from "react";
+import Button from '../Button/Button'
 import "./Blog.css";
 
 const blog = (props) => {
@@ -99,10 +100,11 @@ const blog = (props) => {
               routine. Here's how to implement Ayurvedic skin-care tips for
               healthier, glowing skin. Now, there are many ways to follow the
               Ayurveda suggestions, in terms of skin care, but i personaly love
-              the Lakshmi brand method. find below the right routine for you.
+              the Organic and Ayurvedic Lakshmi brand method. find below the
+              right routine for you.
             </p>
             <h3 className="blog-h1-component">
-              Vata/Dry skin routine with the lakshmi brand
+              Vata/Dry skin routine with the Organic and Ayurvedic lakshmi brand
             </h3>
             <p>
               If your skin appearance is typically dry, according with the
@@ -110,16 +112,18 @@ const blog = (props) => {
               use the fantastic Vata line of the Lakshmi brand.
             </p>
             <h3 className="blog-h1-component">
-              Pitta/Sensitive skin routine with the Lakshmi brand
+              Pitta/Sensitive skin routine with the Organic and Ayurvedic
+              Lakshmi brand
             </h3>
             <p>
               If your skin appearance is typically sensitive, thin or red,
               according to the Ayurveda, you have a Pitta skin type. In this
-              case I racommend to use the the awesome Pitta line of the Lakshmi
-              brand.
+              case I racommend to use the the awesome Pitta line of the Organic
+              and Ayurvedic Lakshmi brand.
             </p>
             <h3 className="blog-h1-component">
-              Kapha/Oily and Combinate skin routine with the Lakshmi brand
+              Kapha/Oily and Combinate skin routine with the Organic and
+              Ayurvedic Lakshmi brand
             </h3>
             <p>
               If your skin appearance is typically oily, with brakeouts,
@@ -128,15 +132,53 @@ const blog = (props) => {
               brand.
             </p>
             <h3 className="blog-h1-component">
-              Anti age skin routine with the Lakshmi brand
+              Anti age skin routine with the Organic and Ayurvedic Lakshmi brand
             </h3>
-            <p>Use the antiage Lakshmi products</p>
-            <h3 className="blog-h1-component">How do I know what is right for my skin?</h3>
+            <p>Use the antiage Organic and Ayurvedic Lakshmi products</p>
+            <h3 className="blog-h1-component">
+              How do I know what is right for my skin?
+            </h3>
             <p>
-              Booking the Lakshmi Facial treatment with me, followed by a
-              careful analysis of your skin I will be able to suggest the right
+              It is never easy to choose the right products for your skin,
+              please ladies and gentlemens leave it in the hands of the beauty experts...!
+            </p>
+            <p>
+              Booking your the Organic Ayurvedic Lakshmi Facial treatment,
+              it's included in the price your skin care consultation.
+            </p>
+            <p>
+               I will carefully analyse of your skin,
+              choose the right treatment for you and then suggest you the right
               skin care products for your daily basis routine.
             </p>
+            <strong>
+              Normally if we could get done 1 professional Lakshmi facial per
+              month you will just need a:
+            </strong>
+            <ul>
+              <li>Cleanser</li>
+              <li>Toner</li>
+              <li>Serum</li>
+              <li>Day Cream</li>
+              <li>Night Cream</li>
+            </ul>
+            <strong>
+              If for any reason you can't get done a facial per month you, might
+              need also a:
+            </strong>
+            <ul>
+              <li>Scrub</li>
+              <li>Mask</li>
+            </ul>
+            <strong>
+              But, again, and I cannot stress this enough please let me suggest
+              you which type of skin care it's best for you, that can be the
+              Vata, Pitta, Kapha or Anti Age by booking your facial with All
+              Beauty By Sara Mobile Wellness service. You will not be
+              disappointed any more, I promise! You will notice improvements
+              from the first treatment!
+            </strong>
+            <Button />
           </div>
         </div>
       </div>
