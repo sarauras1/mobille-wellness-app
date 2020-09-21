@@ -70,7 +70,7 @@
     font-style: oblique;
    }
    .top-right {
-     top: 40%;
+     top: 30%;
      right: 3%;
    }
  }
@@ -84,8 +84,8 @@
    }
 
    .top-right {
-     top: 45%;
-     right: 10px;
+     top: 25%;
+     right: 3%;
    }
  }
  @media(max-width: 500px){
@@ -96,8 +96,8 @@
     font-style: oblique;
    }
   .top-right {
-    top: 40%;
-    right: 5px;
+    top: 30%;
+    right: 3%;
   }
  }
  @media(max-width: 468px){
@@ -108,8 +108,8 @@
     font-style: oblique;
    }
   .top-right {
-    top: 40%;
-    right: 5px;
+    top: 35%;
+    right: 2%;
   }
  }
  @media(max-width: 375px){
