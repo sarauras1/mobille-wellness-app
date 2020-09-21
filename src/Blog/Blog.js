@@ -30,7 +30,6 @@ const blog = (props) => {
               represented with 3 differents doshas which are Pitta, Kapha and
               Vata.
             </p>
-
             <h3 className="blog-h1-component">Doshas</h3>
             <p>
               The doshas in Ayurvedic medicine, each of three energies believed
@@ -39,7 +38,6 @@ const blog = (props) => {
               physical constitution and when unbalanced, causing a disposition
               to particular physical and mental disorders.
             </p>
-
             <p>
               <img
                 className="blog-image-min"
@@ -56,7 +54,6 @@ const blog = (props) => {
               produces fear and anxiety, skin unbalance with dryness and a
               tendency to age earlier than normal.
             </p>
-
             <p>
               <img
                 className="blog-image-min"
@@ -70,7 +67,6 @@ const blog = (props) => {
               balance, Pitta arouses anger, hatred and jealousy and on the skin
               sensitivity in general redness that can degenerate to eczema.
             </p>
-
             <p>
               <strong>
                 Kapha is the energy that forms the body’s structure — bones,
@@ -88,7 +84,6 @@ const blog = (props) => {
               forgiveness. Out of balance, it leads to attachment, greed and
               envy with a tendency of having oily, comedic skin, or acne..
             </p>
-
             <h3 className="blog-h1-component">
               Why Ayurveda in your skin care?
             </h3>
@@ -114,29 +109,33 @@ const blog = (props) => {
               Ayurveda, you have a Vata skin type. In this case I racommend to
               use the fantastic Vata line of the Lakshmi brand.
             </p>
-
             <h3 className="blog-h1-component">
               Pitta/Sensitive skin routine with the Lakshmi brand
             </h3>
             <p>
               If your skin appearance is typically sensitive, thin or red,
-              according to the Ayurveda, you have a Pitta skin type. In this case
-              I racommend to use the the awesome Pitta line of the Lakshmi brand.
+              according to the Ayurveda, you have a Pitta skin type. In this
+              case I racommend to use the the awesome Pitta line of the Lakshmi
+              brand.
             </p>
             <h3 className="blog-h1-component">
               Kapha/Oily and Combinate skin routine with the Lakshmi brand
             </h3>
             <p>
               If your skin appearance is typically oily, with brakeouts,
-              according to the Ayurveda, you have a Kapha skin type. In this case
-              I racommend to use the the magic Kapha line of the Lakshmi brand.
+              according to the Ayurveda, you have a Kapha skin type. In this
+              case I racommend to use the the magic Kapha line of the Lakshmi
+              brand.
             </p>
             <h3 className="blog-h1-component">
               Anti age skin routine with the Lakshmi brand
             </h3>
+            <p>Use the antiage Lakshmi products</p>
+            <h3 className="blog-h1-component">How do I know what is right for my skin?</h3>
             <p>
-              Use the antiage Lakshmi products
-                
+              Booking the Lakshmi Facial treatment with me, followed by a
+              careful analysis of your skin I will be able to suggest the right
+              skin care products for your daily basis routine.
             </p>
           </div>
         </div>

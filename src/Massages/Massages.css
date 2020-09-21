@@ -5,6 +5,14 @@
     margin-right: 60px;
    border-bottom: 0.5px solid rgb(88,88,88) ;
 }
+    .info {
+    overflow: hidden;
+     text-align: "center";
+     max-width: "300px,";
+     margin: "auto";
+     padding: "10px";
+     box-shadow: "0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22)";
+}
 
 .massage-h4 h4:hover {
   color:  rgb(163, 157, 157);

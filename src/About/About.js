@@ -21,7 +21,7 @@ const about = (props) => {
         </p>
         <p>
           I am a highly experienced and fully certified mobile beauty therapist
-          with more than 14 years of experience in the beauty industry. I gained
+          with more than 15 years of experience in the beauty industry. I gained
           6 years of experience working on the beautiful Sardinian coastline, an
           exclusive destination for some of Europe's elite, where I offered a
           full suite of treatments.
@@ -30,7 +30,7 @@ const about = (props) => {
           To further my knowledge and experience, I moved to London to work in
           an illustrious Mayfair beauty hotspot for 5 years. I have also worked
           at exclusive events such as London fashion shows and I had a number of
-          A-list celebrities amongst her former clients and 3 years now on my 
+          A-list celebrities amongst her former clients and 4 years now on my 
           All Beauty By Sara mobile business.
         </p>
         <p>
@@ -40,7 +40,7 @@ const about = (props) => {
           pressure points and Hatha yoga.
         </p>
         <p>
-          Now, I bring those 14 years of beauty experience and luxury treatments
+          Now, I bring those 15 years of beauty experience and luxury treatments
           directly to your door!
         </p>
         <h4>Mission</h4>

@@ -1,13 +1,13 @@
-import React from 'react';
-import './Massages.css';
-import Relaxing from './Relaxing';
-import Combine from './Combine';
-import Swedish from './Swedish';
-import Thaimassage from './Thaimassage';
-import Deeptissue from './Deeptissue';
-import Ayurveda from './Ayurveda';
-import Indiano from './Indiano';
-import Button from '../Button/Button';
+import React from "react";
+import "./Massages.css";
+import Relaxing from "./Relaxing";
+import Combine from "./Combine";
+import Swedish from "./Swedish";
+import Thaimassage from "./Thaimassage";
+import Deeptissue from "./Deeptissue";
+import Ayurveda from "./Ayurveda";
+import Indiano from "./Indiano";
+import Button from "../Button/Button";
 
 const massages = (props) => {
   return (
@@ -51,10 +51,6 @@ const massages = (props) => {
       </div>
     </div>
   );
-}
-
-
-
-
+};
 
 export default massages;
