@@ -120,8 +120,8 @@
     font-style: oblique;
    }
    .top-right {
-     top: 40%;
-     right: 5px;
+     top: 20%;
+     right: 2%;
    }
  }
  @media(max-width: 320px){
@@ -132,8 +132,8 @@
     font-style: oblique;
    }
    .top-right {
-     top: 40%;
-     right: 5px;
+     top: 20%;
+     right: 2%;
    }
  }
   
