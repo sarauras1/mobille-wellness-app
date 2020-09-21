@@ -17,7 +17,7 @@
   text-align: left;
   max-width: 500px;
 }
-@media(min-width: 1200px) {
+@media(max-width: 1200px) {
 
   #top-right-h1 {
     color: inherit;
@@ -56,8 +56,8 @@
     font-style: oblique;
   }
   .top-right {
-   top: 20%;
-   right:10%;
+   top: 35%;
+   right:2%;
   
   } 
  }
@@ -70,8 +70,8 @@
     font-style: oblique;
    }
    .top-right {
-     top: 30%;
-     right: 5%;
+     top: 40%;
+     right: 3%;
    }
  }
  @media(max-width: 600px) {
@@ -84,7 +84,7 @@
    }
 
    .top-right {
-     top: 30%;
+     top: 45%;
      right: 10px;
    }
  }
@@ -96,7 +96,7 @@
     font-style: oblique;
    }
   .top-right {
-    top: 30%;
+    top: 40%;
     right: 5px;
   }
  }
@@ -108,7 +108,7 @@
     font-style: oblique;
    }
   .top-right {
-    top: 30%;
+    top: 40%;
     right: 5px;
   }
  }
@@ -120,7 +120,7 @@
     font-style: oblique;
    }
    .top-right {
-     top: 30%;
+     top: 40%;
      right: 5px;
    }
  }
@@ -132,7 +132,7 @@
     font-style: oblique;
    }
    .top-right {
-     top: 30%;
+     top: 40%;
      right: 5px;
    }
  }
