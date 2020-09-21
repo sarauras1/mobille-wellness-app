@@ -34,8 +34,8 @@ const handsFeet = (props) => {
           </div>
         </div>
         <div class="margin-bottom"></div>
-        <Button></Button>
       </div>
+      <Button></Button>
     </div>
   );
 }
