@@ -6,7 +6,7 @@ import { NavLink } from 'react-router-dom';
 import { NavHashLink } from "react-router-hash-link";
 
 
- const navbar = props =>{
+ const navbar = (props) =>{
    
      return (
        <header className="Navbar">

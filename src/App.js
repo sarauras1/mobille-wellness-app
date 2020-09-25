@@ -9,7 +9,7 @@ import Services from "./Services/Services";
 import { motion } from "framer-motion";
 import Footer from "./Footer/Footer";
 import About from "./About/About";
-import Massages from "./Massages/massage";
+import Massages from "./Massages/Massages";
 import Facials from "./Facials/Facials";
 import HandsFeet from "./HandsFeet/HandsFeet";
 import Yoga from "./Yoga/Yoga";
@@ -70,7 +70,7 @@ class App extends React.Component {
           <Route path="/services">
             <motion.div
               initial={{ opacity: 0, y: 300 }}
-              animate={{ opacity: 1, y: 0 }}
+              animate={{ opacity: 1, y: 0, onScroll: true}}
               transition={{ duration: 1 }}
             >
               <Services />

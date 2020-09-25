@@ -1,5 +1,5 @@
 import React from 'react';
-
+import './TextSlice.css';
 
 
 const mainText = props => {
