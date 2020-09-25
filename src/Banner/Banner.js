@@ -5,18 +5,15 @@ import './Banner.css';
 
 
 
-const Banner = (props) => {
-  return( 
-     
+const Banner = () => {
+  return (
+    <div className="Banner-Slicer">
       <div className="Banner-Slicer">
+        <img className="banner2"src={require("./banner2.gif")} alt="banner2" />
         
-    <div><img src={require('./banner2.gif')} alt="corals"/> </div>  
-   
-   
-
-        </div>
-         
-    );
+      </div>
+    </div>
+  );
   };
 
 

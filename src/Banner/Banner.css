@@ -1,53 +1,65 @@
-/* Top left text */
+
 
 @media(min-width: 1100px) {
     .Banner-Slicer img {
         display: flex;
          width: 80%;
          margin: auto;
+        
     }
     .Banner-Slicer {
         background-color: lightseagreen;
          margin-top: -50px;
     }
+  
 }
 @media(min-width: 900px) {
 .Banner-Slicer img{
     display: flex;
-    width: 70%;
+   width: 70%;
    margin: auto;
+ 
     
  }
  .Banner-Slicer {
      background-color: lightseagreen;
       margin-top: -50px;
  }
+ 
 }
 @media(max-width: 899px) {
     .Banner-Slicer img{
         display: flex;
          width: 100%;
         margin-top: -100px;
+         
+       
      }
+    
     }
       @media(max-width: 700px) {
           .Banner-Slicer img {
               display: flex;
               width: 100%;
                margin-top: -100px;
+              
+               
           }
+          
       }
      @media(max-width: 600px) {
          .Banner-Slicer img {
              display: flex;
              width: 100%;
              margin-top: -20px;
+            
          }
+        
      }
   @media(max-width: 500px) {
       .Banner-Slicer img {
-          display: flex;
-          width: 100%;
-          margin-top: -20px;
+       margin-bottom: 100px;
+        width: 100%;
       }
+    
   }
