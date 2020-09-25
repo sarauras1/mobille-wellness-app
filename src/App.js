@@ -57,6 +57,7 @@ class App extends React.Component {
 
             <section style={{ marginTop: "-150px" }}>
               <motion.div
+             
                 initial={{ opacity: 0, y: 100 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 1 }}
@@ -70,7 +71,7 @@ class App extends React.Component {
           <Route path="/services">
             <motion.div
               initial={{ opacity: 0, y: 300 }}
-              animate={{ opacity: 1, y: 0, onScroll: true}}
+              animate={{ opacity: 1, y: 0, onScroll: true }}
               transition={{ duration: 1 }}
             >
               <Services />
