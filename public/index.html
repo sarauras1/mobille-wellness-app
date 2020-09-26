@@ -1,23 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="google-site-verification" content="z_P_cbjRl5r5PzppNpVggsCZH70xMf5PXe1GDNj-iuQ" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-      <link rel="reset.css" href="%PUBLIC_URL%/reset.css" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Mobile Beauty App"/>
-      <div><a href="https://www.flaticon.com/free-icon/lotus_2647635" title="monkik"></a> <a href="https://www.flaticon.com/" title="Flaticon"></a></div>
-    <!--
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="google-site-verification" content="z_P_cbjRl5r5PzppNpVggsCZH70xMf5PXe1GDNj-iuQ" />
+  <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+  <link rel="reset.css" href="%PUBLIC_URL%/reset.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#000000" />
+  <meta name="All Beauty By Sara"
+    content="Mobile Beauty/Mobile Wellness/Waxing/Facial/Massages/Yoga/Manicure&Pedicure " />
+  <div><a href="https://www.flaticon.com/free-icon/lotus_2647635" title="monkik"></a> <a
+      href="https://www.flaticon.com/" title="Flaticon"></a></div>
+  <!--
       manifest.json provides metadata used when your web app is installed on a
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
     -->
-    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
+  <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+  <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+  <!--
       Notice the use of %PUBLIC_URL% in the tags above.
       It will be replaced with the URL of the `public` folder during the build.
       Only files inside the `public` folder can be referenced from the HTML.
@@ -26,41 +27,56 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <title>Mobile Beauty App</title>
-  </head>
-  <body>
-  
-    <div id="root"></div>
-          <form name="contact" netlify netlify-honeypot="bot-field" hidden>
+  <title>Mobile Beauty</title>
+</head>
 
-            <input id="name" type="text" name="name" />
+<body>
 
-            <input id="surname" type="text" name="surname" />
+  <div id="root"></div>
+  <form name="contact" netlify netlify-honeypot="bot-field" hidden>
 
-            <input type="email" required id="email" name="email" />
+    <input id="name" type="text" name="name" />
 
-            <input type="tel" name="tel" id="tel" />
+    <input id="surname" type="text" name="surname" />
 
-            <input type="address" name="address" id="address" />
+    <input type="email" required id="email" name="email" />
 
-            <input name="date" type="date" id="date" />
+    <input type="tel" name="tel" id="tel" />
 
-            <input type="time" name="appt" id="appt"></input>
+    <input type="address" name="address" id="address" />
 
-            <textarea id="message" type="message" name="message"></textarea>
+    <input name="date" type="date" id="date" />
 
-            <button id="submit" className="form-button" type="submit">
-              Submit booking
-            </button>
-          </form>
+    <input type="time" name="appt" id="appt"></input>
+
+    <textarea id="message" type="message" name="message"></textarea>
+
+    <button id="submit" className="form-button" type="submit">
+      Submit booking
+    </button>
+  </form>
   <script>
-    !function(){var i,e,t,s=window.legal=window.legal||[];if(s.SNIPPET_VERSION="3.0.0",i="https://widgets.legalmonster.com/v1/legal.js",!s.__VERSION__)if(s.invoked)window.console&&console.info&&console.info("legal.js: The initialisation snippet is included more than once on this page, and does not need to be.");else{for(s.invoked=!0,s.methods=["cookieConsent","document","ensureConsent","handleWidget","signup","user"],s.factory=function(t){return function(){var e=Array.prototype.slice.call(arguments);return e.unshift(t),s.push(e),s}},e=0;e<s.methods.length;e++)t=s.methods[e],s[t]=s.factory(t);s.load=function(e,t){var n,o=document.createElement("script");o.setAttribute("data-legalmonster","sven"),o.type="text/javascript",o.async=!0,o.src=i,(n=document.getElementsByTagName("script")[0]).parentNode.insertBefore(o,n),s.__project=e,s.__loadOptions=t||{}},s.widget=function(e){s.__project||s.load(e.widgetPublicKey),s.handleWidget(e)}}}();
+    !function () { var i, e, t, s = window.legal = window.legal || []; if (s.SNIPPET_VERSION = "3.0.0", i = "https://widgets.legalmonster.com/v1/legal.js", !s.__VERSION__) if (s.invoked) window.console && console.info && console.info("legal.js: The initialisation snippet is included more than once on this page, and does not need to be."); else { for (s.invoked = !0, s.methods = ["cookieConsent", "document", "ensureConsent", "handleWidget", "signup", "user"], s.factory = function (t) { return function () { var e = Array.prototype.slice.call(arguments); return e.unshift(t), s.push(e), s } }, e = 0; e < s.methods.length; e++)t = s.methods[e], s[t] = s.factory(t); s.load = function (e, t) { var n, o = document.createElement("script"); o.setAttribute("data-legalmonster", "sven"), o.type = "text/javascript", o.async = !0, o.src = i, (n = document.getElementsByTagName("script")[0]).parentNode.insertBefore(o, n), s.__project = e, s.__loadOptions = t || {} }, s.widget = function (e) { s.__project || s.load(e.widgetPublicKey), s.handleWidget(e) } } }();
 
     legal.widget({
-        type: "cookie",
-        widgetPublicKey: "7Ei2uf9oqHNqSzKLqaszM4p7",
+      type: "cookie",
+      widgetPublicKey: "7Ei2uf9oqHNqSzKLqaszM4p7",
     });
-</script>
-  </body>
-</html>
+  </script>
+  <!-- GetButton.io widget -->
+  <script type="text/javascript">
+    (function () {
+      var options = {
+        whatsapp: "+4407413140617", // WhatsApp number
+        call_to_action: "Message us", // Call to action
+        position: "left", // Position may be 'right' or 'left'
+      };
+      var proto = document.location.protocol, host = "getbutton.io", url = proto + "//static." + host;
+      var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = url + '/widget-send-button/js/init.js';
+      s.onload = function () { WhWidgetSendButton.init(host, proto, options); };
+      var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
+    })();
+  </script>
+</body>
 
+</html>

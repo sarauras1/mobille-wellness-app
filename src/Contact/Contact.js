@@ -71,7 +71,7 @@ class Contact extends React.Component {
               Thanks for choosing All Beauty By Sara London Mobile Beauty
               Services. Book your treatments using the form below. If you have
               inqueries about my services do not esited to contact me via
-              whatzApp or email, you will find it a the bottom of thr page.
+              WhatsApp or email.
                Please note that All Beauty By Sara does not
               accept bookings under £ 30/50 or more depending on the area you live and
               the time you book.
