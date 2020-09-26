@@ -38,9 +38,12 @@ const footer = props => {
         <div className="right">
           <h3>Contact</h3>
           <li>London UK </li>
-         
+
           <li>
-            <a href="mailto:allbeautybysara@gmail.com">Send me an email</a>
+            <a href="mailto:allbeautybysara@gmail.com">
+             
+              <img src={require("./gmail.png")} alt="email" />
+            </a>
           </li>
           <li>
             <a href="https://www.instagram.com/allbeautybysara/">
