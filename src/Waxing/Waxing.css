@@ -1,47 +1,169 @@
-.Waxing-h1-div {
-    text-align: center;
+.waxing-div-component {
+    text-align: left;
+     
  }
  
- #Waxing-h1 {
+ .waxing-h1-component {
      font-size: 30px;
      font-weight: 700;
-     color: black;
-     margin-top: 100px;
-     margin-bottom: 30px;
+      
  }
 
- .Waxing-image {
-     width: 400px;
-     margin: 50px;
- }
 .waxing-h2 {
     text-align: center;
     margin-bottom: 0;
+    color: white;
 }
-.waxing-para{
-    padding:0 20px;
-}
- #waxing-image{
-     margin-top: 100px;
- }
- #waxing-span{
-     padding:0 20px;
-     font-size: 15px;
-     text-align: center;
- }
-.margin-bottom-span{
-    margin-bottom: 20px;
-}
+
+
  .price-div-waxing {
      text-align: center;
-     margin-bottom: 20px;
- }
-  .price-waxing {
-     position: relative;
-     text-align: center;
-     width: 80px;
-     font-weight: 500;
+     margin: 20px;
      font-size: 15px;
-     border-bottom: 1px solid grey;
+    background-color: rgb(13, 90, 100);
+ }
+ .waxing-price {
+    font-size: 16px;
+    font-weight: 400;
+    padding: 10px;
+    color: white;
+ }
+ 
+ .waxing-price-div {
+     padding: 5px;
+ }
+ .waxing-para {
+     padding: 5px 20px;
+ }
+ @media(min-width: 1200px){
+     .waxing-price-image {
+         background-image: url('./waxing-prices.jpg');
+         background-size: cover;
+         background-repeat: no-repeat;
+         background-position: center;
+         position: absolute;
+         border-radius: 50%;
+         width: 560px;
+         height: 400px;
+         top: 610px;
+         left: 10px;
+         -webkit-transform: rotate(90deg);
+         -moz-transform: rotate(90deg);
+         -ms-transform: rotate(90deg);
+         -o-transform: rotate(90deg);
+         transform: rotate(90deg);
+     }
 
+     .waxing-price-image-right {
+         background-image: url('./waxing-prices.jpg');
+         background-size: cover;
+         background-repeat: no-repeat;
+         background-position: center;
+         position: absolute;
+         border-radius: 50%;
+         width: 560px;
+         height: 400px;
+         top: 610px;
+         right: 10px;
+         -webkit-transform: rotate(90deg);
+         -moz-transform: rotate(90deg);
+         -ms-transform: rotate(90deg);
+         -o-transform: rotate(90deg);
+         transform: rotate(90deg);
+     }
+ }
+ @media(min-width: 769px) {
+     .waxing-image-component{
+         float: left;
+         margin: 20px;
+     }
+     .waxing-image{
+       max-width: 500px;  
+     }
+  
+     .waxing {
+         max-width: 1000px;
+         margin: 50px auto;
+     }
+    .waxing-h1-component {
+        margin-top: 100px;
+    }
+ }
+
+
+
+
+
+ @media(max-width: 768px) {
+     .waxing-component {
+         width: 100%;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         flex-direction: column;
+
+
+     }
+
+     .waxing-image-component {
+         margin: 0 auto;
+         width: 100%;
+         height: 300px;
+         padding: 60px 0px;
+     }
+
+     .waxing-div-component {
+         padding: 0 25px;
+         margin: 10px 20px;
+         text-align: center;
+         width: 100%;
+     }
+ }
+
+ @media(max-width: 700px) {
+     .waxing-component {
+         width: 100%;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         flex-direction: column;
+
+     }
+
+     .waxing-image-component img {
+         margin: 0 auto;
+         width: 100%;
+         height: 400px
+     }
+
+     .waxing-div-component {
+         padding: 0 25px;
+         margin: 10px 20px;
+         text-align: center;
+         width: 100%;
+     }
+ }
+ @media(max-width: 600px) {
+     .waxing-component {
+         width: 100%;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         flex-direction: column;
+
+     }
+
+     .waxing-image-component img {
+         margin: 10px auto;
+         width: 100%;
+         height: 300px
+     }
+
+           .waxing-div-component {
+               padding: 0 25px;
+               margin: 10px 20px;
+               text-align: center;
+               width: 100%;
+           }
+     
  }

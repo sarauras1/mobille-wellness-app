@@ -1,18 +1,70 @@
 .pamper-para{
- padding:0 20px;
+ padding: 5px;
+}
+.pamper-component{
+     margin-top: 150px;
 }
 
-
-@media(max-width: 768px){
-#pamper-image {
-   margin-top: 80px;
-    min-width: 300px;
-  
-}
-}
 @media(min-width: 769px) {
-    #pamper-image {
-     margin-top: 40px;
-      max-width: 600px;
+    .pamper-image-component img {
+        float: left;
+        max-width: 500px;
+        margin: 0 20px;
+    }
+   
+    #pamper {
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+    .margin-button {
+        margin-top: 50px;
     }
 }
+ @media(max-width: 768px) {
+     .pamper-component {
+         width: 100%;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         flex-direction: column;
+
+
+     }
+
+     .pamper-image-component img {
+         margin: -150px 10px auto;
+         width: 100%;
+        
+     }
+
+     .pamper-div-component {
+         padding: 0 25px;
+         margin: 10px 20px;
+         text-align: center;
+         width: 100%;
+     }
+ }
+
+ @media(max-width: 400px) {
+     .pamper-component {
+         width: 100%;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         flex-direction: column;
+
+     }
+
+     .pamper-image-component img {
+         margin: -100px 10px auto;
+         max-width: 100%;
+        
+     }
+
+     .pamper-div-component {
+         padding: 0 25px;
+         margin: 10px 20px;
+         text-align: center;
+         width: 100%;
+     }
+ }
