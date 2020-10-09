@@ -84,3 +84,14 @@
        height: 400px;
     }
  }
+ @media(max-width: 400px) {
+    .facial-image {
+       background-image: url('./facials.jpg');
+       background-size: cover;
+       background-repeat: no-repeat;
+       background-position: center;
+       margin-top: 50px;
+       width: 100%;
+       height: 300px;
+    }
+ }

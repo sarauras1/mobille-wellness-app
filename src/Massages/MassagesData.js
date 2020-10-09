@@ -1,7 +1,7 @@
  const massageData = [
   {
     id: 1,
-    name:"Swidish Massage",
+    name:"Swedish Massage",
     info:"Swedish massage It involves the use of hands, forearms or elbows to manipulate the superficial layers of the muscles to improve mental and physical health. Active or passive movement of the joints may also be  part of the massage. The benefits of Swedish massage include increased blood circulation, mental and physical relaxation, decreased stress and muscle tension, and improved range of motion.",
     price:"From £ 55 per 60 min"
   },
