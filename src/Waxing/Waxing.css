@@ -167,3 +167,27 @@
            }
      
  }
+  @media(max-width: 400px) {
+      .waxing-component {
+          width: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-direction: column;
+
+      }
+
+      .waxing-image-component img {
+          margin: 10px auto;
+          width: 100%;
+          height: 200px
+      }
+
+      .waxing-div-component {
+          padding: 0 25px;
+          margin: 10px 20px;
+          text-align: center;
+          width: 100%;
+      }
+
+  }
