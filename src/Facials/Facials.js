@@ -21,8 +21,7 @@ const facials = (props) => {
           <div className="service-h1-div-component">
             <h1 className="service-h1-component">Ayurvedic Organic Facials</h1>
             <span className="Gold">By Lakshmi</span>
-            <div className="block_1 hline-bottom"></div>
-
+           
             <Accordion>
               {FacialData.map((data) => (
                 <AccordionItem>
@@ -40,10 +39,11 @@ const facials = (props) => {
                 </AccordionItem>
               ))}
             </Accordion>
+       
             <Button />
           </div>
         </div>
-
+    
         <div className="facials-img">
           <img id="lakshmi" src={require("./gold-l.jpg")} alt="lakshmi" />
 
