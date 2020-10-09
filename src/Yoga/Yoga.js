@@ -9,9 +9,7 @@ const yoga = (props) => {
 
       <div className="yoga-image-component">
          <img className="Yoga-image"src={require('./balance-city.jpg')} alt="yoga"/> 
-         <div className="yoga-h3">
-     
-      </div>
+        
      </div>
       <div className="yoga-div-component">
           <h1 className="yoga-h1-component">One-to-one Hatha Yoga</h1>

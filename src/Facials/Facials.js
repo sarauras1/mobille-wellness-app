@@ -1,17 +1,21 @@
 import React from 'react';
-import OpenWindowPitta from './Pitta';
-import OpenWindowVata from './Vata';
-import Kapha from './Kapha';
-import OpenWindowAge from './AntiAge';
 import './Facials.css';
 import Button from "../Button/Button";
+import FacialData from "./facialData"
+import {
+  Accordion,
+  AccordionItem,
+  AccordionItemButton,
+  AccordionItemHeading,
+  AccordionItemPanel,
+} from "react-accessible-accordion";
 
 const facials = (props) => {
     return (
       <div className="service" id="facials">
         <div className="service-component">
           <div className="service-image-component">
-            <img id="facimage" src={require("./facials.jpg")} alt="massage" />
+            <div className="facial-image"></div>
           </div>
 
           <div className="service-h1-div-component">
@@ -19,24 +23,27 @@ const facials = (props) => {
             <span className="Gold">By Lakshmi</span>
             <div className="block_1 hline-bottom"></div>
 
-            <div className="facials-h4">
-              <OpenWindowPitta />
-            </div>
-
-            <div className="facials-h4">
-              <OpenWindowVata />
-            </div>
-
-            <div className="facials-h4">
-              <Kapha />
-            </div>
-
-            <div className="facials-h4">
-              <OpenWindowAge />
-            </div>
+            <Accordion>
+              {FacialData.map((data) => (
+                <AccordionItem>
+                  <AccordionItemHeading>
+                    <AccordionItemButton style={{ border: "none" }}>
+                      <h4 className="service-title">{data.name}</h4>
+                    </AccordionItemButton>
+                  </AccordionItemHeading>
+                  <AccordionItemPanel>
+                    <div className="info">
+                      <p className="info-p">{data.info}</p>
+                      <span className="price">{data.price}</span>
+                    </div>
+                  </AccordionItemPanel>
+                </AccordionItem>
+              ))}
+            </Accordion>
+            <Button />
           </div>
         </div>
-        <Button />
+
         <div className="facials-img">
           <img id="lakshmi" src={require("./gold-l.jpg")} alt="lakshmi" />
 

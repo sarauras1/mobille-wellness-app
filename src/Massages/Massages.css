@@ -1,36 +1,29 @@
-.massage-h4 h4 {
-    cursor: pointer;
-    margin-bottom: 0;
-    margin-left: 60px;
-    margin-right: 60px;
-   border-bottom: 0.5px solid rgb(88,88,88) ;
-}
-    .info {
-    overflow: hidden;
-     text-align: "center";
-     max-width: "300px,";
-     margin: "auto";
-     padding: "10px";
-     box-shadow: "0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22)";
-}
 
-.massage-h4 h4:hover {
-  color:  rgb(163, 157, 157);
-}
-@media(min-width: 801px){
-    #massage-image {
-        max-height: 500px;
-    }   
-}
-@media(max-width: 800px){
-    #massage-image {
-        margin-top: 100px;
-        max-height: 400px;
-    }   
-}
-@media(max-width: 400px) {
-    #massage-image {
-        margin-top: -50px;
-        max-height: 400px;
+  @media(min-width: 900px) {
+      .massage-image{
+            background-image: 
+            url('./m.unsplash.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+       width:100%;
+       height: 860px;
+       z-index: -1;
+       flex: 1;
+       margin-bottom: -100px;
+       margin-top: -100px;
+      
+      }
+  }
+
+ @media(max-width: 899px) {
+     .massage-image {
+          background-image: url('./banner-1_opt.png');
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-position: center;
+         margin-top: 50px;
+        width: 100%;
+        height: 400px;
+     }
     }
-}
