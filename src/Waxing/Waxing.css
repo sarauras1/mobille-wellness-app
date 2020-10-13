@@ -33,7 +33,7 @@
      padding: 5px;
  }
  .waxing-para {
-     padding: 5px 20px;
+     padding: 2px 20px;
  }
  @media(min-width: 1200px){
      .waxing-price-image {
@@ -72,7 +72,7 @@
          transform: rotate(90deg);
      }
  }
- @media(min-width: 769px) {
+ @media(min-width: 801px) {
      .waxing-image-component{
          float: left;
          margin: 20px;
@@ -94,33 +94,9 @@
 
 
 
- @media(max-width: 768px) {
-     .waxing-component {
-         width: 100%;
-         display: flex;
-         align-items: center;
-         justify-content: center;
-         flex-direction: column;
+ 
 
-
-     }
-
-     .waxing-image-component {
-         margin: 0 auto;
-         width: 100%;
-         height: 300px;
-         padding: 60px 0px;
-     }
-
-     .waxing-div-component {
-         padding: 0 25px;
-         margin: 10px 20px;
-         text-align: center;
-         width: 100%;
-     }
- }
-
- @media(max-width: 700px) {
+ @media(max-width: 800px) {
      .waxing-component {
          width: 100%;
          display: flex;
@@ -131,63 +107,22 @@
      }
 
      .waxing-image-component img {
+         padding-top: 70px;
          margin: 0 auto;
          width: 100%;
-         height: 400px
+         max-height: 400px;
+         background: rgb(13, 90, 100);
      }
 
      .waxing-div-component {
          padding: 0 25px;
          margin: 10px 20px;
-         text-align: center;
+         text-align: left;
          width: 100%;
      }
+      .waxing-h1-component {
+          padding: 0 0 0px 27px;
+      }
  }
- @media(max-width: 600px) {
-     .waxing-component {
-         width: 100%;
-         display: flex;
-         align-items: center;
-         justify-content: center;
-         flex-direction: column;
-
-     }
-
-     .waxing-image-component img {
-         margin: 10px auto;
-         width: 100%;
-         height: 300px
-     }
-
-           .waxing-div-component {
-               padding: 0 25px;
-               margin: 10px 20px;
-               text-align: center;
-               width: 100%;
-           }
-     
- }
-  @media(max-width: 400px) {
-      .waxing-component {
-          width: 100%;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          flex-direction: column;
-
-      }
-
-      .waxing-image-component img {
-          margin: 10px auto;
-          width: 100%;
-          height: 200px
-      }
-
-      .waxing-div-component {
-          padding: 0 25px;
-          margin: 10px 20px;
-          text-align: center;
-          width: 100%;
-      }
-
-  }
+ 
+  

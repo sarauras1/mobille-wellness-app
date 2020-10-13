@@ -1,10 +1,5 @@
-.pamper-para{
- padding: 5px;
-}
-.pamper-component{
-     margin-top: 150px;
-}
 
+  
 @media(min-width: 769px) {
     .pamper-image-component img {
         float: left;
@@ -19,6 +14,13 @@
     .margin-button {
         margin-top: 50px;
     }
+    .pamper-para {
+        padding: 5px;
+    }
+
+  .pamper-component {
+      margin-top: 150px;
+  }
 }
  @media(max-width: 768px) {
      .pamper-component {
@@ -27,25 +29,28 @@
          align-items: center;
          justify-content: center;
          flex-direction: column;
-
+          margin: 0 auto;
 
      }
 
      .pamper-image-component img {
-         margin: -150px 10px auto;
-         width: 100%;
-        
+         margin: 0 auto;
+         max-width: 500px;
+        padding-top: 80px;
      }
-
+       .pamper-h1-component {
+           padding: 0 10px;
+           font-size: 25px
+       }
      .pamper-div-component {
          padding: 0 25px;
          margin: 10px 20px;
-         text-align: center;
-         width: 100%;
+         text-align: left;
+         max-width: 400px;
      }
  }
 
- @media(max-width: 400px) {
+ @media(max-width: 468px) {
      .pamper-component {
          width: 100%;
          display: flex;
@@ -56,15 +61,17 @@
      }
 
      .pamper-image-component img {
-         margin: -100px 10px auto;
-         max-width: 100%;
-        
-     }
-
-     .pamper-div-component {
-         padding: 25px;
-         margin: 10px 20px;
-         text-align: center;
+         margin: 0 auto;
          width: 100%;
+        padding-top: 40px;
+     }
+      .pamper-h1-component{
+          padding: 0 10px;
+          font-size: 20px
+      }
+     .pamper-div-component {
+         padding: 10px;
+         text-align: left;
+         max-width: 290px;
      }
  }
