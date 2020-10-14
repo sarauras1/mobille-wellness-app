@@ -20,13 +20,13 @@ const facials = (props) => {
 
           <div className="service-h1-div-component">
             <h1 className="service-h1-component">Ayurvedic Organic Facials</h1>
-            <span className="Gold">By Lakshmi</span>
+            <h3 className="Gold">By Lakshmi</h3>
            
             <Accordion>
               {FacialData.map((data) => (
                 <AccordionItem>
                   <AccordionItemHeading>
-                    <AccordionItemButton style={{ border: "none" }}>
+                    <AccordionItemButton>
                       <h4 className="service-title">{data.name}</h4>
                     </AccordionItemButton>
                   </AccordionItemHeading>
