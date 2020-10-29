@@ -13,10 +13,10 @@ const yoga = (props) => {
               alt="yoga"
             />
           </div>
-          <div className="yoga-div-component">
+          <div  className="yoga-div-component">
             <h1 className="yoga-h1-component">One-to-one Hatha Yoga</h1>
             <div className="block_1 hline-bottom"></div>
-
+                    
             <div className="yoga-paragraph">
               <p>
                 Yoga is a transformation pratice that encourage the union of
