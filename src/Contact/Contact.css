@@ -157,8 +157,8 @@ label {
 @media(max-width: 400px) {
     .myForm {
         font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
-        width: 289px;
-        padding: 2px;
+        max-width: 300px;
+        padding: 1px;
         border: 1px solid #fff;
         margin: auto;
         align-self: center;
@@ -167,7 +167,7 @@ label {
    .input,
    select,
    .input-textarea {
-       width: 80%;
+       width: 97%;
        border: 1px solid #ccc;
        font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
        padding: 0.5em;
