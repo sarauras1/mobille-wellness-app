@@ -78,124 +78,108 @@ class Contact extends React.Component {
               parking readily available.
             </p>
             <p>
-              <label>
-                Your Name:{" "}
-                <input
-                  id="name"
-                  placeholder="Your Name"
-                  type="text"
-                  name="name"
-                  className="input"
-                  value={name}
-                  onChange={this.handleChange}
-                  required
-                />
-              </label>
+              <label>Your Name:</label>
+              <input
+                id="name"
+                placeholder="Your Name"
+                type="text"
+                name="name"
+                className="input"
+                value={name}
+                onChange={this.handleChange}
+                required
+              />
             </p>
             <p>
-              <label>
-                Your Surname:{" "}
-                <input
-                  placeholder="Your Surname"
-                  id="surname"
-                  type="text"
-                  name="surname"
-                  className="input"
-                  value={surname}
-                  onChange={this.handleChange}
-                  required
-                />
-              </label>
+              <label>Your Surname:</label>
+              <input
+                placeholder="Your Surname"
+                id="surname"
+                type="text"
+                name="surname"
+                className="input"
+                value={surname}
+                onChange={this.handleChange}
+                required
+              />
             </p>
             <p>
-              <label>
-                Your Email:{" "}
-                <input
-                  placeholder="Your Email"
-                  type="email"
-                  required
-                  id="email"
-                  name="email"
-                  className="input"
-                  value={email}
-                  onChange={this.handleChange}
-                />
-              </label>
+              <label>Your Email: </label>
+              <input
+                placeholder="Your Email"
+                type="email"
+                required
+                id="email"
+                name="email"
+                className="input"
+                value={email}
+                onChange={this.handleChange}
+              />
             </p>
             <p>
-              <label>
-                Your Phone Number:{" "}
-                <input
-                  placeholder="Your Phone Number"
-                  type="tel"
-                  name="tel"
-                  id="tel"
-                  className="input"
-                  required
-                  value={tel}
-                  onChange={this.handleChange}
-                />
-              </label>
+              <label>Your Phone Number:</label>
+              <input
+                placeholder="Your Phone Number"
+                type="tel"
+                name="tel"
+                id="tel"
+                className="input"
+                required
+                value={tel}
+                onChange={this.handleChange}
+              />
             </p>
             <p>
-              <label>
-                Address:{" "}
-                <input
-                  placeholder="Your Address"
-                  type="address"
-                  name="address"
-                  id="address"
-                  required
-                  className="input"
-                  value={address}
-                  onChange={this.handleChange}
-                />
-              </label>
+              <label>Your Address: </label>
+              <input
+                placeholder="Your Home Address"
+                type="address"
+                name="address"
+                id="address"
+                required
+                className="input"
+                value={address}
+                onChange={this.handleChange}
+              />
             </p>
             <p>
-              <label>
-                Select Date:{" "}
-                <input
-                  required
-                  name="date"
-                  type="date"
-                  id="date"
-                  className="input"
-                  onChange={this.handleChange}
-                  value={date}
-                />
-              </label>
+              <label>Select Date: </label>
+              <input
+                required
+                name="date"
+                type="date"
+                id="date"
+                className="input"
+                onChange={this.handleChange}
+                value={date}
+              />
             </p>
             <p>
-              <label>
-                Select time:{" "}
-                <input
-                  type="time"
-                  name="appt"
-                  id="appt"
-                  className="input"
-                  min="07:00"
-                  max="21:00"
-                  required
-                  onChange={this.handleChange}
-                  value={time}
-                ></input>
-              </label>
+              <label>Select Time:</label>
+              <input
+                type="time"
+                name="appt"
+                id="appt"
+                className="input"
+                min="07:00"
+                max="21:00"
+                required
+                onChange={this.handleChange}
+                value={time}
+              ></input>
             </p>
             <p>
-              <label>
-                treatments:{" "}
-                <textarea
-                  placeholder="Specify the treatments you want book"
-                  className="input-textarea"
-                  required
-                  id="message"
-                  type="message"
-                  name="message"
-                  value={message}
-                  onChange={this.handleChange}
-                />
-              </label>
+              <label>Treatments: </label>
+              <textarea
+                placeholder="Specify the treatments you want book"
+                className="input-textarea"
+                required
+                id="message"
+                type="message"
+                name="message"
+                value={message}
+                onChange={this.handleChange}
+              />
             </p>
             <p>
               <button id="submit" className="form-button" type="submit">
