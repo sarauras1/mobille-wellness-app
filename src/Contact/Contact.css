@@ -167,7 +167,7 @@ fieldset {
        width: 97% !important;
        border: 1px solid #ccc;
        font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
-       padding: 0.9em;
+       padding: 1em 0.5em;
 
    }
   label {
