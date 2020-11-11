@@ -62,18 +62,7 @@ label {
       text-align: center;
   }
 
-  .input,
-  select,
-  .input-textarea {
-      float: right;
-      width: 50%;
-      border: 1px solid #ccc;
-      font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
-      font-size: 0.9em;
-      padding: 0.3em;
-
-  }
-
+  
   .input-textarea {
       height: 100px;
       width: 50%;
@@ -120,7 +109,18 @@ label {
         border: 3px solid #fff;
         margin: auto;
     }
-    
+    .input,
+    select,
+    .input-textarea {
+        float: right;
+        width: 50%;
+        border: 1px solid #ccc;
+        font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+        font-size: 0.9em;
+        padding: 0.3em;
+
+    }
+
 }
 
 
@@ -152,7 +152,7 @@ label {
 @media(max-width: 500px) {
     .myForm {
         font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
-        max-width: 300px;
+        max-width: 400px;
         padding: 1px;
         border: 1px solid #fff;
         margin: auto;
