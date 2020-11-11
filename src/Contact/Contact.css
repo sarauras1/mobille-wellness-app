@@ -2,6 +2,11 @@
     margin-top: 70px;
     padding: 40px 10px;
 }
+ .container {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+ }
 #contact-para {
     max-width: 600px;
 }
@@ -16,67 +21,87 @@ label {
     font-weight: bold;
 }
 
-label {
-    font-size: 1em;
-    font-weight: 500;
-}
-
-label {
-    text-align: left;
-    display: block;
-}
-
- #form-h3 {
-     margin: 10px auto;
-     text-align: center;
- }
-.input,
-select,
-.input-textarea {
-    float: right;
-    width: 50%;
-    border: 1px solid #ccc;
-    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
-    font-size: 0.9em;
-    padding: 0.3em;
-
-}
-
-.input-textarea {
-    height: 100px;
-    width: 50%;
-}
-
-.input,
-.input {
-    margin-left: 30px;
-}
-
-
-.form-button {
-    padding: 1em;
-    border-radius: 0.5em;
-    background: #eee;
-    border: none;
-    font-weight: bold;
-    margin-left: 40%;
-    margin-top: 1.8em;
-}
 
 .form-button:hover {
     background: #ccc;
     cursor: pointer;
 }
+ .input,
+ .input {
+     margin-left: 30px;
+ }
+  .input-radio,
+  .input-checkbox {
+      display: inline-block;
+      margin-right: 0.625rem;
+      min-height: 1.25rem;
+      min-width: 1.25rem;
+  }
+
+  .input-textarea {
+      min-height: 120px;
+      padding: 0.625rem;
+      resize: vertical;
+  }
+
+ 
+
+ .contact-para {
+     font-size: 15px;
+ }
+  label {
+      text-align: left;
+      display: block;
+       font-size: 15px;
+       font-weight: 700;
+  }
+
+  .form-h3 {
+      font-size: 20px;
+      margin: 10px auto;
+      text-align: center;
+  }
+
+  .input,
+  select,
+  .input-textarea {
+      float: right;
+      width: 50%;
+      border: 1px solid #ccc;
+      font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+      font-size: 0.9em;
+      padding: 0.3em;
+
+  }
+
+  .input-textarea {
+      height: 100px;
+      width: 50%;
+  }
+
+
+  .form-button {
+      padding: 1em;
+      border-radius: 0.5em;
+      background: #eee;
+      border: none;
+      font-weight: bold;
+      margin-left: 40%;
+      margin-top: 1.8em;
+  }
+
 
 @media(min-width: 768px) {
     .myForm {
         font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
         font-size: 0.8em;
-        min-width: 600px;
+        max-width: 650px;
         padding: 1em;
         border: 3px solid #fff;
         margin: auto;
     }
+   
+    
 }
 
 
@@ -85,12 +110,26 @@ select,
     .myForm {
         font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
         font-size: 0.8em;
-        width: 500px;
         padding: 1em;
         border: 1px solid #fff;
         margin: auto;
         align-self: center;
     }
+  
+
+     
+
+       .input,
+       select,
+       .input-textarea {
+           width: 50%;
+           border: 1px solid #ccc;
+           font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+           font-size: 0.9em;
+           padding: 0.4em;
+
+       }  
+
 }
 @media(max-width: 500px) {
     .myForm {
@@ -103,12 +142,21 @@ select,
         margin: auto;
         align-self: center;
     }
+    .input,
+    select,
+    .input-textarea {
+        float: right;
+        width: 49%;
+        border: 1px solid #ccc;
+        font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+        padding: 0.4em;
+
+    }
 }
 
 @media(max-width: 400px) {
     .myForm {
         font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
-        font-size: 0.5em;
         width: 289px;
         padding: 2px;
         border: 1px solid #fff;
@@ -116,14 +164,19 @@ select,
         align-self: center;
     }
    
+   .input,
+   select,
+   .input-textarea {
+       width: 80%;
+       border: 1px solid #ccc;
+       font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+       padding: 0.5em;
 
+   }
+  
 }
 
-.container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
+
 
 .container::before {
     content: '';
@@ -149,24 +202,3 @@ select,
 
 
 
-.input-radio,
-.input-checkbox {
-    display: inline-block;
-    margin-right: 0.625rem;
-    min-height: 1.25rem;
-    min-width: 1.25rem;
-}
-
-.input-textarea {
-    min-height: 120px;
-    padding: 0.625rem;
-    resize: vertical;
-}
-
-.submit-button {
-    display: block;
-    padding: 0.75rem;
-    color: inherit;
-    border-radius: 2px;
-    cursor: pointer;
-}
