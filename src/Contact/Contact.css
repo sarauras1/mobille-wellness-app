@@ -89,6 +89,26 @@ label {
       margin-left: 40%;
       margin-top: 1.8em;
   }
+.container::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background-image: linear-gradient(115deg,
+            rgba(204, 215, 216, 0.493),
+            rgba(243, 250, 250, 0.7)),
+        url('./bg_3.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.hidden {
+    display: none;
+}
 
 
 @media(min-width: 768px) {
@@ -100,7 +120,6 @@ label {
         border: 3px solid #fff;
         margin: auto;
     }
-   
     
 }
 
@@ -116,13 +135,10 @@ label {
         align-self: center;
     }
   
-
-     
-
        .input,
        select,
        .input-textarea {
-           width: 50%;
+           max-width: 60%;
            border: 1px solid #ccc;
            font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
            font-size: 0.9em;
@@ -131,30 +147,9 @@ label {
        }  
 
 }
+
+
 @media(max-width: 500px) {
-    .myForm {
-       
-        font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
-        font-size: 0.8em;
-        width: 400px;
-        padding: 1em;
-        border: 1px solid #fff;
-        margin: auto;
-        align-self: center;
-    }
-    .input,
-    select,
-    .input-textarea {
-        float: right;
-        width: 49%;
-        border: 1px solid #ccc;
-        font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
-        padding: 0.4em;
-
-    }
-}
-
-@media(max-width: 400px) {
     .myForm {
         font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
         max-width: 300px;
@@ -178,26 +173,6 @@ label {
 
 
 
-.container::before {
-    content: '';
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    z-index: -1;
-    background-image: linear-gradient(115deg,
-            rgba(204, 215, 216, 0.493),
-            rgba(243, 250, 250, 0.7)),
-        url('./bg_3.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-.hidden {
-    display: none;
-}
 
 
 

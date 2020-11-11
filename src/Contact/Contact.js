@@ -124,7 +124,7 @@ class Contact extends React.Component {
             </p>
             <p>
               <label>
-                Your phone number:{" "}
+                Your Phone Number:{" "}
                 <input
                   placeholder="Your Phone Number"
                   type="tel"
@@ -157,7 +157,6 @@ class Contact extends React.Component {
                 Select Date:{" "}
                 <input
                   required
-                  placeholder="Select Date"
                   name="date"
                   type="date"
                   id="date"
@@ -171,7 +170,6 @@ class Contact extends React.Component {
               <label>
                 Select time:{" "}
                 <input
-                  placeholder="Select Time"
                   type="time"
                   name="appt"
                   id="appt"
