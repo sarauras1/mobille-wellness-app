@@ -1,5 +1,5 @@
 import React from 'react';
-
+import WhatsGif from './whats.gif'
 import './Whatsapp.css';
 import Popover from 'react-simple-popover';
 
@@ -30,7 +30,7 @@ class Whats extends React.Component{
          onMouseOver={this.handleHover}
          className="whatsapp"
          alt="whatsapp"
-          src="https://img.icons8.com/color/48/000000/whatsapp--v6.png"
+        src={WhatsGif}
        
        />
        <Popover
