@@ -1,0 +1,68 @@
+
+
+  
+@media(min-width: 768px) {
+  .Popover{
+  padding: 10px;
+  border: 1px solid #CCC;
+  border-radius: 30px;
+  background: white;
+   z-index: 2;
+   position: fixed;
+   bottom: 30%;
+   right: 2%;
+   color: black;
+  font-size: 1rem;
+
+  }
+.Popover:before,
+.Popover:after {
+	content: ' ';
+	position: absolute;
+	width: 0;
+	height: 0;
+}
+
+
+.speech:after {
+	right: 19px;
+  bottom: -9px;
+	border: 5px solid;
+	border-color: #fff transparent transparent #fff;
+}
+
+.speech:before {
+	right: 19px;
+  bottom: -12px;
+	border: 6px solid;
+	border-color: #ccc transparent transparent #ccc;
+}
+.whatsapp{
+  border-radius: 30px;
+   cursor: pointer;
+   z-index: 3;
+   position: fixed;
+   bottom: 20%;
+   right: 2%;
+  width: 60px
+  }
+}
+
+@media(max-width: 767px){
+  .whatsapp{
+  border-radius: 30px;
+   cursor: pointer;
+   z-index: 3;
+   position: fixed;
+   bottom: 18%;
+   right: 5%;
+  width: 47px
+  }
+}
+
+.containerSlyle{
+  border: none !important;
+   background: transparent !important;
+   box-shadow: none !important;
+
+}

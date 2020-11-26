@@ -18,7 +18,7 @@ import Pamper from "./Pamper/Pamper";
 import Contact from "./Contact/Contact";
 import PrivacyPolicy from "./PrivacyPolicy/PrivacyPolicy";
 import Blog from "./Blog/Blog";
-
+import Whats from "./Whatsapp/Whatsapp";
 class App extends React.Component {
   state = {
     sideDrawerOpen: false,
@@ -118,6 +118,7 @@ class App extends React.Component {
         </section>
 
         <footer id="footer">
+            <Whats/>
           <Footer />
         </footer>
       </div>

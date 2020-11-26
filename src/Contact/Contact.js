@@ -171,7 +171,7 @@ class Contact extends React.Component {
             <p>
               <label>Treatments: </label>
               <textarea
-                placeholder="Specify the treatments you want book"
+                placeholder="Specify here the treatments you want book"
                 className="input-textarea"
                 required
                 id="message"
