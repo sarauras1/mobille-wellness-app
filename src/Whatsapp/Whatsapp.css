@@ -56,7 +56,8 @@
    position: fixed;
    bottom: 13%;
    right: 2%;
-  width: 50px
+   padding: 6px;
+  width: 55px
   }
 }
 
