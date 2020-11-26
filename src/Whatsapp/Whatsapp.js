@@ -1,5 +1,5 @@
 import React from 'react';
-import Whatsapp from "./whats.png";
+
 import './Whatsapp.css';
 import Popover from 'react-simple-popover';
 
@@ -18,7 +18,6 @@ class Whats extends React.Component{
    this.setState({show: !this.state.show});
   }
 
-
   render() {
   
  return (
@@ -31,7 +30,8 @@ class Whats extends React.Component{
          onMouseOver={this.handleHover}
          className="whatsapp"
          alt="whatsapp"
-         src={Whatsapp}
+          src="https://img.icons8.com/color/48/000000/whatsapp--v6.png"
+       
        />
        <Popover
          showArrow={true}
