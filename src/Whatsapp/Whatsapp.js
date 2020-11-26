@@ -34,9 +34,9 @@ class Whats extends React.Component{
          src={Whatsapp}
        />
        <Popover
-         target={this.refs.target}
-         show={this.state.show}>
-         <p className="popover speech">How may i help you?</p>
+         showArrow={true}
+          target={this.refs.target} show={this.state.show}>
+         <p className="Popover speech">How may i help you?</p>
        </Popover>
      </a>
    </div>
