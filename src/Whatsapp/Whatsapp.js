@@ -1,5 +1,5 @@
 import React from 'react';
-import Whatsapp from "./whatsapp-img.webp";
+import Whatsapp from "./whats.png";
 import './Whatsapp.css';
 import Popover from 'react-simple-popover';
 

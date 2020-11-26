@@ -38,10 +38,7 @@
 	border-color: #ccc transparent transparent #ccc;
 }
 .whatsapp{
-   -ms-backgroundimage: url('./whatsapp-img.webp');
-  -o-backgroundimage: url('./whatsapp-img.webp');
-  -moz-backgroundimage:  url('./whatsapp-img.webp');
-  -webkit-backgroundimage:  url('./whatsapp-img.webp');
+
   border-radius: 30px;
    cursor: pointer;
    z-index: 3;
@@ -54,10 +51,6 @@
 
 @media(max-width: 767px){
   .whatsapp{
-  -ms-backgroundimage: url('./whatsapp-img.webp');
-  -o-backgroundimage: url('./whatsapp-img.webp');
-  -moz-backgroundimage:  url('./whatsapp-img.webp');
-  -webkit-backgroundimage:  url('./whatsapp-img.webp');
   border-radius: 30px;
    cursor: pointer;
    z-index: 3;
