@@ -17,6 +17,7 @@ class Contact extends React.Component {
       email: "",
       tel: "",
       address: "",
+      select:"",
       message: "",
       date: "",
     };
@@ -25,16 +26,19 @@ class Contact extends React.Component {
   /* Here’s the juicy bit for posting the form submission */
 
   handleSubmit = (e) => {
-    fetch("/", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/x-www-form-urlencoded",
-      },
-      body: encode({
-        "form-name": "contact",
-        ...this.state,
-      }),
-    })
+    fetch(
+      "/",
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/x-www-form-urlencoded",
+        },
+        body: encode({
+          "form-name": "contact",
+          ...this.state,
+        }),
+      }
+    )
       .then(() =>
         alert(
           "Success! Thank you for your booking! We will contact you as soon has possible time for confirmation"
@@ -57,6 +61,7 @@ class Contact extends React.Component {
       email,
       tel,
       address,
+      select,
       date,
       time,
       message,
@@ -141,6 +146,24 @@ class Contact extends React.Component {
                 value={address}
                 onChange={this.handleChange}
               />
+            </p>
+            <p>
+              <label>Treatmets: </label>
+              <select
+                placeholder="Select Treatment"
+                type="select"
+                name="select"
+                id="select"
+                required
+                value={select}
+                onChange={this.handleChange}
+              >
+                <option value="Massage">Massage</option>
+                <option value="Facial">Facial</option>
+                <option value="Nails">Nails</option>
+                <option value="Yoga">Yoga</option>
+                <option value="Waxing">Waxing</option>
+              </select>
             </p>
             <p>
               <label>Select Date: </label>
