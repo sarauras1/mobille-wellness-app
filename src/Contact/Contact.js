@@ -148,9 +148,10 @@ class Contact extends React.Component {
               />
             </p>
             <p>
-              <label>Treatmets: </label>
+           
+              <label>Car Parking:</label>
               <select
-                placeholder="Select Treatment"
+                placeholder="Do you have parking available?"
                 type="select"
                 name="select"
                 id="select"
@@ -158,15 +159,29 @@ class Contact extends React.Component {
                 value={select}
                 onChange={this.handleChange}
               >
-                <option value="Massage">Massage</option>
-                <option value="Facial">Facial</option>
-                <option value="Nails">Nails</option>
-                <option value="Yoga">Yoga</option>
-                <option value="Waxing">Waxing</option>
+                <option value="0">Do you have car parcking available?</option>
+                <option value="1">I do not have car parcking available</option>
+                <option value="2">I have car parking available</option>
               </select>
             </p>
             <p>
-              <label>Select Date: </label>
+              <label>Gender:</label>
+              <select
+                placeholder="Do you have parking available?"
+                type="select"
+                name="select"
+                id="select"
+                required
+                value={select}
+                onChange={this.handleChange}
+              >
+                <option value="Yes">Female</option>
+                <option value="No">Male</option>
+                <option value="No">I prefer no to say</option>
+              </select>
+            </p>
+            <p>
+              <label>Select Date:</label>
               <input
                 required
                 name="date"
@@ -194,7 +209,7 @@ class Contact extends React.Component {
             <p>
               <label>Treatments: </label>
               <textarea
-                placeholder="Specify here the treatments you want book"
+                placeholder="Specify here the names of treatmets you would like to book"
                 className="input-textarea"
                 required
                 id="message"

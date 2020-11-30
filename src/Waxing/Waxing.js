@@ -26,8 +26,7 @@ const waxing = (props) => {
               and soft after moisturizing with organic oils from the Lakhsmi
               skincare brand.
             </p>
-            <p>Available for Male and Female</p>
-
+         
             <p>
               I recommend avoiding sauna, hot baths, sun exposure before or
               after waxing treatment. Carefully exfoliate 1 day before and 1

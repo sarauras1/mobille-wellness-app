@@ -2,7 +2,6 @@ import React from "react";
 import { Switch, Route } from "react-router-dom";
 import Navbar from "./Navbar/Navbar";
 import SideDrawer from "./SideDrawer/SideDrawer";
-import Backdrop from "./Backdrop/Backdrop";
 import Gallery from "./Gallery/Gallery";
 import Banner from "./Banner/Banner";
 import Services from "./Services/Services";
@@ -19,6 +18,10 @@ import Contact from "./Contact/Contact";
 import PrivacyPolicy from "./PrivacyPolicy/PrivacyPolicy";
 import Blog from "./Blog/Blog";
 import Whats from "./Whatsapp/Whatsapp";
+import Backdrop from "./Backdrop/Backdrop";
+
+
+
 class App extends React.Component {
   state = {
     sideDrawerOpen: false,
@@ -29,12 +32,14 @@ class App extends React.Component {
       return { sideDrawerOpen: !prevState.sideDrawerOpen };
     });
   };
-
+  onClickHandle () {
+        console.log('onClickHandle');
+        this.setState({ open: false });
+      }
   backdropClickHandler = () => {
     this.setState({ sideDrawerOpen: false });
   };
 
-  
   render() {
     let backdrop;
 
@@ -47,8 +52,11 @@ class App extends React.Component {
         {backdrop}
         <Navbar drawerClickHandler={this.drawerToggleClickHandler} />
 
-        <SideDrawer show={this.state.sideDrawerOpen}></SideDrawer>
-
+        <SideDrawer
+          click={this.backdropClickHandler}
+          show={this.state.sideDrawerOpen}
+        />
+    
         <Switch>
           <Route exact path="/">
             <section style={{ marginTop: "100px" }}>
@@ -57,7 +65,6 @@ class App extends React.Component {
 
             <section style={{ marginTop: "-150px" }}>
               <motion.div
-             
                 initial={{ opacity: 0, y: 100 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 1 }}
@@ -118,7 +125,7 @@ class App extends React.Component {
         </section>
 
         <footer id="footer">
-            <Whats/>
+          <Whats />
           <Footer />
         </footer>
       </div>

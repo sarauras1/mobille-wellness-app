@@ -1,33 +1,39 @@
-import React  from 'react';
+import React from "react";
 import {NavLink} from "react-router-dom";
 import { NavHashLink } from "react-router-hash-link";
 import './SideDrawer.css';
 import DropdownMenu from '../DropdownMenu/DropdownMenu';
 
- 
-const sideDrawer = props => {
- 
-  let drawerClasses = 'sidedrawer'
-  if (props.show) {
-    drawerClasses = 'sidedrawer open';
-  }
+    
+   
+const sideDrawer = (props) =>  {
 
- 
+   
+      
+
+    let drawerClasses = 'sidedrawer'
+    if (props.show) {
+      drawerClasses = 'sidedrawer open'
+  }; 
   
     return (
       <nav className={drawerClasses}>
-        <div onClick={props.click}>
+        <div>
           <ul className="side-list">
             <div>
               <li>
-                <NavLink className="links" to="/">
+                <NavLink onClick={props.click} className="links" to="/">
                   Home
                 </NavLink>
               </li>
             </div>
             <div>
               <li>
-                <NavHashLink className="links" to="/#about">
+                <NavHashLink
+                  onClick={props.click}
+                  className="links"
+                  to="/#about"
+                >
                   About
                 </NavHashLink>
               </li>
@@ -39,21 +45,25 @@ const sideDrawer = props => {
 
             <div>
               <li>
-                <NavLink className="links" to="/blog">
+                <NavLink onClick={props.click} className="links" to="/blog">
                   Blog
                 </NavLink>
               </li>
             </div>
             <div>
               <li>
-                <NavHashLink className="links" to="/#footer">
+                <NavHashLink
+                  onClick={props.click}
+                  className="links"
+                  to="/Contact"
+                >
                   Contact
                 </NavHashLink>
               </li>
             </div>
             <div>
               <li>
-                <NavLink className="links" to="/gallery">
+                <NavLink onClick={props.click} className="links" to="/gallery">
                   Gallery
                 </NavLink>
               </li>
@@ -63,7 +73,6 @@ const sideDrawer = props => {
       </nav>
     );
   }
-
 
 
 export default sideDrawer;
