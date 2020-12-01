@@ -37,7 +37,6 @@ class DropdownMenu extends Component {
  
     return (
       <div>
-       
         <div onClick={this.showMenu} className="dropdownServices">
           <li>
             <NavHashLink to="/#services">Services</NavHashLink>
@@ -58,7 +57,7 @@ class DropdownMenu extends Component {
                 <NavHashLink
                   to="yoga"
                   className="current"
-                  onClick={this.backdropClickHandler}
+                  click={this.backdropClickHandler}
                 >
                   Yoga
                 </NavHashLink>

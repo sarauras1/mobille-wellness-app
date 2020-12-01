@@ -32,7 +32,7 @@
   {
     id: 6,
     name: "All Beauty By Sara Massage",
-    info: " Combination of all Sara knowledge accumulated in the past 14 years of my career taking the best from all the massage tecnique in unique sensational bespoke massage designed for all clients needs.",
+    info: " Combination of all Sara knowledge accumulated in the past 15 years of my career taking the best from all the massage tecnique in unique sensational bespoke massage designed for all clients needs.",
     price: "From £ 55 per 60 min"
   },
   {
