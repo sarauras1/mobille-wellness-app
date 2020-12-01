@@ -150,7 +150,7 @@ fieldset {
 }
 
 
-@media(max-width: 468px) {
+@media(max-width: 600px) {
     .myForm {
         font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
         width: 100%;
