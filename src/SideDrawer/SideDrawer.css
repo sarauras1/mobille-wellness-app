@@ -49,4 +49,15 @@
       
         
     }
+    .Collapsible {
+    cursor: pointer;   
+    color: black;  
+}
+  .drop-img {
+    cursor: pointer;
+    height: 10px ;
+    width: 10px;
+    margin-bottom: -25px;
+    margin-left: 10px;
+}
   

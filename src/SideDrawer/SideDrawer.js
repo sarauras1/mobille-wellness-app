@@ -2,8 +2,7 @@ import React from "react";
 import {NavLink} from "react-router-dom";
 import { NavHashLink } from "react-router-hash-link";
 import './SideDrawer.css';
-import DropdownMenu from '../DropdownMenu/DropdownMenu';
-
+import Collapsible from "react-collapsible";
     
    
 const sideDrawer = (props) =>  {
@@ -40,7 +39,65 @@ const sideDrawer = (props) =>  {
             </div>
 
             <div className="Services links">
-              <DropdownMenu />
+              <img className="drop-img" src={require("./drop.png")} alt="drop" />
+              <Collapsible trigger="Services">
+                <ul className="dropdown">
+                  <li>
+                    <NavHashLink
+                      onClick={props.click}
+                      to="yoga"
+                      className="current"
+                    >
+                      Yoga
+                    </NavHashLink>
+                  </li>
+                  <li>
+                    <NavHashLink
+                      to="massages"
+                      className="current"
+                      onClick={props.click}
+                    >
+                      Massage
+                    </NavHashLink>
+                  </li>
+                  <li>
+                    <NavHashLink
+                      onClick={props.click}
+                      to="handsFeet"
+                      className="current"
+                    >
+                      Hands &amp; Feet
+                    </NavHashLink>
+                  </li>
+                  <li>
+                    <NavHashLink
+                      to="facials"
+                      className="current"
+                      onClick={props.click}
+                    >
+                      Facials
+                    </NavHashLink>
+                  </li>
+                  <li>
+                    <NavHashLink
+                      to="waxing"
+                      className="current"
+                      onClick={props.click}
+                    >
+                      Hair Removal
+                    </NavHashLink>
+                  </li>
+                  <li>
+                    <NavHashLink
+                      to="pamper"
+                      className="current"
+                      onClick={props.click}
+                    >
+                      Corporate &amp; Pamper Parties
+                    </NavHashLink>
+                  </li>
+                </ul>
+              </Collapsible>
             </div>
 
             <div>

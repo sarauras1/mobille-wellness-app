@@ -23,10 +23,11 @@ import Backdrop from "./Backdrop/Backdrop";
 
 
 class App extends React.Component {
-  state = {
-    sideDrawerOpen: false,
-  };
-
+  
+    state = {
+      sideDrawerOpen: false,
+    };
+  
   drawerToggleClickHandler = () => {
     this.setState((prevState) => {
       return { sideDrawerOpen: !prevState.sideDrawerOpen };
@@ -56,7 +57,7 @@ class App extends React.Component {
           click={this.backdropClickHandler}
           show={this.state.sideDrawerOpen}
         />
-    
+     
         <Switch>
           <Route exact path="/">
             <section style={{ marginTop: "100px" }}>

@@ -10,13 +10,3 @@
     box-sizing: border-box;
 }
 
-.toggle:focus {
-  outline: none;
-}
-
-.toggle-line{
-    font-weight: 700;
-    width: 30px;
-    height: 1px;
-    background-color: black;
-}

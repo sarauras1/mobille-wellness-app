@@ -7,9 +7,7 @@ import './DrawerToggleButton.css';
  
     return (
       <button className="toggle" onClick={props.click}>
-        <div className="toggle-line"></div>
-        <div className="toggle-line"></div>
-        <div className="toggle-line"></div>
+        <img className="toggle" src={require("./icons8-menu.gif")} alt="drop" />
       </button>
     );
   }
