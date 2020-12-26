@@ -4,12 +4,13 @@ import React from 'react';
 const privacyPolicy = () => {
 
     return(
-        <div id="privacy" style={{margin:'auto',
-        padding: '100px 40px',
-        textAlign: 'justify',
+      <div id="privacy" style={{
+        margin: 'auto',
+        padding: '100px 50px',
+        textAlign: 'left',
         color: 'black',
         background: 'white'}}>
-          <h3> PRIVACY POLICY</h3>
+          <h3 className="text-center"> PRIVACY POLICY</h3>
 <p>This privacy policy applies between you, the User of this Website and All Beauty By Sara, the owner and provider of this Website. All Beauty By Sara takes the privacy of your information very seriously. This privacy policy applies to our use of any and all Data collected by us or provided by you in relation to your use of the Website.
 This privacy policy should be read alongside, and in addition to, our Terms and Conditions, which can be found at: .
 Please read this privacy policy carefully.<br></br>

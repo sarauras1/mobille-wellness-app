@@ -38,7 +38,9 @@ code {
 }
 
 
-
+.text-center{
+  text-align: center;
+}
 .service-h1-div-component {
   margin: 0 20px;
 }
