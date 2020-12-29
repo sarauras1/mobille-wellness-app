@@ -19,7 +19,6 @@
    width: 70%;
    margin: auto;
  
-    
  }
  .Banner-Slicer {
      background-color: lightseagreen;
@@ -31,9 +30,7 @@
     .Banner-Slicer img{
         display: flex;
          width: 100%;
-        margin-top: -100px;
-         
-       
+       margin-top: -15px;
      }
     
     }
@@ -41,22 +38,18 @@
           .Banner-Slicer img {
               display: flex;
               width: 100%;
-               margin-top: -100px;
-              
-               
+                        
           }
           
       }
      @media(max-width: 600px) {
          .Banner-Slicer img {
              display: flex;
-             width: 100%;
-             margin-top: -20px;
-            
+             width: 100%;      
          }
         
      }
-  @media(max-width: 500px) {
+  @media(max-width: 500zpx) {
       .Banner-Slicer img {
        margin-bottom: 100px;
         width: 100%;

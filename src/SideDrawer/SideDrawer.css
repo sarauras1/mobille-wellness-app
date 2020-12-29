@@ -50,6 +50,7 @@
         
     }
     .Collapsible {
+    margin-right: 10px;
     cursor: pointer;   
     color: black;  
 }
