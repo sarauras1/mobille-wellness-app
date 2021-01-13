@@ -32,6 +32,9 @@ li {
   padding: 20px;
   font-weight: 100;
 }
+.socials li {
+  display: inline-block;
+}
 @media(min-width: 769px) {
 #container{
     display:flex;
@@ -61,6 +64,10 @@ li {
     order: 2;
    
   }
+   .socials {
+    width: 35px;
+    margin: 3px;
+  }
 }
   @media(max-width: 768px) {
     #container{
@@ -88,4 +95,16 @@ li {
        align-self: center;
        padding:0 20px;
       }
+      .socials {
+    width: 35px;
+    margin: 5px auto;
   }
+  
+  }
+
+@media(max-width: 600px) {
+  .socials {
+    width: 35px;
+    margin: 5px auto;
+  }
+}

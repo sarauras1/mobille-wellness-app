@@ -18,20 +18,18 @@ const pamper = (props) => {
         </div>
 
         <div className="pamper-div-component">
-          <h1 className="pamper-h1-component">
+          <h1 className="service-h1-component">
             Pamper Parties &amp; Corporate
           </h1>
           <div className="block_1 hline-bottom"></div>
           <div className="pamper-para">
-            <p>
+            <p className="info-p">
               Pamper and relax with All Beauty By Sara mobile spa pamper parties
               all over London. Treat your self and friends or collegues at home
               or office. Tailored and Personalized packeges at your convenience
-              are available, with a large range of services options at an affordable price. 
-              
-              Please contact me for more information, I will be happy to discuss with
-              you the best options available.
-              
+              are available, with a large range of services options at an
+              affordable price. Please contact me for more information, I will
+              be happy to discuss with you the best options available.
             </p>
           </div>
         </div>

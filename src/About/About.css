@@ -17,16 +17,17 @@
   font-size: 1rem;
 }
 
-.about {
-  max-width: 600px;
-  margin: 100px auto;
-  border: 3px dotted lightseagreen;
-}
+
 
 @media(min-width: 900px ) {
     .about {  
       padding: 200px;
     }
+    .about {
+  max-width: 600px;
+  margin: 100px auto;
+  border: 3px dotted lightseagreen;
+}
 }
 
 @media(min-width: 800px ) {

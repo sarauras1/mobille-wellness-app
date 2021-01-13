@@ -8,15 +8,15 @@ import { withRouter } from "react-router-dom";
 // I used the class-based component example rather than the functional component, as I didn't see you using hooks anywhere else in the app.
 
 class ScrollToTop extends React.Component {
-    componentDidUpdate(prevProps) {
-      if (this.props.location !== prevProps.location) {
-        window.scrollTo(0, 0);
-      }
-    }
-  
-    render() {
-      return this.props.children;
+  UNSAFE_componentDidUpdate(prevProps) {
+    if (this.props.location !== prevProps.location) {
+      window.scrollTo(0, 0);
     }
   }
+
+  render() {
+    return this.props.children;
+  }
+}
   
   export default withRouter(ScrollToTop); // withRouter is a function built into React Router. 

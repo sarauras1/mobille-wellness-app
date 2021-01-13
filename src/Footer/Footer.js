@@ -28,33 +28,44 @@ const footer = props => {
           </NavHashLink>
         </div>
         <div className="center">
+          <h3>Socials</h3>
+          <li>London UK </li>
+
+          <li>
+            <a href="mailto:allbeautybysara@gmail.com">
+              <img
+                className="socials"
+                src={require("./gmail.png")}
+                alt="email"
+              />
+            </a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/allbeautybysara/">
+              <img
+                className="socials"
+                src={require("./instagram.png")}
+                alt="instagram"
+              />
+            </a>
+          </li>
+          <li>
+            <a href="https://www.facebook.com/sara.allbeauty.3">
+              <img
+                className="socials"
+                src={require("./facebook.png")}
+                alt="facebook"
+              />{" "}
+            </a>
+          </li>
+        </div>
+        <div className="right">
           <h3>Let's get in touch!</h3>
           <p>
             Thank you for choosing All Beauty By Sara in London, England! Please
             send me an email or WhatsApp me for enquiries about my services. I
             will respond to you at the soonest possible time.
           </p>
-        </div>
-        <div className="right">
-          <h3>Contact</h3>
-          <li>London UK </li>
-
-          <li>
-            <a href="mailto:allbeautybysara@gmail.com">
-             
-              <img src={require("./gmail.png")} alt="email" />
-            </a>
-          </li>
-          <li>
-            <a href="https://www.instagram.com/allbeautybysara/">
-              <img src={require("./instagram.png")} alt="instagram" />
-            </a>
-          </li>
-          <li>
-            <a href="https://www.facebook.com/sara.allbeauty.3">
-              <img src={require("./facebook.png")} alt="facebook" />{" "}
-            </a>
-          </li>
         </div>
       </div>
       <div className="hline-bottom-footer"></div>

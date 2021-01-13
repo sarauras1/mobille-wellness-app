@@ -13,12 +13,12 @@ const yoga = (props) => {
               alt="yoga"
             />
           </div>
-          <div  className="yoga-div-component">
-            <h1 className="yoga-h1-component">One-to-one Hatha Yoga</h1>
+          <div className="yoga-div-component">
+            <h1 className="service-h1-component">One-to-one Hatha Yoga</h1>
             <div className="block_1 hline-bottom"></div>
-                    
+
             <div className="yoga-paragraph">
-              <p>
+              <p className="info-p">
                 Yoga is a transformation pratice that encourage the union of
                 mind, body, and spirit. It helps us to tune in our body's needs,
                 rewarding us with a whole host of health benefits both mental
@@ -26,7 +26,7 @@ const yoga = (props) => {
                 balance, it also can with poor digestion, insomnia, anxiety,
                 stress of life.
               </p>
-              <p>
+              <p className="info-p">
                 Designed to bring awareness in to the mind and body by focusing
                 on breath and alignment. I will be covering slow motion sequence
                 movement to improve flexibily and strenght. One translation of
@@ -37,7 +37,7 @@ const yoga = (props) => {
                 your pratice. Suitable for everyone.
               </p>
 
-              <p>
+              <p className="info-p">
                 One-to-one classes are available from the price of £ 30,
                 depending on time and location! And small groups classes from £
                 15 per person.

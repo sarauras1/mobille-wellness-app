@@ -6,22 +6,27 @@ const mainText = props => {
  
       
  return (
-  <div  className="text-centre">
- 
-      <h1>Enjoy Hassle-Free Beauty Services</h1>
-     <p className="text-justify">Treat yourself to a rewarding makeover without needing to leave your home or your place
-      of work! All Beauty By Sara has you covered! I am Sara Uras, a business owner and a highly 
-    experience professional. I provide a full range of luxurious beauty services such 
-     as WAXING, NAILS, MASSAGE, FACIALS, YOGA and more...to clients around London, England.</p>
-    <p/>
-   <h3> Why Choose My Services?</h3>
-     <p className="text-justify" > Fully qualified beauty therapist whit more than 
-     15 years of experience in the beauty industry. Also, my spotless equipment and 
-     mono use set my business apart from most beauty service providers. I offer bespoke treatments 
-     and use only carefully chosen products to ensure the best results.
-    </p>
- </div>
-    );
+   <div className="main-text">
+     <h1 className="service-h1-component">Enjoy Hassle-Free Beauty Services</h1>
+     <p className="info-p2">
+       Treat yourself to a rewarding makeover without needing to leave your home
+       or your place of work! All Beauty By Sara has you covered! I am Sara
+       Uras, a business owner and a highly experience professional. I provide a
+       full range of luxurious beauty services such as WAXING, NAILS, MASSAGE,
+       FACIALS, YOGA and more...to clients around London, England.
+     </p>
+     <p />
+     <h3> Why Choose My Services?</h3>
+     <p className="info-p2">
+       {" "}
+       Fully qualified beauty therapist whit more than 15 years of experience in
+       the beauty industry. Also, my spotless equipment and mono use set my
+       business apart from most beauty service providers. I offer bespoke
+       treatments and use only carefully chosen products to ensure the best
+       results.
+     </p>
+   </div>
+ );
   };
 
 

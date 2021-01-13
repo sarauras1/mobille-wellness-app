@@ -1,139 +1,36 @@
-  .top-right {
-    position: absolute;
-    display: flex;
-    padding-right: 10px;
-    margin-right: 20px;
-    width: 50%;
-   text-align: right;
-   justify-content: center;
-   align-content: center;
-  align-self: flex-end;
-}
-.text-centre {
+
+.main-text {
   text-align: center;
-  padding: 50px;
+  padding: 8px 20px;
+   max-width: 500px;
 }
-.text-justify {
-  text-align: left;
-  max-width: 500px;
+.info-p2 {
+  text-align: left; 
 }
-@media(max-width: 1200px) {
 
-  #top-right-h1 {
-    color: inherit;
-    max-width: 300px;
-    font-weight: 900;
-    font-size: 80px;
-    font-style: oblique;
-  }
-
-  .top-right {
-    top: 30%;
-    right: 2%;
-  }
-}
-@media(min-width: 900px) {
-
-  #top-right-h1 {
-    color: inherit;
-    max-width: 300px;
-    font-weight: 900;
-    font-size: 60px;
-    font-style: oblique;
-  }
-
-  .top-right {
-    top: 20%;
-    right: 2%;
-  }
-}
-@media(max-width: 899px){
  
-  #top-right-h1 {
-    color: inherit;
-    font-weight: 900;
-    font-size:  50px;
-    font-style: oblique;
-  }
-  .top-right {
-   top: 35%;
-   right:2%;
-  
-  } 
- }
- @media(max-width: 700px){
- 
-  #top-right-h1 {
-    text-align: right;
-    font-size: 40px;
-    font-weight: 900;
-    font-style: oblique;
-   }
-   .top-right {
-     top: 30%;
-     right: 3%;
-   }
- }
- @media(max-width: 600px) {
 
-   #top-right-h1 {
-     text-align: right;
-     font-size: 41px;
-     font-weight: 900;
-     font-style: oblique;
-   }
-
-   .top-right {
-     top: 25%;
-     right: 3%;
-   }
- }
  @media(max-width: 500px){
- 
-  #top-right-h1 {
-    font-size: 40px;
-    font-weight: 900;
-    font-style: oblique;
-   }
-  .top-right {
-    top: 30%;
-    right: 3%;
-  }
+  .info-p2 {
+ font-size: 18px;
+}
  }
  @media(max-width: 468px){
  
-  #top-right-h1 {
-    font-size: 30px;
-    font-weight: 900;
-    font-style: oblique;
-   }
-  .top-right {
-    top: 35%;
-    right: 2%;
-  }
+  .info-p2 {
+ font-size: 18px;
+}
  }
  @media(max-width: 375px){
  
-  #top-right-h1 {
-    font-size: 25px;
-    font-weight: 900;
-    font-style: oblique;
-   }
-   .top-right {
-     top: 30%;
-     right: 2%;
-   }
+   .info-p2 {
+ font-size: 18px;
+}
  }
  @media(max-width: 320px){
  
-  #top-right-h1 {
-    font-size: 20px;
-    font-weight: 900;
-    font-style: oblique;
-   }
-   .top-right {
-     top: 20%;
-     right: 2%;
-   }
+   .info-p2 {
+ font-size: 18px;
+}
  }
   
