@@ -1,74 +1,37 @@
 
 
- 
-
+  
   @media(min-width: 769px) {
-    .yoga-image-component img {
-      float: left;
-      max-width: 500px;
-      margin: 20px;
-    }
-    #yoga {
-      max-width: 1000px;
+    .yoga-image-component{
+      max-width: 600px;
       margin: auto;
     }
+   .Yoga-image{
+    max-width:600px;  
+    margin: auto;
+  }
     .yoga-component {
-      margin-top: 200px;
+       margin-top: 200px;
+       max-width: 600px;
+       margin: 0 auto;
     }
-
-    .price-yoga {
-      display: flex;
-      align-self: center;
-      justify-content: center;
-      font-size: 17px;
-      margin: auto;
+     .zoom{
+       max-width: 500px;
+       text-align: center;
+     }
+    .price {
+      text-align: center;
+      font-size: 15px;
       font-weight: 700;
+       display: flex;
+     align-items: center;
+     justify-content: center;
     }
-
-    .yoga-paragraph {
-      padding: 0 20px;
-    }
-
-    .yoga-h1-component {
-      text-align: left;
-      padding: 0 20px;
-    }
+  
   }
   
 
   
-
-  
- @media(max-width: 468px) {
-    .yoga-component {
-      width: 100%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-direction: column;
-      margin: 0px auto;
-      padding-top: 50px;
-     
-    }
-    .yoga-image-component img{
-      padding-top: 50px;
-      width: 100%;
-      height: 200px;
-  }
-  .yoga-div-component .yoga-paragraph {
-    padding:1px 50px;
-    margin: 0 auto;
-     text-align: left;
-     width: 300px;
-   }
-   
-   .zoom  {
-     font-size: 14px;
-     font-weight: 600;
-     text-align: center;
-   }
-  }
-
 
  @media(max-width: 768px) {
    .yoga-component {
@@ -77,30 +40,130 @@
      align-items: center;
      justify-content: center;
      flex-direction: column;
-     margin: 0px auto;
-     padding-top: 20px;
-   }
-
-   .yoga-image-component img {
-     max-width: 400px;
-     max-height: 300px;
-   }
-
-   .yoga-div-component .yoga-paragraph {
-     padding: 1px 50px;
      margin: 0 auto;
-     text-align: left;
-     max-width: 400px;
+     padding-top: 100px;
    }
 
-   
+   .yoga-image-component {
+     max-width: 600px;
+     margin: 0 auto;
+   }
+   .yoga-paragraph {
+      max-width: 600px;
+     margin: 0 auto; 
+   }
+  .Yoga-image{
+    width: 500px;
+     margin: 0 auto; 
+  }
+   .yoga-div-component  {
+     padding: 1px 20px;
+     margin: 0 auto;
+     max-width: 600px;
+   }
+
    .zoom {
      font-size: 14px;
      font-weight: 600;
      text-align: center;
    }
-
+  .price {
+      text-align: center;
+      font-size: 15px;
+      font-weight: 700;
+       display: flex;
+     align-items: center;
+     justify-content: center;
+    }
+  
    
  }
 
+ @media(max-width: 468px) {
+   .yoga-component {
+     width: 100%;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     flex-direction: column;
+     margin: 0 auto;
+     padding-top: 100px;
+   }
+
+   .yoga-image-component {
+     max-width: 400px;
+     margin: 0 auto;
+   }
+   .yoga-paragraph {
+      max-width: 400px;
+      margin: 0 auto;
+   }
+  .Yoga-image{
+    max-width:400px;  
+    margin: 0 auto;
+  }
+   .yoga-div-component  {
+     padding: 1px 20px;
+     margin: 0 auto;
+     max-width: 400px;
+   }
+
+   .zoom {
+     font-size: 14px;
+     font-weight: 400;
+     text-align: center;
+   }
+  .price {
+      text-align: center;
+      font-size: 15px;
+      font-weight: 700;
+       display: flex;
+     align-items: center;
+     justify-content: center;
+    }
   
+ }
+ @media(max-width: 375px) {
+   .yoga-component {
+     width: 100%;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     flex-direction: column;
+     margin: 0 auto;
+     padding-top: 100px;
+   }
+
+   .yoga-image-component {
+     max-width: 300px;
+     margin: 0 auto;
+   }
+   .yoga-paragraph {
+      max-width: 300px;
+      margin: 0 auto;
+   }
+  .Yoga-image{
+    max-width:300px;  
+  }
+   .yoga-div-component  {
+     padding: 1px 20px;
+     margin: 0 auto;
+     max-width: 300px;
+
+   }
+
+   .zoom {
+     font-size: 14px;
+     font-weight: 400;
+     text-align: center;
+   }
+  .price {
+      text-align: center;
+      font-size: 15px;
+      font-weight: 700;
+       display: flex;
+     align-items: center;
+     justify-content: center;
+    }
+  
+ }

@@ -10,11 +10,14 @@ const yoga = (props) => {
             <img
               className="Yoga-image"
               src={require("./balance-city.jpg")}
-              alt="yoga"
+              alt="Yoga"
             />
+            
           </div>
           <div className="yoga-div-component">
-            <h1 className="service-h1-component">One-to-one Hatha Yoga</h1>
+            <h1 className="service-h1-component">
+              One-to-one Hatha Yoga
+            </h1>
             <div className="block_1 hline-bottom"></div>
 
             <div className="yoga-paragraph">
@@ -47,9 +50,9 @@ const yoga = (props) => {
                 One-to-one zoom classes are now available with 50% discount.Try
                 out 30 min free class
               </h3>
+              <span className="price">From £ 30 per 1 hour class</span>
             </div>
           </div>
-          <span className="price">From £ 30 per 1 hour class</span>
         </div>
 
         <Button></Button>

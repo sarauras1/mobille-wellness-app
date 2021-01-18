@@ -35,58 +35,22 @@
  .waxing-para {
      padding: 2px 20px;
  }
- @media(min-width: 1200px){
-     .waxing-price-image {
-         background-image: url('./waxing-prices.jpg');
-         background-size: cover;
-         background-repeat: no-repeat;
-         background-position: center;
-         position: absolute;
-         border-radius: 50%;
-         width: 560px;
-         height: 400px;
-         top: 610px;
-         left: 10px;
-         -webkit-transform: rotate(90deg);
-         -moz-transform: rotate(90deg);
-         -ms-transform: rotate(90deg);
-         -o-transform: rotate(90deg);
-         transform: rotate(90deg);
-     }
-
-     .waxing-price-image-right {
-         background-image: url('./waxing-prices.jpg');
-         background-size: cover;
-         background-repeat: no-repeat;
-         background-position: center;
-         position: absolute;
-         border-radius: 50%;
-         width: 560px;
-         height: 400px;
-         top: 610px;
-         right: 10px;
-         -webkit-transform: rotate(90deg);
-         -moz-transform: rotate(90deg);
-         -ms-transform: rotate(90deg);
-         -o-transform: rotate(90deg);
-         transform: rotate(90deg);
-     }
- }
+ 
  @media(min-width: 801px) {
      .waxing-image-component{
-         float: left;
-         margin: 20px;
+         margin: auto;
      }
      .waxing-image{
-       max-width: 500px;  
+       max-width: 600px;
+      margin-top: 100px; 
      }
   
      .waxing {
-         max-width: 1000px;
+         max-width: 600px;
          margin: 50px auto;
      }
-    .waxing-h1-component {
-        margin-top: 100px;
+    .service-h1-component {
+        margin-top: 50px;
     }
  }
 

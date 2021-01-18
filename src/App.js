@@ -19,9 +19,13 @@ import PrivacyPolicy from "./PrivacyPolicy/PrivacyPolicy";
 import Blog from "./Blog/Blog";
 import Whats from "./Whatsapp/Whatsapp";
 import Backdrop from "./Backdrop/Backdrop";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
-
-
+ AOS.init({
+   duration: 400, // values from 0 to 3000, with step 50ms
+   easing: "ease", // default easing for AOS animations
+ });
 class App extends React.Component {
   
     state = {
@@ -40,7 +44,7 @@ class App extends React.Component {
   backdropClickHandler = () => {
     this.setState({ sideDrawerOpen: false });
   };
-
+ 
   render() {
     let backdrop;
 
@@ -57,7 +61,7 @@ class App extends React.Component {
           click={this.backdropClickHandler}
           show={this.state.sideDrawerOpen}
         />
-     
+
         <Switch>
           <Route exact path="/">
             <section style={{ marginTop: "100px" }}>
@@ -73,7 +77,18 @@ class App extends React.Component {
                 <Services />
               </motion.div>
             </section>
-            <About />
+            <div
+              data-aos="fade-up"
+              data-aos-offset="200"
+              data-aos-delay="50"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
+              data-aos-mirror="true"
+              data-aos-once="false"
+              data-aos-anchor-placement="top-center"
+            >
+              <About />
+            </div>
           </Route>
 
           <Route path="/services">
