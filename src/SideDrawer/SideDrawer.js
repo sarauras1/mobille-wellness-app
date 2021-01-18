@@ -39,7 +39,7 @@ const sideDrawer = (props) =>  {
             </div>
 
             <div className="Services links">
-              <img className="drop-img" src={require("./drop.png")} alt="drop" />
+      
               <Collapsible trigger="Services">
                 <ul className="dropdown">
                   <li>

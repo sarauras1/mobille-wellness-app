@@ -3,7 +3,7 @@ import './Pamper.css';
 import Button from '../Button/Button';
 
 
-const pamper = (props) => {
+const pamper = () => {
 
 
   return (
@@ -21,7 +21,6 @@ const pamper = (props) => {
           <h1 className="service-h1-component">
             Pamper Parties &amp; Corporate
           </h1>
-          <div className="block_1 hline-bottom"></div>
           <div className="pamper-para">
             <p className="info-p">
               Pamper and relax with All Beauty By Sara mobile spa pamper parties
@@ -32,10 +31,8 @@ const pamper = (props) => {
               be happy to discuss with you the best options available.
             </p>
           </div>
+          <Button />
         </div>
-      </div>
-      <div className="margin-button">
-        <Button />
       </div>
     </div>
   );

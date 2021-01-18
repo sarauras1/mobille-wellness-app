@@ -16,7 +16,7 @@ const yoga = (props) => {
           </div>
           <div className="yoga-div-component">
             <h1 className="service-h1-component">
-              One-to-one Hatha Yoga
+              Hatha Yoga
             </h1>
             <div className="block_1 hline-bottom"></div>
 
