@@ -10,7 +10,7 @@
    z-index: 2;
    position: fixed;
    bottom: 14%;
-   left: 4%;
+   right: 4%;
    color: black;
   font-size: 1rem;
 
@@ -25,14 +25,14 @@
 
 
 .speech:after {
-	left: 19px;
+	right: 19px;
   bottom: -9px;
 	border: 5px solid;
 	border-color: #fff transparent transparent #fff;
 }
 
 .speech:before {
-	left: 19px;
+	right: 19px;
   bottom: -12px;
 	border: 6px solid;
 	border-color: #ccc transparent transparent #ccc;
@@ -43,7 +43,7 @@
    z-index: 3;
    position: fixed;
    bottom: 3%;
-   left: 2%;
+   right: 2%;
   width: 60px
   }
 }
@@ -55,7 +55,7 @@
    z-index: 3;
    position: fixed;
    bottom: 10%;
-   left: 2%;
+   right: 2%;
    padding: 6px;
   width: 55px
   }

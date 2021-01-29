@@ -1,84 +1,74 @@
-import React from 'react';
-import './Footer.css';
-import { NavHashLink } from "react-router-hash-link";
-const footer = props => {
+import React from "react";
+import "./Footer.css";
+import { NavLink } from "react-router-dom";
+import servicesmenu from "../servicesmenu";
+
+
+const footer = (props) => {
   return (
     <div className="footer">
       <div id="container">
         <div className="left">
-          <h3>Services</h3>
-          <NavHashLink to="/yoga" className="current-footer">
-            {" "}
-            <li>Hatha Yoga</li>{" "}
-          </NavHashLink>
-          <NavHashLink to="/facials" className="current-footer">
-            <li>Facials</li>
-          </NavHashLink>
-          <NavHashLink to="/massages" className="current-footer">
-            <li>Massages</li>
-          </NavHashLink>
-          <NavHashLink to="/handsFeet" className="current-footer">
-            <li>Hands &amp; Feet</li>
-          </NavHashLink>
-          <NavHashLink to="/pamper" className="current-footer">
-            <li>Pamper Parties</li>
-          </NavHashLink>
-          <NavHashLink to="/waxing" className="current-footer">
-            <li>Hair Removal</li>
-          </NavHashLink>
-        </div>
-        <div className="center">
-          <h3>Socials</h3>
-          <li>London UK </li>
+          <h3 className="footer-title-1">Services</h3>
+          {servicesmenu.map((menu) => (
+            <li key={menu.id}>
+              <NavLink className="current-footer" to={menu.tomenu}>
+                {menu.namemenu}
+              </NavLink>
+            </li>
+          ))}
+</div>
+          <div className="center">
+            <h3 className="footer-title-2">Socials</h3>
+            <li>London UK </li>
 
-          <li>
-            <a href="mailto:allbeautybysara@gmail.com">
-              <img
-                className="socials"
-                src={require("./gmail.png")}
-                alt="email"
-              />
-            </a>
-          </li>
-          <li>
-            <a href="https://www.instagram.com/allbeautybysara/">
-              <img
-                className="socials"
-                src={require("./instagram.png")}
-                alt="instagram"
-              />
-            </a>
-          </li>
-          <li>
-            <a href="https://www.facebook.com/sara.allbeauty.3">
-              <img
-                className="socials"
-                src={require("./facebook.png")}
-                alt="facebook"
-              />{" "}
-            </a>
-          </li>
+            <li>
+              <a href="mailto:allbeautybysara@gmail.com">
+                <img
+                  className="socials"
+                  src={require("./gmail.png")}
+                  alt="email"
+                />
+              </a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/allbeautybysara/">
+                <img
+                  className="socials"
+                  src={require("./instagram.png")}
+                  alt="instagram"
+                />
+              </a>
+            </li>
+            <li>
+              <a href="https://www.facebook.com/sara.allbeauty.3">
+                <img
+                  className="socials"
+                  src={require("./facebook.png")}
+                  alt="facebook"
+                />{" "}
+              </a>
+            </li>
+          </div>
+          <div className="right">
+            <h3 className="footer-title-3">Let's get in touch!</h3>
+            <p>
+              Thank you for choosing All Beauty By Sara in London, England!
+              Please send me an email or WhatsApp me for enquiries about my
+              services. I will respond to you at the soonest possible time.
+            </p>
+          </div>
         </div>
-        <div className="right">
-          <h3>Let's get in touch!</h3>
-          <p>
-            Thank you for choosing All Beauty By Sara in London, England! Please
-            send me an email or WhatsApp me for enquiries about my services. I
-            will respond to you at the soonest possible time.
-          </p>
+        <div className="hline-bottom-footer"></div>
+        {/* <NavLink to="/privacy" className="current-footer">
+        <li id="privacy-li">Privacy Policy</li>
+      </NavLink> */}
+        <div className="copiright">
+          <small>&copy; All Rights reserved by SaraWebDev</small>
         </div>
       </div>
-      <div className="hline-bottom-footer"></div>
-      <NavHashLink to="/privacy" className="current-footer">
-        <li id="privacy-li">Privacy and Policy</li>
-      </NavHashLink>
-      <div className="copiright">
-        <small>&copy; All Rights reserved by SaraWebDev</small>
-      </div>
-    </div>
+    
   );
-}
-
-
+};
 
 export default footer;

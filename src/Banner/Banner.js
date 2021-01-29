@@ -7,10 +7,10 @@ import './Banner.css';
 
 const Banner = () => {
   return (
-    <div className="Banner-Slicer">
+    <div id="banner" className="Banner-Slicer">
       <div className="Banner-Slicer">
-        <img className="banner2" src={require("./banner2.gif")} alt="banner2" />
-        <img className="bannerphone" src={require("./phonebanner.gif")} alt="bannerphone" />
+        <img className="banner2" src={require("./banner2.gif")} alt="wellness" />
+        <img className="bannerphone" src={require("./phonebanner.gif")} alt="beauty" />
       </div>
     </div>
   );

@@ -12,7 +12,7 @@ ReactDOM.render(
     <Router>
       <ScrollToTop>
         <App />
-       
+   
       </ScrollToTop>
     </Router>
   </React.StrictMode>,

@@ -35,25 +35,27 @@ li {
 .socials li {
   display: inline-block;
 }
+
 @media(min-width: 769px) {
 #container{
     display:flex;
-    flex-flow: row;
-   
+    flex-flow: row;   
   }
   .left{
-    margin:10px 10px 10px 25px;
     order: 1;
-    width: 25%;
+    margin: 20px 40px;
+     max-width: 300px;
     align-self: flex-start;
   }
   .right{
     align-self: flex-end;
-    margin:10px 10px 25px 10px;
+    margin: 20px;
     text-align: right;
-    margin: 10px;
     order: 3;
-    width: 35%;
+    max-width: 350px;
+  }
+  .footer-title-3{
+    margin-right: 15px;
   }
   .center{
     margin: auto;
@@ -61,8 +63,7 @@ li {
     text-align: center;
     margin: 10px;
     width: 40%;
-    order: 2;
-   
+    order: 2; 
   }
    .socials {
     width: 35px;
