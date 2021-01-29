@@ -1,7 +1,7 @@
 import React from 'react';
 import './Pamper.css';
 import Button from '../Button/Button';
-
+import CorporateBeauty from "./corporate.jpg";
 
 const pamper = () => {
 
@@ -12,7 +12,7 @@ const pamper = () => {
         <div className="pamper-image-component">
           <img
             className="pamper-image"
-            src={require("./corporate.jpg")}
+            src={CorporateBeauty}
             alt="corporate"
           />
         </div>

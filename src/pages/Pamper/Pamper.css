@@ -45,7 +45,7 @@
      }
  }
 
- @media(max-width: 468px) {
+ @media(max-width: 500px) {
      .pamper-component {
          width: 100%;
          display: flex;
@@ -56,7 +56,7 @@
      }
 
      .pamper-image-component img {
-         margin: 0 auto;
+         margin-top: -40px;
          width: 100%;
         padding-top: 40px;
      }

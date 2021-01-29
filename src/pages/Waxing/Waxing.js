@@ -2,7 +2,7 @@ import React from "react";
 import "./Waxing.css";
 import Button from "../Button/Button";
 import WaxingData from './waxingData';
-
+import Waxing from "./armpit-wax.jpg";
 const waxing = (props) => {
   return (
     <div className="waxing" id="waxing">
@@ -10,7 +10,7 @@ const waxing = (props) => {
         <div className="waxing-image-component">
           <img
             className="waxing-image"
-            src={require("./armpit-wax.jpg")}
+            src={Waxing}
             alt="wax"
           />
         </div>

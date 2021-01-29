@@ -1,5 +1,6 @@
 import React from "react";
 import "./About.css";
+import Sara from './thailand.jpg';
 
 const about = (props) => {
   return (
@@ -7,7 +8,7 @@ const about = (props) => {
       <h1 className="services-h1-component">About me</h1>
       <div className="about-img">
         <div>
-          <img src={require("./thailand.jpg")} alt="me" />{" "}
+          <img src={Sara} alt="me" />{" "}
         </div>
         <h4 className="about-h4">Profile</h4>
       </div>

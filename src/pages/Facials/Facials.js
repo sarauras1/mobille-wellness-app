@@ -1,7 +1,9 @@
 import React from 'react';
 import './Facials.css';
 import Button from "../Button/Button";
-import FacialData from "./facialData"
+import FacialData from "./facialData";
+import Lakshmi from './gold-l.jpg';
+
 import {
   Accordion,
   AccordionItem,
@@ -45,7 +47,7 @@ const facials = (props) => {
         </div>
     
         <div className="facials-img">
-          <img id="lakshmi" src={require("./gold-l.jpg")} alt="lakshmi" />
+          <img id="lakshmi" src={Lakshmi} alt="lakshmi" />
 
           <div className="lakshmi-para">
             <p>

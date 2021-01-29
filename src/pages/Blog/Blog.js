@@ -1,17 +1,17 @@
 import React from "react";
-import Button from '../Button/Button'
+import Button from "../Button/Button";
 import "./Blog.css";
+import DoshaKapha from "./3-doshas-kapha.jpg";
+import Ayurveda from "./ayurveda.jpg";
+import DoshaPitta from "./3-doshas-pitta.jpg";
+import DoshaVata from "./3-doshas.jpg";
 
 const blog = (props) => {
   return (
     <div id="blog">
       <div className="blog-component">
         <div className="blog-image-component">
-          <img
-            className="blog-image"
-            src={require("./ayurveda.jpg")}
-            alt="ayurveda"
-          />
+          <img className="blog-image" src={Ayurveda} alt="ayurveda" />
           <div className="blog-h3"></div>
         </div>
 
@@ -40,11 +40,7 @@ const blog = (props) => {
               to particular physical and mental disorders.
             </p>
             <p>
-              <img
-                className="blog-image-min"
-                src={require("./3-doshas.jpg")}
-                alt="ayurveda"
-              />
+              <img className="blog-image-min" src={DoshaVata} alt="Vata" />
               <strong>
                 Vata is the subtle energy associated with movement —
               </strong>
@@ -56,11 +52,7 @@ const blog = (props) => {
               tendency to age earlier than normal.
             </p>
             <p>
-              <img
-                className="blog-image-min"
-                src={require("./3-doshas-pitta.jpg")}
-                alt="ayurveda"
-              />
+              <img className="blog-image-min" src={DoshaPitta} alt="Pitta" />
               <strong>Pitta expresses as the body’s metabolic system — </strong>
               made up of Fire and Water. It governs digestion, absorption,
               assimilation, nutrition, metabolism and body temperature. In
@@ -73,11 +65,7 @@ const blog = (props) => {
                 Kapha is the energy that forms the body’s structure — bones,
                 muscles, tendons —
               </strong>
-              <img
-                className="blog-image-min"
-                src={require("./3-doshas-kapha.jpg")}
-                alt="ayurveda"
-              />
+              <img className="blog-image-min" src={DoshaKapha} alt="ayurveda" />
               and provides the “glue” that holds the cells together, formed from
               Earth and Water. Kapha supplies the water for all bodily parts and
               systems. It lubricates joints, moisturizes the skin, and maintains
@@ -140,7 +128,8 @@ const blog = (props) => {
             </h3>
             <p>
               It is never easy to choose the right products for your skin,
-              please ladies and gentlemens leave it in the hands of the beauty experts...!
+              please ladies and gentlemens leave it in the hands of the
+              beauty experts...!
             </p>
             <p>
               Booking your the Organic Ayurvedic Lakshmi Facial treatment,

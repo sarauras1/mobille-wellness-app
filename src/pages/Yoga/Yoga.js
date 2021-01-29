@@ -1,7 +1,7 @@
 import React from 'react';
 import './Yoga.css';
 import Button from '../Button/Button';
-
+import Yoga from './balance-city.jpg'
 const yoga = (props) => {
     return (
       <div id="yoga">
@@ -9,7 +9,7 @@ const yoga = (props) => {
           <div className="yoga-image-component">
             <img
               className="Yoga-image"
-              src={require("./balance-city.jpg")}
+              src={Yoga}
               alt="Yoga"
             />
             
