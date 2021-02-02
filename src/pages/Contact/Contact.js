@@ -37,7 +37,7 @@ class Contact extends React.Component {
     })
       .then(() =>
         alert(
-          "Success! Thank you for your booking! We will contact you as soon has possible time for confirmation"
+          "Success! Thank you for your booking! We will contact you as soon has possible time to confirm"
         )
       )
       .catch((error) => alert(error));
