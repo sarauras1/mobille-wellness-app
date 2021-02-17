@@ -6,7 +6,17 @@ const mainText = props => {
  
       
  return (
-   <div className="main-text">
+   <div
+     className="main-text"
+     data-aos="fade-up"
+     data-aos-offset="20"
+     data-aos-delay="50"
+     data-aos-duration="2000"
+     data-aos-easing="ease"
+     data-aos-mirror="true"
+     data-aos-once="false"
+     data-aos-anchor-placement="top-center"
+   >
      <h1 className="service-h1-component">Enjoy Hassle-Free Beauty Services</h1>
      <p className="info-p2">
        Treat yourself to a rewarding makeover without needing to leave your home

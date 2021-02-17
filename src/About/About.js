@@ -10,9 +10,6 @@ const about = (props) => {
       <div className="about-img">
         <div>
           <img
-            data-aos="fade-up"
-            data-aos-easing="ease"
-            data-aos-anchor-placement="top-center"
             src={Sara}
             alt="me"
           />{" "}

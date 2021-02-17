@@ -1,94 +1,125 @@
 import React from "react";
 import "./Services.css";
 import { NavHashLink } from "react-router-hash-link";
-import MainText from "../TextSlice/MainText";
 import { motion } from "framer-motion";
-import Waxing from "./depilation.png";
-import Yoga from "./depilation.png";
-import Facials from "./massage.png";
-import Massage from "./spa.png";
-import Manicure from "./manicure.png";
-import Pamper from "./work.png";
+import MainText from "../TextSlice/MainText";
 
-const services = (props) => {
-  return (
-    <div className="Services" id="services">
-      <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
-        <NavHashLink to="/waxing" className="current-serv">
-          <div className="svg">
-            <img src={Waxing} alt="waxing" />
-            <h2>Hair Removal</h2>
-            <h5>Hot wax</h5>
-            <h5>Strip Wax</h5>
-            <h5>Threading</h5>
-          </div>
-        </NavHashLink>
-      </motion.div>
-      <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
-        <NavHashLink to="/yoga" className="current-serv">
-          <div className="svg">
-            <img src={Yoga} alt="yoga" />
-            <h2>Hatha Yoga</h2>
-            <h5>
-              One to one classes <br></br>
-              or<br></br>
-              small groups
-            </h5>
-            <h5>Zoom classes</h5>
-          </div>
-        </NavHashLink>
-      </motion.div>
-      <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
-        <NavHashLink to="/facials" className="current-serv">
-          <div className="svg">
-            <img src={Facials} alt="facials" />
-            <h2>Ayurvedic Facials</h2>
-            <h5>Pitta Facials</h5>
-            <h5>Vata facials</h5>
-            <h5>Kapha Facials</h5>
-            <h5>Anti age Facials</h5>
-          </div>
-        </NavHashLink>
-      </motion.div>
-      <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
-        <NavHashLink to="/handsFeet" className="current-serv">
-          <div className="svg">
-            <img src={Manicure} alt="manicures" />
-            <h2>Hands &amp; Feet</h2>
-            <h5>Classic Manicure</h5>
-            <h5>Classic Pedicure</h5>
-            <h5>Shellac Manicure</h5>
-            <h5>Shellac Pedicure</h5>
-          </div>
-        </NavHashLink>
-      </motion.div>
-      <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
-        <NavHashLink to="massages" className="current-serv">
-          <div className="svg">
-            <img src={Massage} alt="massage" />
-            <h2>Massages</h2>
-            <h5>Ayurvedic Massage</h5>
-            <h5>Thai Massage </h5>
-            <h5>Deep Tissue Massage</h5>
-            <h5>and more...</h5>
-          </div>
-        </NavHashLink>
-      </motion.div>
-      <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
-        <NavHashLink to="pamper" className="current-serv">
-          <div className="svg">
-            <img src={Pamper} alt="work" />
-            <h2>Corporate &amp; Pamper Parties</h2>
-            <h5>At Home &amp; Office</h5>
-            <h5>Affordable</h5>
-            <h5>Convenient</h5>
-          </div>
-        </NavHashLink>
-      </motion.div>
-      <section>
-        <MainText/>
-      </section>
-    </div>
-  );
-};
-export default services;
+class Services extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      services: [
+        {
+          id: 1,
+          to: "/yoga",
+          img: "./images/excercise.png",
+          alt: "Yoga",
+          title: "Hata Yoga",
+          text01: "One to one classes",
+          text02: "small groups classes",
+          text03: "zoom classes",
+         
+        },
+        {
+          id: 2,
+          to: "/waxing",
+          img: "./images/depilation.png",
+          alt: "waxing",
+          title: "Hair Removal",
+          text01: "Hot wax",
+          text02: "Strip wax",
+          text03: "Treading",
+         
+        },
+        {
+          id: 3,
+          to: "/handsFeet",
+          img: "./images/manicure.png",
+          alt: "Perfect manicures",
+          title: "Hands & Feet",
+          text01: "Classic manicure",
+          text02: "Classic pedicure",
+          text03: "Shellac manicure",
+          text04: "Shellac pedicure",
+         
+        },
+        {
+          id: 4,
+          to: "/facials",
+          img: "./images/massage.png",
+          alt: "Facials",
+          title: "Ayurvedic facials",
+          text01: "Pitta facials",
+          text02: "Vata facials",
+          text03: "Kapha facials",
+          text04: "Anti age facials",
+         
+        },
+        {
+          id: 5,
+          to: "/massages",
+          img: "./images/spa.png",
+          alt: "Spa massages",
+          title: "Massages",
+          text01: "Ayurvedic massage",
+          text02: "Thai Massage",
+          text03: "Deep Tissue Massage",
+          text04: "and more...",
+          
+        },
+        {
+          id: 6,
+          to: "/pamper",
+          img: "./images/lotus.png",
+          alt: "Pamper Parties",
+          title: "Corporate & Pamper Parties",
+          text01: "At Home and Office",
+          text02: "Affordable",
+          text03: "Conveniente",
+         
+        },
+      ],
+    };
+  }
+  render() {
+    return (
+      <div className="Services" id="services">
+        {this.state.services.map((data) => (
+          <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
+            <NavHashLink
+              to={data.to}
+              className="current-serv">
+              <div
+                className="svg"
+                key={data.id}
+               data-aos="fade-up"
+              data-aos-offset="50"
+              data-aos-delay="50"
+              data-aos-duration="2000"
+              data-aos-easing="ease"
+              data-aos-mirror="false"
+              data-aos-once="true"
+              data-aos-anchor-placement="top-center"
+            >
+                <img src={data.img} alt={data.alt} />
+
+                <h2 className="service-h2">{data.title}</h2>
+                <h5 className="service-h5">
+                  {data.text01} <br />
+                  {data.text02} <br />
+                  {data.text03} <br />
+                  {data.text04} <br />
+                </h5>
+              </div>
+            </NavHashLink>
+          </motion.div>
+        ))}
+        <section>
+          <MainText/>
+        </section>
+      </div>
+    );
+  }
+}
+
+export default Services;

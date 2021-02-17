@@ -2,7 +2,7 @@ const servicesmenu = [
   {
     id: 1,
     tomenu: "/yoga",
-    namemenu: "Yoga",
+    namemenu: "Yoga",             
   },
   {
     id: 2,

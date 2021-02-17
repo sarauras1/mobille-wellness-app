@@ -7,9 +7,10 @@
     background-color: transparent;
     border: none;
     cursor: pointer;
-    box-sizing: border-box;
+  
 }
 
 .material-icons{
-    font-size: 3rem;
+    font-size: 3em;
+    -webkit-appearance: 2rem;
 }

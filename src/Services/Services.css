@@ -20,7 +20,9 @@
      color:	rgb(88,88,88);
  }
  
- 
+ .service-h5{
+     line-height: 30px;
+ }
 
  .current-serv {
     text-decoration: none !important;
