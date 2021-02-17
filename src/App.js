@@ -60,10 +60,10 @@ class App extends React.Component {
             <section style={{ marginTop: "-150px" }}>
               <div
                 data-aos="fade-up"
-                data-aos-offset="200"
+                data-aos-offset="0"
                 data-aos-delay="50"
-                data-aos-duration="1000"
-                data-aos-easing="ease-in-out"
+                data-aos-duration="2000"
+                data-aos-easing="ease"
                 data-aos-mirror="true"
                 data-aos-once="false"
                 data-aos-anchor-placement="top-center"
@@ -73,10 +73,10 @@ class App extends React.Component {
             </section>
             <div
               data-aos="fade-up"
-              data-aos-offset="200"
+              data-aos-offset="0"
               data-aos-delay="50"
-              data-aos-duration="1000"
-              data-aos-easing="ease-in-out"
+              data-aos-duration="2000"
+              data-aos-easing="ease"
               data-aos-mirror="true"
               data-aos-once="false"
               data-aos-anchor-placement="top-center"

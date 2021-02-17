@@ -1,7 +1,7 @@
 import React from 'react';
 import './Banner.css';
 import banner2 from './banner2.gif';
-import phone from './phonebanner.gif';
+import phone from './bannersmall.png';
 
 
 const Banner = () => {

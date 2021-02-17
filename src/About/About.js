@@ -2,13 +2,20 @@ import React from "react";
 import "./About.css";
 import Sara from './thailand.jpg';
 
+
 const about = (props) => {
   return (
     <div className="about" id="about">
       <h1 className="services-h1-component">About me</h1>
       <div className="about-img">
         <div>
-          <img src={Sara} alt="me" />{" "}
+          <img
+            data-aos="fade-up"
+            data-aos-easing="ease"
+            data-aos-anchor-placement="top-center"
+            src={Sara}
+            alt="me"
+          />{" "}
         </div>
         <h4 className="about-h4">Profile</h4>
       </div>
@@ -40,14 +47,15 @@ const about = (props) => {
           Mai, Thailand and in India, Rishikesh Ayurveda technique of marma
           pressure points and Hatha yoga.
         </p>
-        <p>
+        <p className="info-p">
           Now, I bring those 15 years of beauty experience and luxury treatments
           directly to your door!
         </p>
         <h4>Mission</h4>
         <p className="info-p">
-          My mission is to deliver luxurious beauty treatments at your home and
-          office. That will make you save time and keep you comfortable.
+          My mission is to deliver luxurious beauty treatments<br></br> at your
+          home and office. That will make you save time<br></br>
+          and keep you comfortable.
         </p>
       </div>
     </div>

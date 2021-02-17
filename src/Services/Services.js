@@ -86,7 +86,7 @@ const services = (props) => {
         </NavHashLink>
       </motion.div>
       <section>
-        <MainText />
+        <MainText/>
       </section>
     </div>
   );

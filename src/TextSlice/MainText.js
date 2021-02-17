@@ -17,7 +17,7 @@ const mainText = props => {
      </p>
      <p />
      <h3> Why Choose My Services?</h3>
-     <p className="info-p2">
+     <p className="info-p1">
        {" "}
        Fully qualified beauty therapist whit more than 15 years of experience in
        the beauty industry. Also, my spotless equipment and mono use set my
