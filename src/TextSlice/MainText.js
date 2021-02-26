@@ -29,8 +29,8 @@ const mainText = props => {
      <h3> Why Choose My Services?</h3>
      <p className="info-p1">
        {" "}
-       Fully qualified beauty therapist whit more than 15 years of experience in
-       the beauty industry. Also, my spotless equipment and mono use set my
+       Fully qualified beauty therapist since 2007. 
+       Moreover, my spotless equipment and mono use set my
        business apart from most beauty service providers. I offer bespoke
        treatments and use only carefully chosen products to ensure the best
        results.

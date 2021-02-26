@@ -70,15 +70,16 @@ class Contact extends React.Component {
             <h3 className="form-h3">Book your treatments</h3>
             <p className="contact-para">
               Thanks for choosing All Beauty By Sara London Mobile Beauty
-              Services in London. Book your treatments using the form below. 
-              If you have inquiries about our services do not hesitate to contact us via
-              WhatsApp or email. Please note that All Beauty By Sara does not
-              accept bookings under £30 or £50 or more... depending on the area
-              you live. Let explain, we cover 2 miles radio area around Peckham with a min of £30 
-              per booking. Out of our area the min for a booking will start from £50 and grow
-              the more far you live from my area. There may be a further surcharge if
-              you live in the congestion charge zone or if you don't have free
-              parking readily available.
+              Services in London. Book your treatments using the form below. If
+              you have inquiries about our services do not hesitate to contact
+              us via WhatsApp or email. Please note that All Beauty By Sara does
+              not accept bookings under £30 or £50 or more... depending on the
+              area you live. Let explain, we cover 2 miles radio area around
+              Peckham with a min of £30 per booking. Out of our area the min for
+              a booking will start from £50 and grow the more far you live from
+              my area. There may be a further surcharge if you live in the
+              congestion charge zone or if you don't have free parking readily
+              available.
             </p>
             <p>
               <label>Your Name:</label>
@@ -177,7 +178,8 @@ class Contact extends React.Component {
               </select>
             </p>
             <p>
-              <label>Select Date:</label>
+            
+             <label>Select Date:</label>
               <input
                 required
                 name="date"

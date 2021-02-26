@@ -1,58 +1,64 @@
 .about {
-   background: hsla(195, 53%, 79%);
+  
+   background: rgb(202, 234, 245);
    margin-bottom: 100px;
   border-radius:70% 30% / 30% 30% 70% 70%;
 }
-.about-img img {
-  margin-right: 20px;
-  shape-outside: circle(50%);
-  text-align: center;
-  float: left;
-  margin-top: -10px;
-  margin-left: 20px;
-  width: 200px;
-  border-radius: 50%;
-  border: 5px solid white;
-}
+
 .about h1 {
   text-align: center;
   font-size: 2rem;
 }
 .about-h4 {
   font-size: 1rem;
+  margin-left: 10px;
 }
 
 
-@media(min-width: 900px ) {
+@media(min-width: 800px ) {
+  .container-about {
+    display: flex;
+    flex-direction: row;
+  }
     .about {  
-      padding: 200px;
+      padding: 80px;
     }
     .about {
-  max-width: 600px;
+  max-width: 800px;
   margin: 100px auto;
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),
   0 10px 10px rgba(0, 0, 0, 0.22);
  
 }
+.about-img {
+  
+  text-align: center;
+  max-width: 400px;
+  margin: 20px;
+  border: 5px solid white;
+}
 }
 
-@media(min-width: 800px ) {
+
+
+@media(max-width: 799px ) {
   .about {
-  
-    padding: 50px 150px;
+  padding: 30px;
+  }
+  .about-img {
+    margin: 20px;
+    text-align: center;
+    float: left;
+    max-width: 300px;
+    border: 5px solid white;
   }
 }
-
-@media(max-width: 800px ) {
-  .about {
-   
-    padding: 50px 100px;
-  }
-}
-
-@media(max-width: 600px ) {
-  .about {
-  
-    padding: 45px 20px;
+@media(max-width: 468px) {
+ 
+  .about-img {
+    padding: 20px;
+    margin: 10px auto;
+    float: left;
+    width: 100%;
   }
 }
