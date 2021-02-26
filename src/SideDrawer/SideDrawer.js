@@ -23,6 +23,15 @@ const sideDrawer = (props) => {
                   to={menu.tomenu}
                   onClick={props.click}
                   className="links"
+                  isActive={(match, location) => {
+                    if (!match) {
+                      return false;
+                    }
+
+                    // only consider an event active if its event id is an odd number
+                    const eventID = parseInt(match.params.eventID);
+                    return !isNaN(eventID) && eventID % 2 === 1;
+                  }}
                 >
                   {menu.namemenu}
                 </NavHashLink>
