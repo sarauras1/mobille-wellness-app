@@ -32,8 +32,8 @@ const about = (props) => {
           <h4 className="about-h4">Mission</h4>
           <p className="info-p">
             Our mission is to deliver luxurious beauty treatments<br></br>
-             at your home or office. That will save you time,
-             but more importantly, keep you comfortable.
+             at your home or office that will save you time,
+             but more importantly, that keep you comfortable.
           </p>
         </div>
       </div>
