@@ -36,7 +36,7 @@ class Whats extends React.Component{
        <Popover
          showArrow={true}
           target={this.refs.target} show={this.state.show}>
-         <p className="Popover speech">How may i help you?</p>
+         <p className="Popover speech">How may I help you?</p>
        </Popover>
      </a>
    </div>
