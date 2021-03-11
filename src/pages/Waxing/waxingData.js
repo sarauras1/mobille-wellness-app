@@ -17,7 +17,7 @@ const waxingData = [
   },
   {
     id: 5,
-    price: "Ladies and Mens Under arms wax £ 15",
+    price: "Ladies and Men Under arms wax £ 15",
   },
   {
     id: 6,
@@ -35,45 +35,49 @@ const waxingData = [
     id: 9,
     price: "Ladies Full legs wax £ 35",
   },
-  {
+   {
     id: 10,
-    price: "Ladies Brasilian wax £ 35",
+    price: "Ladies Bikini line wax £ 25",
   },
   {
     id: 11,
-    price: "Ladies Hollywood wax £ 40",
+    price: "Ladies Brasilian wax £ 35",
   },
   {
     id: 12,
+    price: "Ladies Hollywood wax £ 40",
+  },
+  {
+    id: 13,
     price: "Ladies back wax £ 30",
   },
   {
-    id: 13,
-    price: "Mens eyebrows wax or threading £ 15",
-  },
-  {
-    id: 13,
-    price: "Mens ers wax  £ 10",
-  },
-  {
-    id: 13,
-    price: "Mens beard contour wax £ 15",
-  },
-  {
     id: 14,
-    price: "Mens Chest and stomach wax £ 50",
+    price: "Men eyebrows wax or threading £ 15",
   },
   {
     id: 15,
-    price: "Mens back wax £ 50",
+    price: "Men ers wax  £ 10",
   },
   {
     id: 16,
-    price: "Mens Full legs wax £ 60",
+    price: "Men beard contour wax £ 15",
   },
   {
     id: 17,
-    price: "Mens half legs wax £ 35",
+    price: "Men Chest and stomach wax £ 50",
+  },
+  {
+    id: 18,
+    price: "Men back wax £ 50",
+  },
+  {
+    id: 19,
+    price: "Men Full legs wax £ 60",
+  },
+  {
+    id: 20,
+    price: "Men half legs wax £ 35",
   },
 ];
 export default waxingData;
