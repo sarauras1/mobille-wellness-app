@@ -6,7 +6,7 @@ const menus = [
   },
   {
     id: 2,
-    tomenu: "#about",
+    tomenu: "/#about",
     namemenu: "About",
   },
  
