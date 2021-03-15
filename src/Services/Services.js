@@ -86,13 +86,7 @@ class Services extends React.Component {
                 className="svg"
                 key={data.id}
                 data-aos="fade-up"
-                data-aos-offset="50"
-                data-aos-delay="50"
-                data-aos-duration="2000"
-                data-aos-easing="ease"
-                data-aos-mirror="false"
-                data-aos-once="true"
-                data-aos-anchor-placement="top-center"
+            data-aos-duration="1600"
               >
                 <img src={data.img} alt={data.alt} />
 
