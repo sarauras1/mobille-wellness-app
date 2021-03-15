@@ -1,3 +1,5 @@
+
+
 import React from 'react';
 import './Banner.css';
 import banner2 from './banner2.gif';
@@ -35,5 +37,9 @@ const Banner = () => {
 
 
   export default Banner;
+
+
+
+ 
 
 
