@@ -63,7 +63,7 @@
              margin-top: -50px;
          }
          .banner1{
-           height: 350px;
+           height: 300px;
          }
          .banner2 {
              display: none !important;
@@ -91,7 +91,7 @@
             position: absolute;
             font-weight: bold;
              color: #fff;
-             top: 35%;
+             top: 33%;
              font-size: 19px;
               text-align: center;
               width: 220px;
