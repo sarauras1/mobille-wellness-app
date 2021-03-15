@@ -14,7 +14,7 @@ class Services extends React.Component {
           to: "/facials",
           img: "./images/massage.png",
           alt: "Facials",
-          title: "Ayurvedic facials",
+          title: "Facials",
           text01: "Pitta facials",
           text02: "Vata facials",
           text03: "Kapha facials",
