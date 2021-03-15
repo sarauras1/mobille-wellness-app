@@ -68,7 +68,7 @@ class Services extends React.Component {
           to: "/yoga",
           img: "./images/excercise.png",
           alt: "Yoga",
-          title: "Hata Yoga",
+          title: "Hatha Yoga",
           text01: "One to one classes",
           text02: "small groups classes",
           text03: "zoom classes",
@@ -88,7 +88,7 @@ class Services extends React.Component {
                 data-aos="fade-up"
             data-aos-duration="1600"
               >
-                <img src={data.img} alt={data.alt} />
+                <img src={data.img} alt={data.alt} loading="lazy" />
 
                 <h2 className="service-h2">{data.title}</h2>
                 <h5 className="service-h5">

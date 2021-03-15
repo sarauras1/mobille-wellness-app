@@ -8,6 +8,7 @@ const yoga = (props) => {
         <div className="yoga-component">
           <div className="yoga-image-component">
             <img
+            loading="lazy" 
               className="Yoga-image"
               src={Yoga}
               alt="Yoga"
