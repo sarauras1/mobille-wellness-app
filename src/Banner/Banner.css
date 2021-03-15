@@ -64,6 +64,7 @@
          }
          .banner1{
            height: 300px;
+           width: 100%;
          }
          .banner2 {
              display: none !important;
@@ -103,9 +104,12 @@
 
            .banner-title {
     
-             font-size: 30px;
+             font-size: 33px;
            }
-
+             .banner1 {
+               height: 300px;
+               width: 100%;
+             }
            .banner-para {
              text-align: center;
               width: 200px;
@@ -113,3 +117,15 @@
              
            }
          }
+          @media(max-width: 320px) {
+
+            .banner-title {
+
+              font-size: 30px;
+            }
+
+            .banner1 {
+              height: 300px;
+              width: 100%;
+            }
+          }
