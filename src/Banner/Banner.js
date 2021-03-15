@@ -18,8 +18,6 @@ const Banner = () => {
             data-aos-mirror="true"
             data-aos-once="false"
             data-aos-anchor-placement="top-center"
-          >
-            data-aos-easing="ease" data-aos-anchor-placement="top-center"
             className="banner-title" > The Mobile Wellness
           </h1>
           <p
@@ -32,8 +30,7 @@ const Banner = () => {
             data-aos-mirror="true"
             data-aos-once="false"
             data-aos-anchor-placement="top-center"
-          >
-            data-aos-anchor-placement="top-center" > Book your treatments at the
+           > Book your treatments at the
             comfort of your own home
           </p>
         </div>
