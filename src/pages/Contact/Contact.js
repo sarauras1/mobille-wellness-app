@@ -178,8 +178,7 @@ class Contact extends React.Component {
               </select>
             </p>
             <p>
-            
-             <label>Select Date:</label>
+              <label>Select Date:</label>
               <input
                 required
                 name="date"
@@ -224,6 +223,10 @@ class Contact extends React.Component {
             </p>
           </form>
         </div>
+        <iframe
+          className="map"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4970.477040020887!2d-0.05985083526588886!3d51.47213600880261!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x212befb4389c510f!2sAll%20Beauty%20By%20Sara!5e0!3m2!1sen!2suk!4v1615917264219!5m2!1sen!2suk" 
+        />
       </div>
     );
   }

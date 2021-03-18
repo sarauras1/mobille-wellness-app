@@ -1,13 +1,23 @@
 import React from "react";
 import "./Banner.css";
-import banner2 from "./banner2.gif";
-import banner1 from "./bannersmall.png";
+//import banner2 from "../banner2.gif";
+//import banner1 from "../bannersmall.png";
 const Banner = () => {
   return (
     <div id="banner" className="Banner-Slicer">
       <div className="Banner-Slicer">
-        <img className="banner2" src={banner2} alt="wellness" loading="lazy" />
-        <img className="banner1" src={banner1} alt="wellness" loading="lazy" />
+        <img
+          className="banner2"
+          src="../images/banner2.gif"
+          alt="wellness"
+          loading="lazy"
+        />
+        <img
+          className="banner1"
+          src="./images/bannersmall.png"
+          alt="wellness"
+          loading="lazy"
+        />
         <div className="div-banner-small">
           <h1
             data-aos="fade-right"
@@ -18,7 +28,10 @@ const Banner = () => {
             data-aos-mirror="true"
             data-aos-once="false"
             data-aos-anchor-placement="top-center"
-            className="banner-title" > The Mobile Wellness
+            className="banner-title"
+          >
+            {" "}
+            The Mobile Wellness
           </h1>
           <p
             className="banner-para"
@@ -30,8 +43,9 @@ const Banner = () => {
             data-aos-mirror="true"
             data-aos-once="false"
             data-aos-anchor-placement="top-center"
-           > Book your treatments at the
-            comfort of your own home
+          >
+            {" "}
+            Book your treatments at the comfort of your own home
           </p>
         </div>
       </div>
