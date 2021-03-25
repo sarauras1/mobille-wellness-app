@@ -16,7 +16,7 @@ class App extends Component {
   }
   makePostRequest() {
     return axios({
-      method: "GET",
+      method: "POST",
       url:
         "https://mybusiness.googleapis.com/v3/accounts/{process.env.ACCOUNT_ID}/locations/{process.env.LOCATION_ID}/reviews/",
       data: {
