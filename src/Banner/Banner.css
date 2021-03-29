@@ -12,8 +12,9 @@
         
     }
     .Banner-Slicer {
-        background-color: lightseagreen;
-         margin-top: -50px;
+      height: fit-content;
+     background-color: lightseagreen;
+     
     }
   .bannerphone{
              display: none !important; 
@@ -28,7 +29,7 @@
  }
  .Banner-Slicer {
      background-color: lightseagreen;
-      margin-top: -50px;
+      margin-top: -20px;
  }
  .bannerphone{
              display: none !important; 
