@@ -11,7 +11,7 @@ import routes from "./pages/index";
 import Backdrop from "./Backdrop/Backdrop";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import Reviews from "./Reviews";
+
 AOS.init({
   duration: 400, // values from 0 to 3000, with step 50ms
   easing: "ease", // default easing for AOS animations
@@ -91,7 +91,7 @@ class App extends React.Component {
             ))}
           </Switch>
         </section>
-      <Reviews/>
+      
         <footer id="footer">
           <Whats />
           <Footer />
