@@ -1,11 +1,12 @@
 
 .main-text {
-   background: rgb(225, 243, 58);
+   background: rgb(234, 236, 110);
    margin-bottom: 100px;
-   border-radius:70% 20% / 20% 20% 70% 80%;
+   border-radius:70% 20% / 20% 20% 10% 50%;
   text-align: center;
   padding: 20px;
    max-width: 500px;
+ 
    
 }
 .info-p2 {
@@ -25,9 +26,7 @@
  
 }
 .main-text {
-  background: rgb(225, 243, 58);
   margin-bottom: 100px;
-  border-radius: 70% 20% / 20% 20% 70% 80%;
   text-align: center;
   padding: 20px;
   max-width: 450px;
@@ -53,9 +52,7 @@
  font-size: 18px;
 }
 .main-text {
-  background: rgb(225, 243, 58);
   margin-bottom: 100px;
-  border-radius: 70% 20% / 20% 20% 70% 80%;
   text-align: center;
   padding: 20px;
   max-width: 300px;

@@ -1,8 +1,7 @@
 import React from "react";
 import "./Massages.css";
-
 import MassagesData from "./MassagesData";
-import Button from "../Button/Button";
+import Button from "../../components/Button/Button";
    import {
      Accordion,
      AccordionItem,

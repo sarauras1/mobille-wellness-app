@@ -1,7 +1,7 @@
 import React from "react";
 import "./Footer.css";
 import { NavLink } from "react-router-dom";
-import servicesmenu from "../servicesmenu";
+import servicesmenu from "../../servicesmenu";
 import Facebook from "./facebook.png";
 import Gmail from "./gmail.png";
 import Instagram from "./instagram.png";

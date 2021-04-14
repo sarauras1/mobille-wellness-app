@@ -25,3 +25,19 @@
 .current {
     text-decoration: none;
 }
+.modal-h1, .modal-para, .modal-input{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 10px auto;
+    padding: 2%;
+}
+
+.modal-button{
+    display: flex;
+    justify-content: flex-end;
+    float: right;
+    align-self: baseline;
+    margin-right: 20px;
+}

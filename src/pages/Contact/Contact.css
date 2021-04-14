@@ -44,12 +44,7 @@ fieldset {
   }
 
   
-  .input-textarea {
-      height: 100px;
-      width: 50%;
-  }
-
-
+  
   .form-button {
       padding: 1em;
       border-radius: 0.5em;
@@ -77,40 +72,41 @@ fieldset {
 
 @media(min-width: 768px) {
     .myForm {
+        background-color:#fff;
         font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
         font-size: 0.8em;
-        max-width: 650px;
+        max-width: 700px;
         padding: 1em;
         border: 3px solid #ccc;
         margin: auto;
     }
     .input,
-    select,
     .input-textarea {
+        display: inline;
         float: right;
         width: 60%;
         border: 1px solid #ccc;
         font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
         font-size: 0.9em;
         padding: 0.5em;
-        margin: auto;
+       
+    }
+    select{
+        display: inline;
     }
   label {
-     text-align: left;
      display: inline;
      font-size: 15px;
-     font-weight: 700;
+     font-weight: 700;  
+ }
+ .group{
+     margin-top: -2px;
  }
   .container {
       display: flex;
       align-items: center;
       justify-content: center;
-  }
- 
-.input,
-.input {
-    margin-left: 30px;
-}
+  } 
 
 }
 
@@ -143,7 +139,7 @@ fieldset {
      font-size: 15px;
      font-weight: 700;
  }
-  .input,
+ 
   .input {
       margin-left: 30px;
   }
@@ -172,9 +168,9 @@ fieldset {
    }
   label {
         display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
       display: inline-block;
       font-size: 15px;
       font-weight: 700;

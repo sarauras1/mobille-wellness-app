@@ -1,14 +1,14 @@
 import React from "react";
 import { Switch, Route } from "react-router-dom";
-import Navbar from "./Navbar/Navbar";
-import SideDrawer from "./SideDrawer/SideDrawer";
-import Banner from "./Banner/Banner";
+import Navbar from "./components/Navbar/Navbar";
+import SideDrawer from "./components/SideDrawer/SideDrawer";
+import Banner from "./components/Banner/Banner";
 import Services from "./Services/Services";
-import Footer from "./Footer/Footer";
+import Footer from "./components/Footer/Footer";
 import About from "./About/About";
-import Whats from "./Whatsapp/Whatsapp";
+import Whats from "./components/Whatsapp/Whatsapp";
 import routes from "./pages/index";
-import Backdrop from "./Backdrop/Backdrop";
+import Backdrop from "./components/Backdrop/Backdrop";
 import AOS from "aos";
 import "aos/dist/aos.css";
 

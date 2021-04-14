@@ -1,6 +1,6 @@
 import React from "react";
 import "./Waxing.css";
-import Button from "../Button/Button";
+import Button from "../../components/Button/Button";
 import WaxingData from './waxingData';
 import Waxing from "./armpit-wax.jpg";
 

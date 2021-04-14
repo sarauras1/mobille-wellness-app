@@ -1,7 +1,4 @@
 
-
-
- 
    
 
 @media(min-width: 1100px) {
@@ -13,7 +10,7 @@
     }
     .Banner-Slicer {
       height: fit-content;
-     background-color: lightseagreen;
+     background-image: url('./abs-back.jpeg');
      
     }
   .bannerphone{
@@ -28,7 +25,7 @@
  
  }
  .Banner-Slicer {
-     background-color: lightseagreen;
+    background-image: url('./abs-back.jpeg');
       margin-top: -20px;
  }
  .bannerphone{

@@ -1,6 +1,6 @@
 import React from 'react';
 import './Yoga.css';
-import Button from '../Button/Button';
+import Button from "../../components/Button/Button";
 import Yoga from './balance-city.jpg'
 const yoga = (props) => {
     return (

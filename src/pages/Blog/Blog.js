@@ -1,5 +1,5 @@
 import React from "react";
-import Button from "../Button/Button";
+import Button from "../../components/Button/Button";
 import "./Blog.css";
 import DoshaKapha from "./3-doshas-kapha.jpg";
 import Ayurveda from "./ayurveda.jpg";

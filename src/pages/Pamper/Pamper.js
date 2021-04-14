@@ -1,6 +1,6 @@
 import React from 'react';
 import './Pamper.css';
-import Button from '../Button/Button';
+import Button from "../../components/Button/Button";
 import CorporateBeauty from "./corporate.jpg";
 
 const pamper = () => {

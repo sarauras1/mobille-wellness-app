@@ -82,7 +82,7 @@ class Contact extends React.Component {
               available.
             </p>
             <p>
-              <label>Your Name:</label>
+              <label>Name:</label>
               <input
                 id="name"
                 placeholder="Your Name"
@@ -95,7 +95,7 @@ class Contact extends React.Component {
               />
             </p>
             <p>
-              <label>Your Surname:</label>
+              <label>Surname:</label>
               <input
                 placeholder="Your Surname"
                 id="surname"
@@ -108,7 +108,7 @@ class Contact extends React.Component {
               />
             </p>
             <p>
-              <label>Your Email:</label>
+              <label>Email:</label>
               <input
                 placeholder="Your Email"
                 type="email"
@@ -121,7 +121,7 @@ class Contact extends React.Component {
               />
             </p>
             <p>
-              <label>Your Phone Number:</label>
+              <label>Phone Number:</label>
               <input
                 placeholder="Your Phone Number"
                 type="tel"
@@ -134,7 +134,7 @@ class Contact extends React.Component {
               />
             </p>
             <p>
-              <label>Your Address:</label>
+              <label>Address:</label>
               <input
                 placeholder="Your Home Address"
                 type="address"
@@ -147,44 +147,13 @@ class Contact extends React.Component {
               />
             </p>
             <p>
-              <label>Car Parking:</label>
-              <select
-                placeholder="Do you have car park available?"
-                type="select"
-                name="select"
-                id="select"
-                required
-                value={select}
-                onChange={this.handleChange}
-              >
-                <option value="0">Do you have car park available?</option>
-                <option value="1">No I don't</option>
-                <option value="2">Yes I do</option>
-              </select>
-            </p>
-            <p>
-              <label>Gender:</label>
-              <select
-                placeholder="Do you have parking available?"
-                type="select"
-                name="select"
-                id="select"
-                required
-                value={select}
-                onChange={this.handleChange}
-              >
-                <option value="Yes">Female</option>
-                <option value="No">Male</option>
-              </select>
-            </p>
-            <p>
               <label>Select Date:</label>
               <input
                 required
                 name="date"
                 type="date"
                 id="date"
-                className="input"
+                className="input group"
                 onChange={this.handleChange}
                 value={date}
               />
@@ -195,14 +164,48 @@ class Contact extends React.Component {
                 type="time"
                 name="appt"
                 id="appt"
-                className="input"
+                className="input group"
                 min="07:00"
                 max="21:00"
                 required
                 onChange={this.handleChange}
                 value={time}
-              ></input>
+              />
             </p>
+            <p>
+              <label>Gender:</label>
+              <select
+                placeholder="Do you have parking available?"
+                type="select"
+                name="select"
+                id="select-gender"
+                className="input group"
+                required
+                value={select}
+                onChange={this.handleChange}
+              >
+                <option value="Female">Female</option>
+                <option value="Male">Male</option>
+              </select>
+            </p>
+            <p>
+              <label>Car Parking:</label>
+              <select
+                placeholder="Do you have car park available?"
+                type="select"
+                name="select"
+                className="input group"
+                id="select-option"
+                required
+                value={select}
+                onChange={this.handleChange}
+              >
+                <option value="0">Do you have car park available?</option>
+                <option value="1">No I don't</option>
+                <option value="2">Yes I do</option>
+              </select>
+            </p>
+
             <p>
               <label>Treatments:</label>
               <textarea

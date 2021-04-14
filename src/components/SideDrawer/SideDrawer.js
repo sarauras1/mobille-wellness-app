@@ -3,8 +3,8 @@ import { NavHashLink } from "react-router-hash-link";
 import "./SideDrawer.css";
 import Collapsible from "react-collapsible";
 import { NavLink } from "react-router-dom";
-import menus from "../menus";
-import servicesmenu from "../servicesmenu";
+import menus from "../../menus";
+import servicesmenu from "../../servicesmenu";
 
 const sideDrawer = (props) => {
   let drawerClasses = "sidedrawer";

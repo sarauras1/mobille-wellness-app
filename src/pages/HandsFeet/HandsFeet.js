@@ -1,7 +1,7 @@
 import React from 'react';
 import './HandsFeet.css';
 import ManiData from "./ManiData";
-import Button from "../Button/Button";
+import Button from "../../components/Button/Button";
 import {
   Accordion,
   AccordionItem,

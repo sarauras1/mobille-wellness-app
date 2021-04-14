@@ -1,6 +1,6 @@
 import React from 'react';
 import './Facials.css';
-import Button from "../Button/Button";
+import Button from "../../components/Button/Button";
 import FacialData from "./facialData";
 import Lakshmi from './gold-l.jpg';
 

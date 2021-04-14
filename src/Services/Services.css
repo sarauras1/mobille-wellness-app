@@ -3,13 +3,13 @@
     align-items: center;
     display: flex;
     flex-wrap: wrap;
-   
+   background-image: url('./09.png');
 }
  .svg {
  cursor: pointer;
  width: 200px;
  height: 300px;
- margin: 30px 50px;
+ margin:20px 50px;
   text-align: center;
   border:rgb(88,88,88) 1px solid;
   border-radius: 20px;
