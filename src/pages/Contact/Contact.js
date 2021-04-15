@@ -72,12 +72,19 @@ class Contact extends React.Component {
               Thanks for choosing All Beauty By Sara London Mobile Beauty
               Services in London. Book your treatments using the form below. If
               you have inquiries about our services do not hesitate to contact
-              us via WhatsApp or email. Please note that All Beauty By Sara does
-              not accept bookings under £30 or £50 or more... depending on the
-              area you live. Let explain, we cover 2 miles radio area around
-              Peckham with a min of £30 per booking. Out of our area the min for
-              a booking will start from £50 and grow the more far you live from
-              my area. There may be a further surcharge if you live in the
+              us via WhatsApp or email.{" "}
+            </p>
+            <p className="contact-para">
+              Please note that All Beauty By Sara does not accept bookings under
+              £30 or £50 or more... depending on the area you live in. We cover
+              2 miles radio area around Peckham in which we accept bookings with
+              a minimum of £ 30 spending. If you live out of our 2 miles radio
+              area the minimum for a booking would be £ 50 or more... depending
+              on how far you live from us. To find out what is the minimum for a
+              booking for your area contact us via WhatsApp or email. In
+            </p>
+            <p className="contact-para">
+              addition, there may be a further surcharge if you live in the
               congestion charge zone or if you don't have free parking readily
               available.
             </p>
