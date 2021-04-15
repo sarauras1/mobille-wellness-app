@@ -81,10 +81,10 @@ class Contact extends React.Component {
               a minimum of £ 30 spending. If you live out of our 2 miles radio
               area the minimum for a booking would be £ 50 or more... depending
               on how far you live from us. To find out what is the minimum for a
-              booking for your area contact us via WhatsApp or email. In
+              booking for your area contact us via WhatsApp or email.
             </p>
             <p className="contact-para">
-              addition, there may be a further surcharge if you live in the
+              In addition, there may be a further surcharge if you live in the
               congestion charge zone or if you don't have free parking readily
               available.
             </p>
