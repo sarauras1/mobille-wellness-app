@@ -1,126 +1,68 @@
 
    
-
-@media(min-width: 1100px) {
-    .Banner-Slicer img {
-        display: flex;
-         width: 80%;
-         margin: auto;
-        
-    }
-    .Banner-Slicer {
-      height: fit-content;
-     background-image: url('./abs-back.jpeg');
-     
-    }
-  .bannerphone{
-             display: none !important; 
-        }
-}
-@media(min-width: 900px) {
-.Banner-Slicer img{
-    display: flex;
-   width: 70%;
-   margin: 0 auto;
- 
- }
  .Banner-Slicer {
-    background-image: url('./abs-back.jpeg');
-      margin-top: -20px;
+   width: 100%;
+   margin-top: 0px;
+   height: 350px;
  }
- .bannerphone{
-             display: none !important; 
-        }
-}
-  
-@media(max-width: 899px) {
-    .Banner-Slicer img{
-        display: flex;
-         width: 100%;
-       margin-top: -15px;
-     }
-    
+
+ .banner1 {
+   height: 290px;
+   width: 100%;
+   opacity: 1;
+ }
+
+ .banner2 {
+   display: none !important;
+ }
+
+ .div-banner-small {
+ background-image: url("./09.png");
+  background-color: cornflowerblue !important;
+  width: 100%;
+  margin-top: 0px;
+  height: 350px;
+   display: flex;
+   justify-content: center;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ }
+
+
+ .banner-title {
+   background-color: cornflowerblue !important;
+   padding: 5px;
+   text-align: center;
+   max-width: 400px;
+   color: #fff;
+   font-weight: bold;
+   margin: 2px auto;
+   font-size: 37px;
+   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+ }
+
+ .banner-para {
+   background-color: cornflowerblue !important;
+   font-weight: bold;
+   color: #fff;
+   font-size: 19px;
+   text-align: center;
+   margin: 2px auto;
+   max-width: 220px;
+   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+ }
+ 
+ 
+  @media(max-width: 600px) {
+
+    .banner-title {
+      font-size: 30px;
     }
-      @media(max-width: 700px) {
-          .Banner-Slicer img {
-              display: flex;
-              width: 100%;
-                        
-          }
-          
-      }
-       @media(min-width: 469px) {
-         .banner1, .banner-title, .banner-para {
-            display: none !important;
-           }
-       }
-     @media(max-width: 468px) {
-         .Banner-Slicer {
-           background-color: cornflowerblue;
-             width: 100%;   
-             margin-top: -50px;
-         }
-         .banner1{
-           height: 290px;
-           width: 100%;
-           opacity: 1;
-         }
-         .banner2 {
-             display: none !important;
-         }
-         .div-banner-small{ 
-            display: flex;
-            justify-content: center;
-            align-self: center;
-         }
-      
-       
-         .banner-title{
-          position: absolute;
-          text-align: center;
-          max-width: 400px;
-          padding: 2px; 
-          top: 27%;
-          color: #fff;
-          font-weight: bold;
-          margin: auto;
-          font-size: 37px;
-          font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-         }
-           .banner-para {
-            position: absolute;
-            font-weight: bold;
-            color: #fff;
-            top: 33%;
-            font-size: 19px;
-            text-align: center;
-            width: 220px;
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-             
-           }
-        }
-         @media(max-width: 375px) {
 
-           .banner-title {
-             font-size: 33px;
-           }
-             .banner1 {
-               width: 100%;
-             }
-           .banner-para {
-             text-align: center;
-             width: 200px;
-             font-size: 18px;
-             
-           }
-         }
-          @media(max-width: 320px) {
-
-            .banner-title {
-              font-size: 30px;
-            }
-
-            .banner1 {
-              width: 100%;
-            }
-          }
+     .Banner-Slicer {
+      width: 100%;
+       height: 300px;
+    }
+  }

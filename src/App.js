@@ -53,14 +53,14 @@ class App extends React.Component {
 
         <Switch>
           <Route exact path="/">
-            <section style={{ marginTop: "100px" }}>
+            <section id="banner-section">
               <Banner />
             </section>
 
-            <section style={{ marginTop: "-150px" }}>
-              <div>
+            <section id="services-section">
+            
                 <Services />
-              </div>
+             
             </section>
             <div
               data-aos="fade-up"
@@ -75,8 +75,6 @@ class App extends React.Component {
               <About />
             </div>
           </Route>
-
-       
         </Switch>
 
         <section>
@@ -91,7 +89,7 @@ class App extends React.Component {
             ))}
           </Switch>
         </section>
-      
+
         <footer id="footer">
           <Whats />
           <Footer />

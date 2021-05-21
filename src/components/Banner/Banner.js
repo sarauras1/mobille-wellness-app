@@ -6,18 +6,7 @@ const Banner = () => {
   return (
     <div id="banner" className="Banner-Slicer">
       <div className="Banner-Slicer">
-        <img
-          className="banner2"
-          src="../images/banner2.gif"
-          alt="wellness"
-          loading="lazy"
-        />
-        <img
-          className="banner1"
-          src="./images/bannersmall.png"
-          alt="wellness"
-          loading="lazy"
-        />
+       
         <div className="div-banner-small">
           <h1
             data-aos="fade-right"
